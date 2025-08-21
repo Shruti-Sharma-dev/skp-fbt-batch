@@ -1,12 +1,12 @@
 import pandas as pd
 import os
 
-# Correct path: go one level up from current file
-csv_path = os.path.join(os.path.dirname(__file__), "../../sample_data/sample_products.csv")
-
-# Load CSV
-products_df = pd.read_csv(csv_path)
-
-# Preview data
-print("Sample Products Loaded Successfully:")
-print(products_df.head())
+def load_orders_from_csv():
+    """
+    Load sample orders from CSV into a DataFrame.
+    """
+    csv_path = os.path.join(os.path.dirname(__file__), "../../sample_data/sample_orders.csv")
+    df = pd.read_csv(csv_path)
+    print("✅ Sample Orders Loaded Successfully:")
+    print(df.head())
+    return df

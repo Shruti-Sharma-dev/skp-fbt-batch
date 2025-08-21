@@ -1,25 +1,21 @@
 from ingestion import orders, products
 from processing import basketize, similarity
 from publishing import update_crosssell
+from ingestion.products import fetch_products
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.helpers import log
+import pandas as pd
+
 
 def main():
-    log("Batch job started (Week 1 skeleton)")
+    print("Batch job started...")
+    
+    # Fetch products
+    products_df = fetch_products()
+    print("\n🛍️ Sample Products Loaded Successfully:")
+    print(products_df.head())
 
-    # Load sample data
-    order_data = orders.load_sample_orders("../sample_data/sample_orders.json")
-    product_data = products.load_sample_products("../sample_data/sample_products.csv")
-
-    log(f"Loaded {len(order_data)} orders and {len(product_data)} products")
-
-    # Processing
-    baskets = basketize.create_baskets(order_data)
-    recommendations = similarity.compute_recommendations(baskets)
-
-    # Publishing
-    update_crosssell.push_dummy(recommendations)
-
-    log("Batch job completed (Week 1 skeleton)")
 
 
 if __name__ == "__main__":
