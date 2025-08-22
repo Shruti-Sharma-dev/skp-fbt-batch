@@ -31,10 +31,7 @@ def fetch_products():
         }
 
         r = requests.get(BASE_URL, params=params, headers=headers)
-
-        print(f"--- PAGE {page} ---")
-        print(f"Status Code: {r.status_code}")
-        print(f"Response Preview: {r.text[:100]}\n")
+        print(f"--- PAGE {page} --- Status Code: {r.status_code}")
 
         if r.status_code != 200:
             raise Exception(f"Failed to fetch products: {r.status_code}, {r.text}")
@@ -42,7 +39,7 @@ def fetch_products():
         try:
             data = r.json()
         except ValueError:
-            print("Invalid JSON response! Check raw output above.")
+            print("Invalid JSON response!")
             break
 
         if not data:
@@ -52,6 +49,34 @@ def fetch_products():
         page += 1
 
     df = pd.DataFrame(products)
+
+    # Safe filtering
+    df = df[df['status'] == 'publish']
+    df = df[df['stock_status'] == 'instock']
+    df = df[df['catalog_visibility'] != 'hidden']
+
+    # Ensure columns exist
+    for col in ['sku', 'categories', 'parent']:
+        if col not in df.columns:
+            df[col] = pd.NA
+
+    # Flatten SKU
+    df['sku'] = df['sku'].apply(lambda x: x[0] if isinstance(x, list) else x)
+
+    # Flatten categories
+    df['categories'] = df['categories'].apply(
+        lambda cats: ','.join([c['name'] for c in cats]) if isinstance(cats, list) else ''
+    )
+
+    # Safe parent_id
+    df['parent_id'] = df['parent'].fillna(df['id'])
+
+    # Keep only id and parent_id for batch
+    df = df[['id', 'parent_id']]
+
+    # Save CSV
+    df.to_csv("products_cache.csv", index=False)
+
     print(f"Total products fetched: {len(df)}")
     return df
 
