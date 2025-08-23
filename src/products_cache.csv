@@ -1,448 +1,449 @@
-id,parent_id
-14057,14057
-14053,14053
-14048,14048
-14043,14043
-14039,14039
-14034,14034
-14029,14029
-14011,14011
-13974,13974
-13970,13970
-13966,13966
-13963,13963
-13960,13960
-13957,13957
-13954,13954
-13951,13951
-13947,13947
-13944,13944
-13941,13941
-13938,13938
-13935,13935
-13910,13910
-13907,13907
-13903,13903
-13900,13900
-13895,13895
-13891,13891
-13888,13888
-13882,13882
-13875,13875
-13871,13871
-13866,13866
-13862,13862
-13853,13853
-13847,13847
-13840,13840
-13837,13837
-13834,13834
-13831,13831
-13828,13828
-13825,13825
-13823,13823
-13820,13820
-13802,13802
-13798,13798
-13795,13795
-13792,13792
-13790,13790
-13787,13787
-13784,13784
-13781,13781
-13778,13778
-13775,13775
-13772,13772
-13768,13768
-13765,13765
-13762,13762
-13759,13759
-13756,13756
-13753,13753
-13741,13741
-13738,13738
-13735,13735
-13731,13731
-13727,13727
-13717,13717
-13675,13675
-13672,13672
-13669,13669
-13666,13666
-13663,13663
-13660,13660
-13657,13657
-13654,13654
-13650,13650
-13647,13647
-13644,13644
-13641,13641
-13638,13638
-13634,13634
-13631,13631
-13628,13628
-13625,13625
-13622,13622
-13620,13620
-13618,13618
-13615,13615
-13612,13612
-13609,13609
-13602,13602
-13599,13599
-13596,13596
-13592,13592
-13589,13589
-13586,13586
-13582,13582
-13577,13577
-13572,13572
-13545,13545
-13541,13541
-13536,13536
-13525,13525
-13520,13520
-13416,13416
-13407,13407
-13380,13380
-13379,13379
-13378,13378
-13354,13354
-13350,13350
-13338,13338
-13334,13334
-13325,13325
-13320,13320
-13310,13310
-13305,13305
-13300,13300
-13294,13294
-13290,13290
-13286,13286
-13282,13282
-13277,13277
-13267,13267
-13262,13262
-13258,13258
-13251,13251
-13243,13243
-13240,13240
-13225,13225
-13220,13220
-13214,13214
-13210,13210
-13199,13199
-13195,13195
-13189,13189
-13184,13184
-13174,13174
-13167,13167
-13161,13161
-13156,13156
-13150,13150
-13133,13133
-13127,13127
-13119,13119
-13115,13115
-13111,13111
-13107,13107
-13103,13103
-13096,13096
-13091,13091
-13087,13087
-13082,13082
-13077,13077
-13072,13072
-13071,13071
-13066,13066
-13060,13060
-13065,13065
-13056,13056
-13053,13053
-13050,13050
-13040,13040
-13032,13032
-13003,13003
-12998,12998
-12993,12993
-12988,12988
-12978,12978
-12949,12949
-12946,12946
-12943,12943
-12940,12940
-12937,12937
-12934,12934
-12932,12932
-12930,12930
-12928,12928
-12925,12925
-12922,12922
-12919,12919
-12916,12916
-12913,12913
-12910,12910
-12907,12907
-12904,12904
-12901,12901
-12897,12897
-12894,12894
-12891,12891
-12885,12885
-12882,12882
-12879,12879
-12876,12876
-12873,12873
-12870,12870
-12867,12867
-12862,12862
-12856,12856
-12852,12852
-12847,12847
-12843,12843
-12838,12838
-12833,12833
-12829,12829
-12823,12823
-12820,12820
-12817,12817
-12809,12809
-12802,12802
-12797,12797
-12793,12793
-12787,12787
-12778,12778
-12771,12771
-12766,12766
-12761,12761
-12755,12755
-12750,12750
-12703,12703
-12700,12700
-12697,12697
-12693,12693
-12687,12687
-12681,12681
-12678,12678
-12675,12675
-12672,12672
-12669,12669
-12666,12666
-12657,12657
-12651,12651
-12641,12641
-12638,12638
-12634,12634
-12621,12621
-12608,12608
-12604,12604
-12602,12602
-12597,12597
-12589,12589
-12582,12582
-12570,12570
-12555,12555
-12540,12540
-12528,12528
-12525,12525
-12521,12521
-12516,12516
-12514,12514
-12504,12504
-12498,12498
-12497,12497
-12494,12494
-12488,12488
-12483,12483
-12472,12472
-12468,12468
-12464,12464
-12451,12451
-12437,12437
-12426,12426
-11911,11911
-11896,11896
-11894,11894
-11880,11880
-11695,11695
-11692,11692
-11691,11691
-11652,11652
-11651,11651
-11650,11650
-11649,11649
-11647,11647
-11643,11643
-11642,11642
-11641,11641
-11625,11625
-11624,11624
-11623,11623
-11622,11622
-11613,11613
-11612,11612
-11530,11530
-11529,11529
-11527,11527
-11526,11526
-11524,11524
-11522,11522
-11521,11521
-11520,11520
-11519,11519
-11518,11518
-11442,11442
-11439,11439
-11437,11437
-11436,11436
-11435,11435
-11386,11386
-11376,11376
-11199,11199
-11152,11152
-10791,10791
-10692,10692
-10689,10689
-10681,10681
-10665,10665
-10298,10298
-10297,10297
-10294,10294
-10291,10291
-10288,10288
-10213,10213
-10208,10208
-10207,10207
-10206,10206
-10205,10205
-10202,10202
-10195,10195
-10117,10117
-10108,10108
-10106,10106
-10104,10104
-10103,10103
-10101,10101
-10100,10100
-10099,10099
-10090,10090
-9715,9715
-9701,9701
-9700,9700
-9175,9175
-9158,9158
-9157,9157
-8952,8952
-8388,8388
-8387,8387
-8384,8384
-8114,8114
-7767,7767
-7715,7715
-7407,7407
-7390,7390
-6631,6631
-6399,6399
-6394,6394
-6365,6365
-6361,6361
-6357,6357
-6121,6121
-6074,6074
-6073,6073
-5997,5997
-5990,5990
-5986,5986
-5985,5985
-5984,5984
-5983,5983
-5982,5982
-5967,5967
-5959,5959
-5865,5865
-5600,5600
-5498,5498
-5493,5493
-5478,5478
-5085,5085
-5082,5082
-5077,5077
-5051,5051
-5050,5050
-5046,5046
-4986,4986
-4761,4761
-4758,4758
-4674,4674
-4637,4637
-4636,4636
-4601,4601
-4600,4600
-4599,4599
-4505,4505
-4504,4504
-4361,4361
-4360,4360
-4097,4097
-3925,3925
-3924,3924
-3923,3923
-3922,3922
-3921,3921
-3920,3920
-3917,3917
-3916,3916
-3915,3915
-3914,3914
-3891,3891
-3873,3873
-3857,3857
-3803,3803
-3788,3788
-3777,3777
-3607,3607
-3604,3604
-3597,3597
-3595,3595
-3590,3590
-3584,3584
-3574,3574
-3572,3572
-3542,3542
-3531,3531
-3513,3513
-3510,3510
-3508,3508
-3506,3506
-3502,3502
-3500,3500
-3494,3494
-3488,3488
-3486,3486
-3483,3483
-3479,3479
-3423,3423
-3421,3421
-3420,3420
-3419,3419
-3418,3418
-3417,3417
-3388,3388
-3386,3386
-3376,3376
-3375,3375
-3374,3374
-3373,3373
-3372,3372
-3359,3359
-3281,3281
-3279,3279
-3268,3268
-3265,3265
-3247,3247
-3245,3245
-3243,3243
-3236,3236
-3213,3213
-3177,3177
-3068,3068
+id,parent_id,categories,price,stock_status,catalog_visibility,status,sku
+14057,14057,"Luxury Pearl Set,Necklace’s",19500,instock,visible,publish,
+14053,14053,"Luxury Pearl Set,Necklace’s",39800,instock,visible,publish,
+14048,14048,"Luxury Pearl Set,Necklace’s",44800,instock,visible,publish,
+14043,14043,Luxury Pearl Set,,instock,visible,publish,
+14039,14039,"Luxury Pearl Set,Necklace’s",51900,instock,visible,publish,
+14034,14034,"Luxury Pearl Set,Necklace’s",84000,instock,visible,publish,
+14029,14029,"Luxury Pearl Set,Necklace’s",49999,instock,visible,publish,
+14011,14011,"Luxury Pearl Set,Necklace’s",19900,instock,visible,publish,
+13974,13974,Pearls Earrings,1499,instock,visible,publish,
+13970,13970,Pearls Earrings,1899,instock,visible,publish,
+13966,13966,Pearls Earrings,1899,instock,visible,publish,
+13963,13963,Pearls Earrings,1899,instock,visible,publish,
+13960,13960,Pearls Earrings,1899,instock,visible,publish,
+13957,13957,Pearls Earrings,2199,instock,visible,publish,
+13954,13954,Pearls Earrings,2199,instock,visible,publish,
+13951,13951,Pearls Earrings,2199,instock,visible,publish,
+13947,13947,Pearls Earrings,2199,instock,visible,publish,
+13944,13944,Pearls Earrings,2199,instock,visible,publish,
+13941,13941,Pearls Earrings,2199,instock,visible,publish,
+13938,13938,Pearls Earrings,2199,instock,visible,publish,
+13935,13935,Pearls Earrings,2199,instock,visible,publish,
+13910,13910,Pearls Earrings,2199,instock,visible,publish,
+13907,13907,Pearls Earrings,2199,instock,visible,publish,
+13903,13903,Pearls Earrings,2199,instock,visible,publish,
+13900,13900,Pearls Earrings,2199,instock,visible,publish,
+13895,13895,Chain’s,15950,instock,visible,publish,
+13891,13891,92.5 Silver Jewellery,2450,instock,visible,publish,
+13888,13888,92.5 Silver Pearl Jewellery,1850,instock,visible,publish,
+13882,13882,"92.5 Silver Jewellery Pearls Earrings,Chain’s",26615,instock,visible,publish,
+13875,13875,Chain’s,7900,instock,visible,publish,
+13871,13871,Chain’s,6600,instock,visible,publish,
+13866,13866,Chain’s,4095,instock,visible,publish,
+13862,13862,Chain’s,10400,instock,visible,publish,
+13853,13853,Chain’s,5225,instock,visible,publish,
+13847,13847,Pearl Studs Earrings,1199.00,instock,visible,publish,
+13840,13840,Pearl Hanging,1899.00,instock,visible,publish,
+13837,13837,Pearl Hanging,1199.00,instock,visible,publish,
+13834,13834,Pearl Studs Earrings,1099.00,instock,visible,publish,
+13831,13831,92.5 Silver Jewellery Pearls Earrings,1800,instock,visible,publish,
+13828,13828,Pearl Hanging,1499,instock,visible,publish,
+13825,13825,92.5 Silver Jewellery Pearls Earrings,1199,instock,visible,publish,
+13823,13823,Pearl Hanging,1200,instock,visible,publish,
+13820,13820,Pearl Studs Earrings,499,instock,visible,publish,
+13802,13802,92.5 Silver Pearl Jewellery,2199,instock,visible,publish,
+13798,13798,92.5 Silver Pearl Jewellery,1399,instock,visible,publish,
+13795,13795,Pearls Earrings,1299,instock,visible,publish,
+13792,13792,Pearl Studs Earrings,1199,instock,visible,publish,
+13790,13790,Pearls Earrings,1600,instock,visible,publish,
+13787,13787,Uncategorized,1399,instock,visible,publish,
+13784,13784,Uncategorized,1399,instock,visible,publish,
+13781,13781,Pearls Earrings,1399,instock,visible,publish,
+13778,13778,Pearls Earrings,1800,instock,visible,publish,
+13775,13775,Pearls Earrings,1800,instock,visible,publish,
+13772,13772,Pearls Earrings,1199,instock,visible,publish,
+13768,13768,Pearls Earrings,1800,instock,visible,publish,
+13765,13765,92.5 Silver Pearl Jewellery,1400.00,instock,visible,publish,
+13762,13762,92.5 Silver Pearl Jewellery,1800,instock,visible,publish,
+13759,13759,92.5 Silver Pearl Jewellery,1299,instock,visible,publish,
+13756,13756,"92.5 Silver Jewellery Pearls Earrings,92.5 Silver Pearl Jewellery",1399,instock,visible,publish,
+13753,13753,92.5 Silver Jewellery Pearls Earrings,1800,instock,visible,publish,
+13741,13741,"92.5 Silver Jewellery Pearls Earrings,92.5 Silver Pearl Jewellery",1299,instock,visible,publish,
+13738,13738,92.5 Silver Jewellery,1800,instock,visible,publish,
+13735,13735,92.5 Silver Jewellery Pearls Earrings,1800,instock,visible,publish,
+13731,13731,92.5 Silver Pearl Jewellery,1199,instock,visible,publish,
+13727,13727,"92.5 Silver Pearl Jewellery,Pearl Hanging",1800,instock,visible,publish,
+13717,13717,92.5 Silver Pearl Jewellery,1800,instock,visible,publish,
+13675,13675,Pearl Hanging,999,instock,visible,publish,
+13672,13672,Pearl Hanging,999,instock,visible,publish,
+13669,13669,Pearl Hanging,1149.00,instock,visible,publish,
+13666,13666,Pearl Hanging,1149.00,instock,visible,publish,
+13663,13663,"Pearl Hanging,Uncategorized",1999.00,instock,visible,publish,
+13660,13660,Pearl Hanging,2599,instock,visible,publish,
+13657,13657,Pearl Hanging,1349,instock,visible,publish,
+13654,13654,Pearl Studs Earrings,1099.00,instock,visible,publish,
+13650,13650,Pearl Studs Earrings,2199,instock,visible,publish,
+13647,13647,Pearl Hanging,1149.00,instock,visible,publish,
+13644,13644,Pearl Hanging,1149.00,instock,visible,publish,
+13641,13641,Pearl Hanging,1349,instock,visible,publish,
+13638,13638,Pearl Hanging,1349,instock,visible,publish,
+13634,13634,Pearl Studs Earrings,2199,instock,visible,publish,
+13631,13631,Pearl Studs Earrings,2199,instock,visible,publish,
+13628,13628,Pearl Hanging,1349,instock,visible,publish,
+13625,13625,Pearl Studs Earrings,1099.00,instock,visible,publish,
+13622,13622,Pearl Hanging,1449,instock,visible,publish,
+13620,13620,"Pearl Hanging,Uncategorized",1149.00,instock,visible,publish,
+13618,13618,Pearl Hanging,1249,instock,visible,publish,
+13615,13615,Pearl Hanging,1349,instock,visible,publish,
+13612,13612,Pearl Hanging,1349,instock,visible,publish,
+13609,13609,Pearl Studs Earrings,1349,instock,visible,publish,
+13602,13602,Pearl Hanging,1349,instock,visible,publish,
+13599,13599,Pearl Hanging,1499,instock,visible,publish,
+13596,13596,Pearl Hanging,1349,instock,visible,publish,
+13592,13592,Pearl Hanging,1349,instock,visible,publish,
+13589,13589,Plain Pink Pearl Set,24999,instock,visible,publish,
+13586,13586,Button Pearl Set,4999,instock,visible,publish,
+13582,13582,Button Pearl Set,4999,instock,visible,publish,
+13577,13577,Button Pearl Set,7499,instock,visible,publish,
+13572,13572,Button Pearl Set,7499,instock,visible,publish,
+13545,13545,"Emerald,Fancy Pearl Set",22499,instock,visible,publish,
+13541,13541,Fancy Pearl Set,16499,instock,visible,publish,
+13536,13536,Broch Set,14499,instock,visible,publish,
+13525,13525,Broch Set,14499,instock,visible,publish,
+13520,13520,Broch Set,14499,instock,visible,publish,
+13416,13416,"Emerald,Rani Haar",22499,instock,visible,publish,
+13407,13407,"Designer sets,Emerald,Uncategorized",,instock,visible,publish,
+13380,13380,Gift-product,0,instock,visible,publish,
+13379,13379,Gift-product,0,instock,visible,publish,
+13378,13378,Gift-product,0,instock,visible,publish,
+13354,13354,"Luxury Pearl Set,Rani Haar",38999,instock,visible,publish,
+13350,13350,Double Line Pearl Set,6499,instock,visible,publish,
+13338,13338,Double Line Pearl Set,6499,instock,visible,publish,
+13334,13334,Double Line Pearl Set,6499,instock,visible,publish,
+13325,13325,Double Line Pearl Set,6499,instock,visible,publish,
+13320,13320,Double Line Pearl Set,6099,instock,visible,publish,
+13310,13310,Double Line Pearl Set,9499,instock,visible,publish,
+13305,13305,Double Line Pearl Set,6099,instock,visible,publish,
+13300,13300,Double Line Pearl Set,7999.00,instock,visible,publish,
+13290,13290,Choker Set,10999,instock,visible,publish,
+13286,13286,Choker Set,5499,instock,visible,publish,
+13282,13282,Three Line Pearl Necklace set,13499,instock,visible,publish,
+13277,13277,Three Line Pearl Necklace set,13499,instock,visible,publish,
+13267,13267,Three Line Pearl Necklace set,13499,instock,visible,publish,
+13262,13262,Three Line Pearl Necklace set,13499,instock,visible,publish,
+13258,13258,Three Line Pearl Necklace set,13499,instock,visible,publish,
+13251,13251,Three Line Pearl Necklace set,13499,instock,visible,publish,
+13243,13243,Plain Grey Pearl Set,49999,instock,visible,publish,
+13240,13240,"Plain Grey Pearl Set,Uncategorized",25499,instock,visible,publish,
+13225,13225,Single Line Pearl Set,3199,instock,visible,publish,
+13220,13220,Single Line Pearl Set,3199,instock,visible,publish,
+13214,13214,Single Line Pearl Set,3199,instock,visible,publish,
+13210,13210,Single Line Pearl Set,3999,instock,visible,publish,
+13199,13199,Single Line Pearl Set,3199,instock,visible,publish,
+13195,13195,Single Line Pearl Set,3999,instock,visible,publish,
+13189,13189,Single Line Pearl Set,3699,instock,visible,publish,3999
+13184,13184,Single Line Pearl Set,3199,instock,visible,publish,
+13174,13174,Single Line Pearl Set,3999,instock,visible,publish,
+13167,13167,Single Line Pearl Set,3999,instock,visible,publish,
+13161,13161,Single Line Pearl Set,3999,instock,visible,publish,
+13156,13156,Single Line Pearl Set,3999,instock,visible,publish,
+13150,13150,Single Line Pearl Set,3699,instock,visible,publish,
+13133,13133,Single Line Pearl Set,2999.00,instock,visible,publish,
+13127,13127,Single Line Pearl Set,3999,instock,visible,publish,
+13119,13119,Single Line Pearl Set,3899,instock,visible,publish,
+13115,13115,Single Line Pearl Set,3699,instock,visible,publish,
+13111,13111,Single Line Pearl Set,3799,instock,visible,publish,
+13107,13107,Broch Set,14999,instock,visible,publish,
+13103,13103,Necklace Set,9499,instock,visible,publish,
+13096,13096,Necklace Set,7999,instock,visible,publish,
+13091,13091,Necklace Set,7999,instock,visible,publish,
+13087,13087,Necklace Set,7599,instock,visible,publish,
+13082,13082,Necklace Set,7599,instock,visible,publish,
+13077,13077,Designer sets,7999,instock,visible,publish,
+13072,13072,Fancy Pearl Set,7999,instock,visible,publish,
+13071,13071,Pearl Pendent Set,2499,instock,visible,publish,
+13066,13066,Baroque Pearls,21999,instock,visible,publish,
+13060,13060,Baroque Pearls,21999,instock,visible,publish,
+13065,13065,Uncategorized,,instock,visible,publish,
+13056,13056,Baroque Pearls,21999,instock,visible,publish,
+13053,13053,Baroque Pearls,27999,instock,visible,publish,
+13050,13050,Baroque Pearls,13999,instock,visible,publish,
+13040,13040,Designer sets,8100,instock,visible,publish,
+13032,13032,Baroque Pearls,25999,instock,visible,publish,
+13003,13003,Single Line Pearl Set,3499,instock,visible,publish,
+12998,12998,"Fancy Pearl Set,Single Line Pearl Set",3499,instock,visible,publish,
+12993,12993,Single Line Pearl Set,3499,instock,visible,publish,
+12988,12988,Single Line Pearl Set,3999,instock,visible,publish,3499
+12978,12978,Single Line Pearl Set,3499,instock,visible,publish,
+12949,12949,Pearl Studs Earrings,999,instock,visible,publish,
+12946,12946,Precious Stones Studs,1699,instock,visible,publish,
+12943,12943,Pearl Studs Earrings,799,instock,visible,publish,
+12940,12940,Precious Stones Studs,1999,instock,visible,publish,
+12937,12937,Precious Stones Studs,1999,instock,visible,publish,
+12934,12934,Precious Stones Studs,1699,instock,visible,publish,
+12932,12932,Precious Stones Studs,1799,instock,visible,publish,
+12930,12930,Precious Stones Studs,1799,instock,visible,publish,
+12928,12928,Precious Stones Studs,1799,instock,visible,publish,
+12925,12925,Precious Stones Studs,1799,instock,visible,publish,
+12922,12922,Precious Stones Studs,1799,instock,visible,publish,
+12919,12919,Precious Stones Studs,1999,instock,visible,publish,
+12916,12916,Precious Stones Studs,1999,instock,visible,publish,
+12913,12913,Precious Stones Studs,1999,instock,visible,publish,
+12910,12910,Precious Stones Studs,1999,instock,visible,publish,
+12907,12907,Pearl Studs Earrings,2099,instock,visible,publish,
+12904,12904,Precious Stones Studs,1999,instock,visible,publish,
+12901,12901,Precious Stones Studs,1999,instock,visible,publish,
+12897,12897,Precious Stones Studs,1999,instock,visible,publish,
+12894,12894,Precious Stones Studs,1999,instock,visible,publish,
+12891,12891,Precious Stones Studs,1999,instock,visible,publish,
+12885,12885,Precious Stones Studs,1999,instock,visible,publish,
+12882,12882,Precious Stones Studs,1999,instock,visible,publish,
+12879,12879,Precious Stones Studs,1999,instock,visible,publish,
+12876,12876,Precious Stones Studs,1999,instock,visible,publish,
+12873,12873,Precious Stones Studs,1999,instock,visible,publish,
+12870,12870,Precious Stones Studs,1999,instock,visible,publish,
+12867,12867,Precious Stones Studs,1999,instock,visible,publish,
+12862,12862,Precious Stones Studs,1999,instock,visible,publish,
+12856,12856,Chain’s,2349,instock,visible,publish,
+12852,12852,92.5 Silver Pearl Jewellery,2970,instock,visible,publish,
+12847,12847,Chain’s,5999,instock,visible,publish,
+12843,12843,Chain’s,2025,instock,visible,publish,
+12838,12838,Chain’s,3790,instock,visible,publish,
+12833,12833,Chain’s,3290,instock,visible,publish,
+12829,12829,Chain’s,3100,instock,visible,publish,
+12823,12823,Chain’s,3555,instock,visible,publish,
+12820,12820,Chain’s,1599,instock,visible,publish,
+12817,12817,Chain’s,9225,instock,visible,publish,
+12809,12809,Chain’s,1440,instock,visible,publish,
+12802,12802,Chain’s,2699,instock,visible,publish,
+12797,12797,Uncategorized,1999,instock,visible,publish,
+12793,12793,Chain’s,3950,instock,visible,publish,
+12787,12787,92.5 Silver Pearl Jewellery,3950,instock,visible,publish,
+12778,12778,Bangles,15525,instock,visible,publish,
+12771,12771,Necklace’s,5799,instock,visible,publish,
+12766,12766,92.5 Silver Pearl Jewellery,3499,instock,visible,publish,
+12761,12761,92.5 Silver Pearl Jewellery,3499,instock,visible,publish,
+12755,12755,92.5 Silver Pearl Jewellery,2699,instock,visible,publish,
+12750,12750,92.5 Silver Pearl Jewellery,2699,instock,visible,publish,
+12745,12745,92.5 Silver Pearl Jewellery,2699,instock,visible,publish,
+12733,12733,"92.5 Silver Jewellery Pearls Earrings,92.5 Silver Pearl Jewellery",2699,instock,visible,publish,
+12703,12703,Pearls Earrings,2199,instock,visible,publish,
+12700,12700,Pearls Earrings,2199,instock,visible,publish,
+12697,12697,Pearls Earrings,2199,instock,visible,publish,
+12693,12693,Pearls Earrings,2199,instock,visible,publish,
+12687,12687,Pearls Earrings,2199,instock,visible,publish,
+12681,12681,Pearls Earrings,2199,instock,visible,publish,
+12678,12678,Pearls Earrings,2199,instock,visible,publish,
+12675,12675,Pearls Earrings,2299,instock,visible,publish,
+12672,12672,Pearls Earrings,2199,instock,visible,publish,
+12669,12669,Pearl Studs Earrings,2199,instock,visible,publish,
+12666,12666,Pearl Studs Earrings,2199,instock,visible,publish,
+12657,12657,Pearl Hanging,2199,instock,visible,publish,
+12651,12651,Pearl Studs Earrings,2199,instock,visible,publish,
+12641,12641,Pearls Earrings,2199,instock,visible,publish,
+12638,12638,Pearls Earrings,2199,instock,visible,publish,
+12634,12634,Pearl Studs Earrings,2199,instock,visible,publish,
+12621,12621,"Choker Set,Exclusive Pearls Set",9499,instock,visible,publish,
+12608,12608,"Choker Set,Designer sets",5899,instock,visible,publish,
+12604,12604,Plain Black Pearl Set,7999,instock,visible,publish,
+12602,12602,"Choker Set,Luxury Pearl Set,Ruby",27999,instock,visible,publish,
+12597,12597,Choker Set,8499.00,instock,visible,publish,
+12589,12589,"Choker Set,Designer sets",14999.00,instock,visible,publish,CHOKARTRADITIONAL
+12582,12582,"Choker Set,Exclusive Pearls Set",5499,instock,visible,publish,CHOKARBLUE
+12570,12570,"Designer sets,Exclusive Pearls Set,Fancy Pearls Sets,Luxury Pearl Set",23999.00,instock,visible,publish,
+12555,12555,"Broch Set,Button Pearl Set,Designer sets,Long Pearl Set",12100,instock,visible,publish,BUTTONPEARL2
+12540,12540,"Button Pearl Set,Choker Set,Designer sets",6499.00,instock,visible,publish,
+12528,12528,"Fancy Pearls Sets,Three Line Pearl Necklace set",11111.00,instock,visible,publish,
+12525,12525,"Luxury Pearl Set,Plain Pink Pearl Set",15999,instock,visible,publish,
+12521,12521,"Luxury Pearl Set,Plain Black Pearl Set,Plain Grey Pearl Set",17999,instock,visible,publish,
+12516,12516,Single Line Pearl Set,2799.00,instock,visible,publish,
+12514,12514,"Single Line Pearl Set,Uncategorized",2999.00,instock,visible,publish,
+12504,12504,"Single Line Pearl Set,Uncategorized",2999,instock,visible,publish,NATURALPEARL
+12498,12498,"Pearl Necklace Sets,Single Line Pearl Set",4200,instock,visible,publish,
+12497,12497,"Baroque Pearls,Designer sets,Plain Pink Pearl Set",16500,instock,visible,publish,AABRQMLTI
+12494,12494,"Double Line Pearl Set,Fancy Pearls Sets,Uncategorized",7499,instock,visible,publish,AADBEMRDSU
+12488,12488,"Baroque Pearls,Luxury Pearl Set,Plain Pink Pearl Set",17600,instock,visible,publish,AAGDBRQPK
+12483,12483,Single Line Pearl Set,3199,instock,visible,publish,TURQUOISESG
+12472,12472,Double Line Pearl Set,22499,instock,visible,publish,
+12468,12468,Single Line Pearl Set,3999,instock,visible,publish,
+12464,12464,Single Line Pearl Set,3999,instock,visible,publish,
+12451,12451,"Pearl Necklace Sets,Single Line Pearl Set",3699,instock,visible,publish,
+12437,12437,"Precious Stones,Ruby",5499,instock,visible,publish,
+12426,12426,Double Line Pearl Set,9999,instock,visible,publish,
+11911,11911,Designer sets,13500,instock,visible,publish,
+11896,11896,"Baroque Pearls,Designer sets,Fancy Pearl Set",15990,instock,visible,publish,
+11894,11894,Plain White Pearl Set,10900,instock,visible,publish,
+11880,11880,"Exclusive Pearls Set,Plain White Pearl Set",11000,instock,visible,publish,
+11695,11695,Pearl Bracelet,3900,instock,visible,publish,
+11692,11692,Plain Black Pearl Set,6500,instock,visible,publish,
+11691,11691,Long Pearl Set,15500,instock,visible,publish,
+11652,11652,Long Pearl Set,15500,instock,visible,publish,
+11651,11651,Plain White Pearl Set,9000,instock,visible,publish,
+11650,11650,Plain White Pearl Set,6900,instock,visible,publish,
+11649,11649,"Long Pearl Set,Luxury Pearl Set",29000,instock,visible,publish,
+11647,11647,Plain Pink Pearl Set,11900,instock,visible,publish,
+11643,11643,Plain White Pearl Set,8900,instock,visible,publish,
+11642,11642,Plain Pink Pearl Set,4500,instock,visible,publish,
+11641,11641,Long Pearl Set,15500,instock,visible,publish,
+11625,11625,"Long Pearl Set,Luxury Pearl Set",24990,instock,visible,publish,
+11624,11624,"Plain Pink Pearl Set,Plain White Pearl Set",7500,instock,visible,publish,
+11623,11623,"Exclusive Pearls Set,Plain Pink Pearl Set,Plain White Pearl Set",11500,instock,visible,publish,
+11622,11622,"Long Pearl Set,Plain White Pearl Set",24000,instock,visible,publish,
+11613,11613,"Exclusive Pearls Set,Plain Pink Pearl Set,Plain White Pearl Set",8000,instock,visible,publish,
+11612,11612,"Long Pearl Set,Plain White Pearl Set",19000,instock,visible,publish,
+11530,11530,Pearl Studs Earrings,700,instock,visible,publish,
+11529,11529,Pearl Studs Earrings,1900,instock,visible,publish,
+11527,11527,Pearl Studs Earrings,1400,instock,visible,publish,
+11526,11526,Pearl Studs Earrings,1500,instock,visible,publish,
+11524,11524,"Plain Pink Pearl Set,Plain White Pearl Set",11000,instock,visible,publish,
+11522,11522,"Plain Pink Pearl Set,Plain White Pearl Set",9000,instock,visible,publish,
+11521,11521,Pearl Studs Earrings,1200,instock,visible,publish,
+11520,11520,"Plain Pink Pearl Set,Plain White Pearl Set",3400,instock,visible,publish,
+11519,11519,"Plain Pink Pearl Set,Plain White Pearl Set",8500,instock,visible,publish,
+11518,11518,Plain Pink Pearl Set,5500,instock,visible,publish,
+11442,11442,Plain Pink Pearl Set,6999,instock,visible,publish,
+11439,11439,Plain White Pearl Set,13000,instock,visible,publish,
+11437,11437,Plain White Pearl Set,7999,instock,visible,publish,
+11436,11436,Plain White Pearl Set,2500,instock,visible,publish,
+11435,11435,Plain White Pearl Set,2999,instock,visible,publish,
+11386,11386,Plain White Pearl Set,9000,instock,visible,publish,
+11376,11376,Plain White Pearl Set,5500,instock,visible,publish,
+11199,11199,Double Line Pearl Set,5499,instock,visible,publish,
+11152,11152,Double Line Pearl Set,5499,instock,visible,publish,
+10791,10791,"Plain Pink Pearl Set,Plain White Pearl Set",11000,instock,visible,publish,skp74849
+10692,10692,Single Line Pearl Set,2899,instock,visible,publish,
+10689,10689,Single Line Pearl Set,3200,instock,visible,publish,
+10681,10681,Single Line Pearl Set,3400,instock,visible,publish,
+10665,10665,"Double Line Pearl Set,Uncategorized",6100,instock,visible,publish,
+10298,10298,Pearl Hanging,1299,instock,visible,publish,
+10297,10297,Pearl Studs Earrings,1299,instock,visible,publish,
+10294,10294,Pearl Studs Earrings,1299,instock,visible,publish,
+10291,10291,Pearl Hanging,1249,instock,visible,publish,
+10288,10288,Pearl Hanging,1249,instock,visible,publish,
+10213,10213,Pearl Studs Earrings,1299,instock,visible,publish,
+10208,10208,Pearl Hanging,1249,instock,visible,publish,
+10207,10207,Pearl Hanging,1299,instock,visible,publish,
+10206,10206,Pearl Studs Earrings,1299,instock,visible,publish,
+10205,10205,Pearl Studs Earrings,1299,instock,visible,publish,
+10202,10202,Pearl Hanging,1249,instock,visible,publish,
+10195,10195,Pearl Hanging,1249,instock,visible,publish,
+10117,10117,Ruby,,instock,visible,publish,
+10108,10108,Emerald,24000,instock,visible,publish,
+10106,10106,"Exclusive Pearls Set,Long Pearl Set,Plain White Pearl Set",19499,instock,visible,publish,
+10104,10104,"Luxury Pearl Set,Plain Pink Pearl Set,Plain White Pearl Set",16900,instock,visible,publish,
+10103,10103,Plain White Pearl Set,4990,instock,visible,publish,
+10101,10101,Plain Pink Pearl Set,5000,instock,visible,publish,
+10100,10100,Plain Pink Pearl Set,2900,instock,visible,publish,
+10099,10099,Plain White Pearl Set,8001,instock,visible,publish,
+10090,10090,Double Line Pearl Set,8999,instock,visible,publish,
+9715,9715,"Simple Pearl Necklace Set,Single Line Pearl Set",7999,instock,visible,publish,
+9701,9701,Single Line Pearl Set,3750,instock,visible,publish,
+9700,9700,Single Line Pearl Set,3100,instock,visible,publish,
+9175,9175,"Baroque Pearls,Luxury Pearl Set,Plain White Pearl Set",14500,instock,visible,publish,
+9158,9158,Rani Haar,14800,instock,visible,publish,
+9157,9157,"Long Pearl Set,Rani Haar",12900,instock,visible,publish,
+8952,8952,Choker Set,4700,instock,visible,publish,
+8388,8388,"Plain Black Pearl Set,Simple Pearl Necklace Set",7000,instock,visible,publish,
+8387,8387,Ruby,16999,instock,visible,publish,
+8384,8384,Emerald,13100,instock,visible,publish,
+8114,8114,Pearl Studs Earrings,1500,instock,visible,publish,
+7767,7767,Single Line Pearl Set,2450,instock,visible,publish,
+7715,7715,Pearl Bangle,5899,instock,visible,publish,skp1525mj-1
+7407,7407,Uncategorized,450,instock,visible,publish,
+7390,7390,Pearl Hanging,1900,instock,visible,publish,
+6631,6631,"Pearl Studs Earrings,Uncategorized",1150,instock,visible,publish,
+6399,6399,"Exclusive Pearls Set,Three Line Pearl Necklace set",14500,instock,visible,publish,
+6394,6394,Pearl Studs Earrings,900,instock,visible,publish,
+6365,6365,Three Line Pearl Necklace set,11900,instock,visible,publish,
+6361,6361,Pearl Bracelet,5100,instock,visible,publish,
+6357,6357,Plain Black Pearl Set,10800,instock,visible,publish,
+6121,6121,92.5 Silver Pearl Jewellery,3800,instock,visible,publish,
+6074,6074,Designer sets,13900,instock,visible,publish,
+6073,6073,Designer sets,8000,instock,visible,publish,
+5997,5997,Plain White Pearl Set,6999,instock,visible,publish,
+5990,5990,Plain White Pearl Set,6999,instock,visible,publish,
+5986,5986,Plain White Pearl Set,6999,instock,visible,publish,
+5985,5985,"Plain Pink Pearl Set,Plain White Pearl Set",5800,instock,visible,publish,
+5984,5984,"Plain Pink Pearl Set,Plain White Pearl Set",6800,instock,visible,publish,
+5983,5983,"Plain Pink Pearl Set,Plain White Pearl Set",5500,instock,visible,publish,
+5982,5982,"Plain Pink Pearl Set,Plain White Pearl Set",5500,instock,visible,publish,
+5967,5967,"Plain Pink Pearl Set,Plain White Pearl Set",7800.00,instock,visible,publish,
+5959,5959,Uncategorized,6800,instock,visible,publish,
+5865,5865,Long Pearl Set,18900,instock,visible,publish,
+5600,5600,Choker Set,7699,instock,visible,publish,
+5498,5498,Pearl Bangle,5899,instock,visible,publish,skp1525mj
+5493,5493,"Pearl Studs Earrings,Precious Stones Studs",1700,instock,visible,publish,
+5478,5478,"Pearl Studs Earrings,Precious Stones Studs",1450,instock,visible,publish,
+5085,5085,Plain Pink Pearl Set,16900,instock,visible,publish,
+5082,5082,Plain Pink Pearl Set,13500,instock,visible,publish,
+5077,5077,"Exclusive Pearls Set,Plain White Pearl Set,Simple Pearl Necklace Set",11000,instock,visible,publish,
+5051,5051,Pearl Bracelet,2500,instock,visible,publish,
+5050,5050,Pearl Bangle,2900,instock,visible,publish,
+5046,5046,Pearl Bracelet,1850,instock,visible,publish,
+4986,4986,Single Line Pearl Set,3350,instock,visible,publish,
+4761,4761,Pearl Bangle,2999,instock,visible,publish,
+4758,4758,Pearl Bangle,4900,instock,visible,publish,
+4674,4674,Fancy Pearl Set,5200,instock,visible,publish,
+4637,4637,Pearl Bangle,2599,instock,visible,publish,
+4636,4636,Pearl Bangle,2600,instock,visible,publish,
+4601,4601,"Long Pearl Set,Luxury Pearl Set,Plain Pink Pearl Set",16900,instock,visible,publish,
+4600,4600,"Long Pearl Set,Plain White Pearl Set",15999,instock,visible,publish,
+4599,4599,"Long Pearl Set,Plain White Pearl Set",17999,instock,visible,publish,
+4505,4505,"Luxury Pearl Set,Plain Black Pearl Set",15500,instock,visible,publish,
+4504,4504,"Exclusive Pearls Set,Luxury Pearl Set,Plain Pearl Sets,Plain White Pearl Set",12500,instock,visible,publish,
+4361,4361,"Luxury Pearl Set,Plain White Pearl Set",14500,instock,visible,publish,
+4360,4360,"Long Pearl Set,Plain Pink Pearl Set,Plain White Pearl Set",22000,instock,visible,publish,
+4097,4097,Double Line Pearl Set,5600,instock,visible,publish,
+3925,3925,Pearl Bangle,2400,instock,visible,publish,
+3924,3924,Pearl Bangle,,instock,visible,publish,
+3923,3923,Pearl Bangle,,instock,visible,publish,
+3922,3922,Pearl Bangle,,instock,visible,publish,
+3921,3921,Pearl Bangle,,instock,visible,publish,
+3920,3920,Pearl Bangle,,instock,visible,publish,
+3917,3917,Pearl Bangle,,instock,visible,publish,
+3916,3916,Pearl Bangle,,instock,visible,publish,
+3915,3915,Pearl Bangle,,instock,visible,publish,
+3914,3914,Pearl Bangle,,instock,visible,publish,
+3891,3891,Pearl Bangle,3100,instock,visible,publish,
+3873,3873,Double Line Pearl Set,5499,instock,visible,publish,
+3857,3857,"Broch Set,Luxury Pearl Set",18999,instock,visible,publish,
+3803,3803,Plain Pink Pearl Set,11000,instock,visible,publish,
+3788,3788,"Emerald,Precious Stones,Ruby",29111.00,instock,visible,publish,
+3777,3777,"Precious Stones,Ruby,Uncategorized",42100,instock,visible,publish,
+3607,3607,"Pearl Bracelet,Pearl Earrings &amp; Bangles",1700,instock,visible,publish,
+3604,3604,"Pearl Bracelet,Pearl Earrings &amp; Bangles",,instock,visible,publish,
+3597,3597,"Pearl Bracelet,Pearl Earrings &amp; Bangles",2200,instock,visible,publish,
+3595,3595,"Pearl Bracelet,Pearl Earrings &amp; Bangles",1699,instock,visible,publish,
+3590,3590,"Plain Pearl Sets,Plain Pink Pearl Set",8100,instock,visible,publish,
+3584,3584,"Plain Pearl Sets,Plain Pink Pearl Set",9800,instock,visible,publish,
+3574,3574,"92.5 Silver Pearl Jewellery,Hyderabadi Pearls",3900,instock,visible,publish,
+3572,3572,"92.5 Silver Pearl Jewellery,Hyderabadi Pearls",3999,instock,visible,publish,
+3542,3542,"Plain Grey Pearl Set,Plain Pearl Sets",15600,instock,visible,publish,
+3531,3531,Plain Grey Pearl Set,6000,instock,visible,publish,
+3513,3513,"Plain Black Pearl Set,Plain Pearl Sets",4000,instock,visible,publish,
+3510,3510,"Plain Black Pearl Set,Plain Pearl Sets",4900,instock,visible,publish,
+3508,3508,"Plain Pearl Sets,Plain White Pearl Set",9990,instock,visible,publish,
+3506,3506,"Plain Pearl Sets,Plain White Pearl Set",11000,instock,visible,publish,
+3502,3502,"Plain Pearl Sets,Plain White Pearl Set",5500,instock,visible,publish,
+3500,3500,Plain White Pearl Set,11000,instock,visible,publish,
+3494,3494,"Plain Pearl Sets,Plain White Pearl Set",14000,instock,visible,publish,
+3488,3488,"Plain Pearl Sets,Plain White Pearl Set",10500,instock,visible,publish,
+3486,3486,"Plain Pearl Sets,Plain White Pearl Set",4800,instock,visible,publish,
+3483,3483,"Plain White Pearl Set,Uncategorized",7500,instock,visible,publish,
+3479,3479,"Plain Pearl Sets,Plain White Pearl Set",1890,instock,visible,publish,
+3423,3423,"Plain Pearl Sets,Plain Pink Pearl Set,Plain White Pearl Set",19000,instock,visible,publish,skp956grp
+3421,3421,"Plain Pearl Sets,Plain White Pearl Set",15100,instock,visible,publish,
+3420,3420,"Plain Pearl Sets,Plain White Pearl Set",7700.00,instock,visible,publish,
+3419,3419,"Plain Pearl Sets,Plain White Pearl Set",10500,instock,visible,publish,
+3418,3418,"Plain Pearl Sets,Plain White Pearl Set",34000,instock,visible,publish,
+3417,3417,"Plain Pearl Sets,Plain White Pearl Set",8900,instock,visible,publish,
+3388,3388,"Precious Stones,Ruby",,instock,visible,publish,
+3386,3386,"Precious Stones,Ruby",23900,instock,visible,publish,
+3376,3376,"Precious Stones,Ruby",31100,instock,visible,publish,
+3375,3375,"Emerald,Precious Stones",,instock,visible,publish,
+3374,3374,"Emerald,Precious Stones",46500,instock,visible,publish,
+3373,3373,"Emerald,Precious Stones",34499,instock,visible,publish,
+3372,3372,"Emerald,Precious Stones",,instock,visible,publish,
+3359,3359,"Emerald,Precious Stones",,instock,visible,publish,
+3281,3281,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",1450,instock,visible,publish,
+3279,3279,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",650,instock,visible,publish,
+3268,3268,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",900,instock,visible,publish,
+3265,3265,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",1800,instock,visible,publish,
+3247,3247,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",900,instock,visible,publish,
+3245,3245,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",750,instock,visible,publish,
+3243,3243,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",1199,instock,visible,publish,
+3236,3236,"Button Pearl Set,Pearl Necklace Sets",7600,instock,visible,publish,
+3213,3213,"Button Pearl Set,Pearl Necklace Sets",7999,instock,visible,publish,
+3177,3177,"Double Line Pearl Set,Pearl Necklace Sets",5199,instock,visible,publish,
+3068,3068,Broch Set,11999,instock,visible,publish,

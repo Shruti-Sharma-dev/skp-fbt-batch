@@ -1,114 +1,119 @@
 import pandas as pd
-from collections import defaultdict
 import itertools
+from collections import defaultdict
 
-def compute_recommendations(baskets_df, products_df, min_cooccurrence=2, top_n=3):
+# --- CONFIG ---
+MIN_CO_OCCURRENCE = 2
+TOP_N = 3
+PRICE_BAND = 0.4  # ±40%
+
+# Sample category affinity mapping
+CATEGORY_AFFINITY = {
+    'Necklace': ['Earrings', 'Bangles'],
+    'Bracelet': ['Ring', 'Earrings'],
+    'Ring': ['Bracelet'],
+    'Earrings': ['Necklace', 'Bangles']
+}
+
+# --- SIMILARITY LOGIC ---
+def build_similarity(baskets: pd.DataFrame) -> pd.DataFrame:
     """
-    Compute FBT recommendations using co-occurrence, support, lift, and filters.
-
-    Args:
-        baskets_df (pd.DataFrame): columns = ["order_id", "products"] where products is a list of product_ids
-        products_df (pd.DataFrame): must have ["product_id", "price", "stock", "status", "category"]
-        min_cooccurrence (int): minimum number of baskets where pair must appear
-        top_n (int): number of recommendations per product
-
-    Returns:
-        dict: { product_id: [recommended_product_ids] }
+    Build co-occurrence matrix, compute support, lift, and score.
     """
+    co_matrix = defaultdict(lambda: defaultdict(int))
+    product_count = defaultdict(int)
+    total_baskets = len(baskets)
 
-    total_orders = baskets_df["order_id"].nunique()
+    # Count co-occurrences & product occurrences
+    for products in baskets['products']:
+        unique_products = [p for p in set(products) if p]
+        for p in unique_products:
+            product_count[p] += 1
+        for p1, p2 in itertools.combinations(unique_products, 2):
+            co_matrix[p1][p2] += 1
+            co_matrix[p2][p1] += 1
 
-    # Step 1: Compute co-occurrence counts
-    co_counts = defaultdict(int)
-    support_counts = defaultdict(int)
-
-    for _, row in baskets_df.iterrows():
-        basket = set(row["products"])
-        for item in basket:
-            support_counts[item] += 1
-        for a, b in itertools.combinations(sorted(basket), 2):
-            co_counts[(a, b)] += 1
-            co_counts[(b, a)] += 1  # symmetric
-    print(support_counts)
-    # Step 2: Compute scores
-    recs = defaultdict(list)
-
-    for (a, b), co in co_counts.items():
-        if co < min_cooccurrence:
-            continue
-
-        supp_a = support_counts[a]
-        supp_b = support_counts[b]
-
-        pair_support = co / total_orders
-        lift = (co / total_orders) / ((supp_a / total_orders) * (supp_b / total_orders))
-        score = 0.7 * lift + 0.3 * pair_support
-
-        recs[a].append((b, score))
-        print(f"Pair ({a}, {b}) → co={co}, supp_a={supp_a}, supp_b={supp_b}")
-        print(f"pair_support={pair_support:.3f}, lift={lift:.3f}, score={score:.3f}")
-
-        for base, candidates in recs.items():
-          print(f"{base} → {[c[0] for c in candidates]}")
-
-
-
-    # Step 3: Apply filters
-    filtered_recs = {}
-    for base, candidates in recs.items():
-        base_row = products_df.loc[products_df["product_id"] == base]
-        if base_row.empty:
-            continue
-
-        base_price = base_row["price"].values[0]
-        base_category = base_row["category"].values[0]
-
-        # Price guard
-        min_price = base_price * 0.6
-        max_price = base_price * 1.4
-
-        filtered = []
-        for cand, score in candidates:
-            row = products_df.loc[products_df["product_id"] == cand]
-            if row.empty:
-                continue
-   
-            cand_price = row["price"].values[0]
-            cand_stock = row["stock"].values[0]
-            cand_status = row["status"].values[0]
-            cand_category = row["category"].values[0]
-
-            # # Exclusion filters
-            if cand_stock <= 0 or cand_status in ("hidden", "draft"):
-                continue
-            # if not (min_price <= cand_price <= max_price):
-            #     continue
-            # if not is_category_compatible(base_category, cand_category):
-            #     continue
-
-            filtered.append((cand, score))
+    # Compute score and flatten
+    rows = []
+    pair_count = 0
+    for p1, related in co_matrix.items():
+        for p2, co_count in related.items():
+            if co_count < MIN_CO_OCCURRENCE:
+                continue  # min co-occurrence filter
             
-        for cand, score in candidates:
-            print(f"Checking candidate {cand} for base {base} with score {score}")
+            
+            support_pair = co_count / total_baskets
+            support_p1 = product_count[p1] / total_baskets
+            support_p2 = product_count[p2] / total_baskets
+            lift = support_pair / (support_p1 * support_p2)
+            score = 0.7 * lift + 0.3 * support_pair
+            rows.append({'product_id': p1, 'other_product': p2, 'score': score, 'co_count': co_count})
+            if p1 < p2 and co_count > 3:  # p1 < p2 avoids double counting
+                pair_count += 1
+    print(f"Total unique product pairs with co-occurrence >= {MIN_CO_OCCURRENCE}: {pair_count}")
+    similarity_df = pd.DataFrame(rows)
+    print("Sample similarity_df after build_similarity:")
+    print(similarity_df.head())
+    return similarity_df
 
 
-        # Pick top-N by score
-        filtered = sorted(filtered, key=lambda x: x[1], reverse=True)[:top_n]
-        filtered_recs[base] = [c for c, _ in filtered]
+def apply_filters(similarity_df: pd.DataFrame, products_df: pd.DataFrame,
+                  price_band=PRICE_BAND, top_n=TOP_N) -> pd.DataFrame:
+    """
+    Apply stock, price, and category affinity filters.
+    """
+    if similarity_df.empty:
+        return similarity_df
 
-    return filtered_recs
+    # Merge product info for base and recommended
+    similarity_df = similarity_df.merge(
+        products_df[['id', 'categories', 'price', 'stock_status', 'catalog_visibility', 'status']],
+        left_on='product_id', right_on='id', suffixes=('', '_base')
+    )
+    similarity_df = similarity_df.merge(
+        products_df[['id', 'categories', 'price', 'stock_status', 'catalog_visibility', 'status']],
+        left_on='other_product', right_on='id', suffixes=('', '_rec')
+    )
+
+    # # Filter out-of-stock, hidden, draft safely (case-insensitive)
+    # similarity_df = similarity_df[
+    #     (similarity_df['stock_status'].str.lower() == 'instock') &
+    #     (similarity_df['status'].str.lower() == 'publish') &
+    #     (similarity_df['catalog_visibility'].str.lower() == 'visible') &
+    #     (similarity_df['stock_status_rec'].str.lower() == 'instock') &
+    #     (similarity_df['status_rec'].str.lower() == 'publish') &
+    #     (similarity_df['catalog_visibility_rec'].str.lower() == 'visible')
+    # ]
+    # print("After stock/status/visibility filter:")
+    # print(similarity_df.head())
+
+    # # Price band filter
+    # similarity_df = similarity_df[
+    #     (similarity_df['price_rec'] >= similarity_df['price'] * (1 - price_band)) &
+    #     (similarity_df['price_rec'] <= similarity_df['price'] * (1 + price_band))
+    # ]
+    # print("After price band filter:")
+    # print(similarity_df.head())
+
+    # # Category affinity filter
+    # def affinity_check(row):
+    #     base_cat = row['categories']
+    #     rec_cat = row['categories_rec']
+    #     allowed = CATEGORY_AFFINITY.get(base_cat, [])
+    #     return rec_cat in allowed
+
+    # similarity_df = similarity_df[similarity_df.apply(affinity_check, axis=1)]
+    # print("After category affinity filter:")
+    # print(similarity_df.head())
+
+    # Keep top N recommendations per product
+    similarity_df = similarity_df.sort_values(['product_id', 'score'], ascending=[True, False])
+    top_recs = similarity_df.groupby('product_id').head(top_n).reset_index(drop=True)
+    print("Top recs:")
+    print(top_recs.head())
+    return top_recs[['product_id', 'other_product', 'score']]
 
 
-def is_category_compatible(base_category, cand_category):
-    """Apply jewellery category affinity rules"""
-    affinity_map = {
-        "Necklace": ["Earrings", "Bangles", "Pendants"],
-        "Earrings": ["Necklace", "Bangles"],
-        "Rings": ["Bracelets", "Earrings"],
-        "Bracelets": ["Rings", "Earrings"],
-        "Pendants": ["Necklace", "Earrings"],
-    }
-
-    if base_category == cand_category:
-        return True
-    return cand_category in affinity_map.get(base_category, [])
+def recommend_for_product(similarity_df: pd.DataFrame, product_id: int) -> pd.DataFrame:
+    """Return top-N recommendations for a given product."""
+    return similarity_df[similarity_df['product_id'] == product_id].reset_index(drop=True)

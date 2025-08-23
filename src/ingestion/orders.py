@@ -63,6 +63,9 @@ def fetch_orders():
         line_items = order.get('line_items', [])
         for item in line_items:
             product_id = item.get('product_id')
+            if not product_id:
+                continue   # skip invalid line_items
+
             quantity = item.get('quantity', 1)
             line_total = float(item.get('total',0))
             rows.append({

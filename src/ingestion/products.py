@@ -59,10 +59,7 @@ def fetch_products():
     for col in ['sku', 'categories', 'parent']:
         if col not in df.columns:
             df[col] = pd.NA
-
-    # Flatten SKU
-    df['sku'] = df['sku'].apply(lambda x: x[0] if isinstance(x, list) else x)
-
+            
     # Flatten categories
     df['categories'] = df['categories'].apply(
         lambda cats: ','.join([c['name'] for c in cats]) if isinstance(cats, list) else ''
@@ -71,8 +68,12 @@ def fetch_products():
     # Safe parent_id
     df['parent_id'] = df['parent'].fillna(df['id'])
 
-    # Keep only id and parent_id for batch
-    df = df[['id', 'parent_id']]
+    # Flatten SKU (and replace df directly)
+    df = df.explode("sku").reset_index(drop=True)
+
+    # Select important columns
+    df = df[['id', 'parent_id', 'categories', 'price', 'stock_status', 'catalog_visibility', 'status', 'sku']]
+
 
     # Save CSV
     df.to_csv("products_cache.csv", index=False)
@@ -81,6 +82,3 @@ def fetch_products():
     return df
 
 
-if __name__ == "__main__":
-    df = fetch_products()
-    print(df.head())

@@ -13,12 +13,22 @@ def create_baskets(orders_df: pd.DataFrame) -> pd.DataFrame:
     A DataFrame where each row is one order and the products are grouped into a list.
     """
     try:
+        
+
         # Group products by order_id
         baskets = (
             orders_df.groupby("order_id")["product_id"]
             .apply(list)   # collect product_ids per order
             .reset_index(name="products")
         )
+        
+        
+        
+        # Remove invalid product IDs (0)
+        baskets['products'] = baskets['products'].apply(lambda x: [p for p in x if p != 0])
+
+        # Drop orders with empty baskets
+        baskets = baskets[baskets['products'].map(len) > 0]
 
         print("✅ Baskets created successfully:")
         print(baskets.head())
