@@ -5,6 +5,7 @@ from ingestion.products import fetch_products
 from ingestion.orders import fetch_orders
 from processing.basketize import create_baskets
 from processing.similarity import build_similarity, apply_filters, recommend_for_product
+from publishing import update_crosssell
 
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -26,50 +27,47 @@ def main():
     # orders_df = fetch_orders()
     # products_df = fetch_products()
 
-    print("\n🛍️ Sample Products Loaded Successfully:")
-    print(products_df.head())
+    # print("\n🛍️ Sample Products Loaded Successfully:")
+    # print(products_df.head())
 
-    print("\n🛍️ Sample Orders Loaded Successfully:")
-    print(orders_df.head())
+    # print("\n🛍️ Sample Orders Loaded Successfully:")
+    # print(orders_df.head())
 
     # Create baskets
     baskets_df = create_baskets(orders_df)
     print("\n🛍️ Sample Baskets Loaded Successfully:")
-    print(baskets_df['products'][:20])
+    print(baskets_df['products'][:50])
 
     # Build similarity
-    similarity_df = build_similarity(baskets_df)
-    print("\n🔍 Similarity DF Info:")
-    print(similarity_df.shape)
-    print(similarity_df.columns)
-    print("\n🛍️ Sample Similarity Scores Loaded Successfully:")
-    print(similarity_df.head(50))
+    # similarity_df = build_similarity(baskets_df)
+    # print("\n🔍 Similarity DF Info:")
+    # print(similarity_df.shape)
+    # print(similarity_df.columns)
+    # print("\n🛍️ Sample Similarity Scores Loaded Successfully:")
+    # print(similarity_df.head(50))
 
-    merged = similarity_df.merge(products_df, left_on="other_product", right_on="id", how="left", indicator=True)
-    print("DEBUG >> merge results")
-    print(merged[["product_id", "other_product", "_merge"]].head(20))
+    # merged = similarity_df.merge(products_df, left_on="other_product", right_on="id", how="left", indicator=True)
+    # print("DEBUG >> merge results")
+    # print(merged[["product_id", "other_product", "_merge"]].head(20))
 
-    #Apply filters
-    filtered_df = apply_filters(similarity_df, products_df)
-    print("\n🛍️ filtered Loaded Successfully:")
+    # #Apply filters
+    # filtered_df = apply_filters(similarity_df, products_df)
+    # print("\n🛍️ filtered Loaded Successfully:")
     # print(filtered_df)
-    # Get recommendations for product 3318
+    # # Get recommendations for product 3318
     
     
 
 
-    print("recommendation for 3245")
-    rec = recommend_for_product(filtered_df, 3243)
-    print(rec)
-    print("recommendation for 3245")
-    rec = recommend_for_product(filtered_df, 3245)
-    print(rec)
-    print("recommendation for 3891")
-    rec = recommend_for_product(filtered_df, 10192)
+    # print("recommendation for 3245")
+    # rec = recommend_for_product(filtered_df, 3243)
+    # print(rec)
     
-    print(rec)
- 
+    
+    # recommendations = rec.to_dict(orient="records")
+    # print(recommendations)
 
+    # update_crosssell.save_recommendations(recommendations)
 
 if __name__ == "__main__":
     main()

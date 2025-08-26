@@ -75,17 +75,17 @@ def apply_filters(similarity_df: pd.DataFrame, products_df: pd.DataFrame,
         left_on='other_product', right_on='id', suffixes=('', '_rec')
     )
 
-    # # Filter out-of-stock, hidden, draft safely (case-insensitive)
-    # similarity_df = similarity_df[
-    #     (similarity_df['stock_status'].str.lower() == 'instock') &
-    #     (similarity_df['status'].str.lower() == 'publish') &
-    #     (similarity_df['catalog_visibility'].str.lower() == 'visible') &
-    #     (similarity_df['stock_status_rec'].str.lower() == 'instock') &
-    #     (similarity_df['status_rec'].str.lower() == 'publish') &
-    #     (similarity_df['catalog_visibility_rec'].str.lower() == 'visible')
-    # ]
-    # print("After stock/status/visibility filter:")
-    # print(similarity_df.head())
+    # Filter out-of-stock, hidden, draft safely (case-insensitive)
+    similarity_df = similarity_df[
+        (similarity_df['stock_status'].str.lower() == 'instock') &
+        (similarity_df['status'].str.lower() == 'publish') &
+        (similarity_df['catalog_visibility'].str.lower() == 'visible') &
+        (similarity_df['stock_status_rec'].str.lower() == 'instock') &
+        (similarity_df['status_rec'].str.lower() == 'publish') &
+        (similarity_df['catalog_visibility_rec'].str.lower() == 'visible')
+    ]
+    print("After stock/status/visibility filter:")
+    print(similarity_df.head())
 
     # # Price band filter
     # similarity_df = similarity_df[
