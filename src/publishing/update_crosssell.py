@@ -1,19 +1,34 @@
 import requests
 import os
 
-API_URL = "https://srikrishnapearls.com/wp-json/skp-fbt/v1/save-recommendations"
+API_URL = "http://localhost/testplugin/wp-json/skp-fbt/v1/save-recommendations"
 CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
 CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")
 
 def save_recommendations(recommendations):
+   
+
     for row in recommendations:
         payload = {
             "product_id": row["product_id"],
-            "recommendations": row["recs"]
+            "recommendations": [row["other_product"]],
+            "score": row.get("score", 0) 
         }
-        r = requests.post(
-            API_URL,
-            json=payload,
-            auth=(CONSUMER_KEY, CONSUMER_SECRET)
-        )
-        print(r.status_code, r.text)
+
+        try:
+            r = requests.post(
+                API_URL,
+                json=payload,
+                auth=(CONSUMER_KEY, CONSUMER_SECRET)
+            )
+            print(f"Product {row['product_id']} → Status: {r.status_code}, Response: {r.text}")
+        except requests.exceptions.RequestException as e:
+            print(f"Error sending product {row['product_id']}: {e}")
+
+# Example usage with a list of dicts
+recommendations = [
+    {'product_id': 3243, 'other_product': 3245},
+    {'product_id': 3245, 'other_product': 3243},
+]
+
+save_recommendations(recommendations)
