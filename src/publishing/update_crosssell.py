@@ -25,10 +25,4 @@ def save_recommendations(recommendations):
         except requests.exceptions.RequestException as e:
             print(f"Error sending product {row['product_id']}: {e}")
 
-# Example usage with a list of dicts
-recommendations = [
-    {'product_id': 3243, 'other_product': 3245},
-    {'product_id': 3245, 'other_product': 3243},
-]
 
-save_recommendations(recommendations)
