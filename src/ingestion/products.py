@@ -78,7 +78,7 @@ def fetch_products():
     # Save CSV
     df.to_csv("products_cache.csv", index=False)
 
-    print(f"Total products fetched: {len(df)}")
+    # print(f"Total products fetched: {len(df)}")
     return df
 
 

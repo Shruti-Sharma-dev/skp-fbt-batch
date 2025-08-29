@@ -3,7 +3,7 @@ import itertools
 from collections import defaultdict
 
 # --- CONFIG ---
-MIN_CO_OCCURRENCE = 2
+MIN_CO_OCCURRENCE = 3
 TOP_N = 3
 PRICE_BAND = 0.4  # ±40%
 
@@ -87,20 +87,20 @@ def apply_filters(similarity_df: pd.DataFrame, products_df: pd.DataFrame,
     print("After stock/status/visibility filter:")
     print(similarity_df.head())
 
-    # # Price band filter
-    # similarity_df = similarity_df[
-    #     (similarity_df['price_rec'] >= similarity_df['price'] * (1 - price_band)) &
-    #     (similarity_df['price_rec'] <= similarity_df['price'] * (1 + price_band))
-    # ]
+    # Price band filter
+    similarity_df = similarity_df[
+        (similarity_df['price_rec'] >= similarity_df['price'] * (1 - price_band)) &
+        (similarity_df['price_rec'] <= similarity_df['price'] * (1 + price_band))
+    ]
     # print("After price band filter:")
     # print(similarity_df.head())
 
-    # # Category affinity filter
-    # def affinity_check(row):
-    #     base_cat = row['categories']
-    #     rec_cat = row['categories_rec']
-    #     allowed = CATEGORY_AFFINITY.get(base_cat, [])
-    #     return rec_cat in allowed
+    # Category affinity filter
+    def affinity_check(row):
+        base_cat = row['categories']
+        rec_cat = row['categories_rec']
+        allowed = CATEGORY_AFFINITY.get(base_cat, [])
+        return rec_cat in allowed
 
     # similarity_df = similarity_df[similarity_df.apply(affinity_check, axis=1)]
     # print("After category affinity filter:")

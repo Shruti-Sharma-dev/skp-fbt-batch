@@ -3,7 +3,7 @@ from processing import basketize, similarity
 from publishing import update_crosssell
 from ingestion.products import fetch_products
 from ingestion.orders import fetch_orders
-from ingestion.dummy_orders import generate_dummy_orders
+from ingestion.dummy_orders import generate_structured_orders
 from processing.basketize import create_baskets
 from processing.similarity import build_similarity, apply_filters, recommend_for_product
 from publishing import update_crosssell
@@ -13,6 +13,10 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.helpers import log
 import pandas as pd
 import ast
+
+# pd.set_option('display.max_rows', None)
+
+# pd.set_option('display.max_columns', None)
 
 def main():
     print("Batch job started...")
@@ -28,13 +32,13 @@ def main():
     # products_df = fetch_products()
 
     print("\n🛍️ Sample Products Loaded Successfully:")
-    print(products_df.head())
+    print(len(products_df))
 
     print("\n🛍️ Sample Orders Loaded Successfully:")
     print(len(orders_df))
-    
-    
-    dummy_orders_df = generate_dummy_orders(products_df)
+
+
+    dummy_orders_df = generate_structured_orders(products_df)
     # Create baskets
     baskets_df = create_baskets(dummy_orders_df)
     print("\n🛍️ Sample Baskets Loaded Successfully:")
@@ -61,7 +65,7 @@ def main():
     
     
     recommendations = filtered_df.to_dict(orient="records")
-    # print(recommendations)
+    print(recommendations)
     
 
     update_crosssell.save_recommendations(recommendations)
