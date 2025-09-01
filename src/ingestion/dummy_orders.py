@@ -1,67 +1,34 @@
 import pandas as pd
 import random
+from collections import defaultdict
 
-def generate_structured_orders(products_df: pd.DataFrame, num_orders: int = 50) -> pd.DataFrame:
-    """
-    Generate dummy orders ensuring products are grouped by category.
-    
-    Args:
-        products_df: DataFrame with columns ["id", "category"]
-        num_orders: how many dummy orders to generate
-    
-    Returns:
-        DataFrame of dummy orders with columns ["order_id", "product_id"]
-    """
-
-
-    # Group products by category
-    category_groups = (
-        products_df.groupby("categories")["id"]
-        .apply(list)
-        .to_dict()
-    )
-
-    categories = list(category_groups.keys())
+def generate_dummy_orders(products_csv, output_orders_csv, num_orders=5000):
+    products = pd.read_csv(products_csv)
+    product_ids = products['id'].tolist()
 
     orders = []
+    used_products = set()
 
-    for order_id in range(1, num_orders + 1):
-        # Pick a primary category
-        primary_category = random.choice(categories)
-        primary_products = category_groups[primary_category]
+    for order_id in range(1, num_orders+1):
+        # Random basket size: 3–8
+        basket_size = random.randint(3, 8)
 
-        # Select 2–3 products from this category
-        basket_products = random.sample(
-            primary_products, min(len(primary_products), random.randint(2, 3))
-        )
+        # Ensure coverage: force-inject unused products in first 90% orders
+        if len(used_products) < int(0.9 * len(product_ids)):
+            prod = random.choice([p for p in product_ids if p not in used_products])
+            basket = {prod}
+            used_products.add(prod)
+        else:
+            basket = set()
 
-        # Pick a complementary category (different from primary)
-        other_categories = [c for c in categories if c != primary_category]
-        if other_categories:  # avoid error if only one category
-            secondary_category = random.choice(other_categories)
-            secondary_products = category_groups[secondary_category]
+        # Fill remaining basket with random products
+        while len(basket) < basket_size:
+            basket.add(random.choice(product_ids))
 
-            # Add 2–3 products from secondary category
-            basket_products += random.sample(
-                secondary_products, min(len(secondary_products), random.randint(2, 3))
-            )
+        # Save basket rows
+        for pid in basket:
+            orders.append([order_id, pid, 1])  # quantity = 1
 
-        # Ensure 4–6 unique items per basket
-        basket_products = list(set(basket_products))[: random.randint(4, 6)]
+    df_orders = pd.DataFrame(orders, columns=["order_id", "product_id", "quantity"])
+    return df_orders
 
-        # Add to orders
-        for pid in basket_products:
-            orders.append({"order_id": order_id, "product_id": pid})
-
-    dummy_orders_df = pd.DataFrame(orders)
-    dummy_orders_df.to_csv("dummy_orders.csv", index=False)
-
-    return dummy_orders_df
-
-
-# Example usage
-if __name__ == "__main__":
-    # Load your cached products file (must have id, category columns)
-    products_df = pd.read_csv("products.csv")
-    dummy_orders_df = generate_dummy_orders(products_df, num_orders=25)
-    print(dummy_orders_df.head())

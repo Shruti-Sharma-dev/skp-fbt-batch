@@ -3,7 +3,7 @@ from processing import basketize, similarity
 from publishing import update_crosssell
 from ingestion.products import fetch_products
 from ingestion.orders import fetch_orders
-from ingestion.dummy_orders import generate_structured_orders
+from ingestion.dummy_orders import generate_dummy_orders
 from processing.basketize import create_baskets
 from processing.similarity import build_similarity, apply_filters, recommend_for_product
 from publishing import update_crosssell
@@ -38,7 +38,9 @@ def main():
     print(len(orders_df))
 
 
-    dummy_orders_df = generate_structured_orders(products_df)
+ # Dummy orders generate karo
+    dummy_orders_df = generate_dummy_orders("products_cache.csv", output_orders_csv="structured_dummy_orders.csv")
+
     # Create baskets
     baskets_df = create_baskets(dummy_orders_df)
     print("\n🛍️ Sample Baskets Loaded Successfully:")
