@@ -20,7 +20,7 @@ import ast
 
 def main():
     print("Batch job started...")
-
+    fetch_products()
     # Load from cache CSVs
     
   
