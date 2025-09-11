@@ -7,7 +7,7 @@ from ingestion.dummy_orders import generate_dummy_orders
 from processing.basketize import create_baskets
 from processing.similarity import build_similarity, apply_filters, recommend_for_product
 from publishing import update_crosssell
-
+# from tests import categories
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.helpers import log
@@ -25,7 +25,7 @@ def main():
     
   
     products_df = pd.read_csv("products_cache.csv")
-    orders_df = pd.read_csv("orders_cache.csv")
+    # orders_df = pd.read_csv("orders_cache.csv")
 
 
     # orders_df = fetch_orders()
@@ -35,7 +35,7 @@ def main():
     print(len(products_df))
 
     print("\n🛍️ Sample Orders Loaded Successfully:")
-    print(len(orders_df))
+    # print(len(orders_df))
 
 
  # Dummy orders generate karo
@@ -48,9 +48,7 @@ def main():
 
     # Build similarity
     similarity_df = build_similarity(baskets_df)
-    print("\n🔍 Similarity DF Info:")
-    print(similarity_df.shape)
-    print(similarity_df.columns)
+    
     print("\n🛍️ Sample Similarity Scores Loaded Successfully:")
     print(similarity_df.head(50))
 
