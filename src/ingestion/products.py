@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_URL = "https://srikrishnapearls.com/wp-json/wc/v3/products"
+BASE_URL = "https://srikrishnanew-staging.us23.cdn-alpha.com/wp-json/wc/v3/products"
 CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
 CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")
 
@@ -72,7 +72,7 @@ def fetch_products():
     df = df.explode("sku").reset_index(drop=True)
 
     # Select important columns
-    df = df[['id', 'parent_id', 'categories', 'price', 'stock_status', 'catalog_visibility', 'status', 'sku']]
+    df = df[['id', 'parent_id', 'categories', 'price', 'stock_status', 'catalog_visibility', 'status', 'sku','name']]
 
 
     # Save CSV

@@ -34,15 +34,18 @@ def main():
     print("\n🛍️ Sample Products Loaded Successfully:")
     print(len(products_df))
 
-    print("\n🛍️ Sample Orders Loaded Successfully:")
-    # print(len(orders_df))
-
 
  # Dummy orders generate karo
-    dummy_orders_df = generate_dummy_orders("products_cache.csv", output_orders_csv="structured_dummy_orders.csv")
+    df = generate_dummy_orders(
+    products_csv="products_cache.csv",
+    output_csv="structured_dummy_orders.csv"
+   )
+
+    print(df.head())
+
 
     # Create baskets
-    baskets_df = create_baskets(dummy_orders_df)
+    baskets_df = create_baskets(df)
     print("\n🛍️ Sample Baskets Loaded Successfully:")
     print(baskets_df)
 
@@ -56,7 +59,7 @@ def main():
     print("DEBUG >> merge results")
     print(merged[["product_id", "other_product", "_merge"]].head(20))
 
-    # #Apply filters
+    # # #Apply filters
     filtered_df = apply_filters(similarity_df, products_df)
     print("\n🛍️ filtered Loaded Successfully:")
 
@@ -65,7 +68,7 @@ def main():
     
     
     recommendations = filtered_df.to_dict(orient="records")
-    print(recommendations)
+    # print(recommendations)
     
 
     update_crosssell.save_recommendations(recommendations)
