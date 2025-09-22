@@ -3,15 +3,7 @@
 import pandas as pd
 
 def create_baskets(orders_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Convert order data into baskets (transactions).
     
-    Input orders_df expected columns:
-    [order_id, customer_id, product_id, quantity, total]
-
-    Returns:
-    A DataFrame where each row is one order and the products are grouped into a list.
-    """
     try:
         
 

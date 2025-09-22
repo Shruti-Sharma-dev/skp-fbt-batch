@@ -2,29 +2,40 @@ import pandas as pd
 import random
 
 def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4, max_basket=8, price_band=0.4):
-    """
-    Generate dummy orders based on products cache CSV.
+  # Anchor keyword → complementary categories
+    complement_map = {
+    # Necklaces → add earrings, bangles, bracelets
+    "Necklace": [
+        "Pearl Bracelet", "Pearl Studs Earrings", "Pearl Bangle", 
+        "Choker Set", "Rani Haar", "Three Line Pearl Necklace set"
+    ],
     
-    Parameters:
-    -----------
-    products_csv : str
-        Path to products CSV file.
-    num_orders : int
-        Number of orders to generate.
-    min_basket : int
-        Minimum number of products per order.
-    max_basket : int
-        Maximum number of products per order.
-    price_band : float
-        Allowed price variation for products in same order (±price_band).
-    output_csv : str or None
-        If provided, saves the output CSV to this path. If None, does not save.
-        
-    Returns:
-    --------
-    pd.DataFrame
-        DataFrame with columns ['order_id', 'product_id']
-    """
+    # Rings → add earrings, bracelets
+    "Ring": [
+        "Precious Stones Studs", "Fancy Pearl Set", "Pearl Bangle"
+    ],
+    
+    # Earrings → add necklaces, bangles
+    "Earrings": [
+        "Pearl Necklace Sets", "Choker Set", "Pearl Bracelet"
+    ],
+    
+    # Bracelets / Bangles → add necklace, earrings
+    "Bracelet": [
+        "Pearl Necklace Sets", "Pearl Studs Earrings", "Choker Set"
+    ],
+    
+    # Sets → mix of necklaces + earrings + bangles
+    "Set": [
+        "Pearl Necklace Sets", "Pearl Bangle", "Pearl Studs Earrings", "Choker Set", "Rani Haar"
+    ],
+    
+    # Precious stones → add complementary sets
+    "Ruby": ["Pearl Necklace Sets", "Precious Stones Studs"],
+    "Emerald": ["Pearl Necklace Sets", "Precious Stones Studs"]
+    }
+
+
     # ---------- Load products ----------
     products = pd.read_csv(products_csv)
     products = products[
@@ -49,12 +60,29 @@ def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4
             category = anchor["categories"]
 
             # Candidates in same category & price band
-            candidates = products[
-                (products["categories"] == category) &
-                (products["id"] != pid) &
-                (products["price"].between(anchor_price * (1 - price_band),
-                                           anchor_price * (1 + price_band)))
-            ]
+            candidates_categories = []
+            for keyword, comps in complement_map.items():
+                if keyword.lower() in category.lower():
+                    candidates_categories = comps
+                    break
+
+            if candidates_categories:
+            # Use complementary categories
+                candidates = products[
+                    (products["categories"].isin(candidates_categories)) &
+                    (products["id"] != pid) &
+                    (products["price"].between(anchor_price*(1-price_band),
+                                               anchor_price*(1+price_band)))
+                ]
+            else:
+                # Default: same category + price band
+                candidates = products[
+                    (products["categories"] == category) &
+        (products["id"] != pid) &
+        (products["price"].between(anchor_price*(1-price_band),
+                                   anchor_price*(1+price_band)))
+    ]
+
 
             if candidates.empty:
                 candidates = products[products["id"] != pid]  # fallback
@@ -63,7 +91,12 @@ def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4
             basket = [pid] + chosen
 
             for item in basket:
-                orders.append({"order_id": order_id, "product_id": item})
+                product_name = products.loc[products["id"] == item, "name"].values[0]
+                orders.append({
+                "order_id": order_id,
+                "product_id": item,
+                "product_name": product_name
+            })
             order_id += 1
 
     # ---------- Step 2: Generate additional random orders ----------
@@ -86,7 +119,11 @@ def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4
         basket = [anchor["id"]] + chosen
 
         for item in basket:
-            orders.append({"order_id": order_id, "product_id": item})
+           orders.append({
+        "order_id": order_id,
+        "product_id": item,
+        "product_name": product_name
+    })
         order_id += 1
 
     orders_df = pd.DataFrame(orders)

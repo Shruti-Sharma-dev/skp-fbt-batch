@@ -2,7 +2,7 @@ import requests
 import os
 import json  
 
-# API_URL = "http://localhost/testplugin/wp-json/skp-fbt/v1/save-recs"
+
 API_URL = "https://srikrishnanew-staging.us23.cdn-alpha.com/wp-json/skp-fbt/v1/save-recs"
 CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
 CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")

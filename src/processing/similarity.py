@@ -3,17 +3,10 @@ import itertools
 from collections import defaultdict
 
 # --- CONFIG ---
-MIN_CO_OCCURRENCE = 2
+MIN_CO_OCCURRENCE = 3
 TOP_N = 3
 PRICE_BAND = 0.4  # ±40%
 
-# Sample category affinity mapping
-CATEGORY_AFFINITY = {
-    'Necklace': ['Earrings', 'Bangles'],
-    'Bracelet': ['Ring', 'Earrings'],
-    'Ring': ['Bracelet'],
-    'Earrings': ['Necklace', 'Bangles']
-}
 
 # --- SIMILARITY LOGIC ---
 def build_similarity(baskets: pd.DataFrame) -> pd.DataFrame:
@@ -92,8 +85,8 @@ def apply_filters(similarity_df: pd.DataFrame, products_df: pd.DataFrame,
         (similarity_df['price_rec'] >= similarity_df['price'] * (1 - price_band)) &
         (similarity_df['price_rec'] <= similarity_df['price'] * (1 + price_band))
     ]
-    # print("After price band filter:")
-    # print(similarity_df.head())
+    print("After price band filter:")
+    print(similarity_df.head())
 
     # # Category affinity filter
     # def affinity_check(row):

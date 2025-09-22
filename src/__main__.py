@@ -20,7 +20,7 @@ import ast
 
 def main():
     print("Batch job started...")
-    fetch_products()
+    # fetch_products()
     # Load from cache CSVs
     
   
@@ -55,9 +55,9 @@ def main():
     print("\n🛍️ Sample Similarity Scores Loaded Successfully:")
     print(similarity_df.head(50))
 
-    merged = similarity_df.merge(products_df, left_on="other_product", right_on="id", how="left", indicator=True)
-    print("DEBUG >> merge results")
-    print(merged[["product_id", "other_product", "_merge"]].head(20))
+    # merged = similarity_df.merge(products_df, left_on="other_product", right_on="id", how="left", indicator=True)
+    # print("DEBUG >> merge results")
+    # print(merged[["product_id", "other_product", "_merge"]].head(20))
 
     # # #Apply filters
     filtered_df = apply_filters(similarity_df, products_df)
@@ -68,7 +68,7 @@ def main():
     
     
     recommendations = filtered_df.to_dict(orient="records")
-    # print(recommendations)
+    print(recommendations)
     
 
     update_crosssell.save_recommendations(recommendations)
