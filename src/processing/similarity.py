@@ -5,14 +5,25 @@ from collections import defaultdict
 # --- CONFIG ---
 MIN_CO_OCCURRENCE = 3
 TOP_N = 3
-PRICE_BAND = 0.4  # ±40%
+PRICE_BAND = 40  # ±40%
 
 
 # --- SIMILARITY LOGIC ---
-def build_similarity(baskets: pd.DataFrame) -> pd.DataFrame:
+def build_similarity(baskets: pd.DataFrame, config) -> pd.DataFrame:
     """
     Build co-occurrence matrix, compute support, lift, and score.
     """
+    print("this is config",config)
+    MIN_CO_OCCURRENCE = int(config.get("min_occurrence"))
+    TOP_N = int(config.get("top_n"))
+    price = int(config.get("price_band"))
+    PRICE_BAND = (price/100)
+    
+    print("MIN_CO_OCCURRENCE", MIN_CO_OCCURRENCE)
+    print("TOP_N", TOP_N)
+    print("PRICE_BAND", PRICE_BAND)
+    
+    
     co_matrix = defaultdict(lambda: defaultdict(int))
     product_count = defaultdict(int)
     total_baskets = len(baskets)

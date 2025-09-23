@@ -8,6 +8,7 @@ from processing.basketize import create_baskets
 from processing.similarity import build_similarity, apply_filters, recommend_for_product
 from publishing import update_crosssell
 # from tests import categories
+from config_loader import load_config, WP_API_URL
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.helpers import log
@@ -22,8 +23,8 @@ def main():
     print("Batch job started...")
     # fetch_products()
     # Load from cache CSVs
-    
-  
+ 
+    config = load_config(WP_API_URL)
     products_df = pd.read_csv("products_cache.csv")
     # orders_df = pd.read_csv("orders_cache.csv")
 
@@ -50,7 +51,7 @@ def main():
     print(baskets_df)
 
     # Build similarity
-    similarity_df = build_similarity(baskets_df)
+    similarity_df = build_similarity(baskets_df,config)
     
     print("\n🛍️ Sample Similarity Scores Loaded Successfully:")
     print(similarity_df.head(50))
@@ -62,16 +63,17 @@ def main():
     # # #Apply filters
     filtered_df = apply_filters(similarity_df, products_df)
     print("\n🛍️ filtered Loaded Successfully:")
+    print(len(filtered_df))
 
     
     
     
     
     recommendations = filtered_df.to_dict(orient="records")
-    print(recommendations)
+    # print(recommendations)
     
 
-    update_crosssell.save_recommendations(recommendations)
+    # update_crosssell.save_recommendations(recommendations)
 
 if __name__ == "__main__":
     main()
