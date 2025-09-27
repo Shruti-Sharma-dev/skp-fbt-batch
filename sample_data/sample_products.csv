@@ -1,8 +1,0 @@
-product_id,name,sku,price,stock,category,status
-101,Gold Ring,GR101,2500,10,Rings,active
-102,Silver Necklace,SN102,1500,5,Necklaces,active
-103,Earrings,ER103,800,15,Earrings,active
-104,Diamond Bracelet,DB104,4000,7,Bracelets,active
-105,Pearl Pendant,PP105,2000,12,Pendants,inactive
-106,Platinum Ring,PR106,5000,6,Rings,active
-107,Ruby Necklace,RN107,3500,4,Necklaces,active

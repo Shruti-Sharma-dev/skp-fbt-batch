@@ -10,7 +10,7 @@ CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
 CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")
 
 
-def fetch_products():
+def fetch_products(products_cache):
     products = []
     page = 1
 
@@ -76,7 +76,7 @@ def fetch_products():
 
 
     # Save CSV
-    df.to_csv("products_cache.csv", index=False)
+    df.to_csv(products_cache, index=False)
 
     # print(f"Total products fetched: {len(df)}")
     return df

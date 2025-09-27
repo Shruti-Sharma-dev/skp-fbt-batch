@@ -21,16 +21,22 @@ import ast
 
 def main():
     print("Batch job started...")
-    # fetch_products()
+    BASE_DIR = os.path.dirname(__file__)  # folder jahan __main__.py hai
+    products_cache_path = os.path.join(BASE_DIR, "products_cache.csv")
+
+    # 2️⃣ Fetch products from API and save CSV
+    fetch_products(products_cache_path)
     # Load from cache CSVs
  
     config = load_config(WP_API_URL)
-    products_df = pd.read_csv("products_cache.csv")
+    
+    # products_df = pd.read_csv("products_cache.csv")
     # orders_df = pd.read_csv("orders_cache.csv")
 
 
     # orders_df = fetch_orders()
     # products_df = fetch_products()
+    products_df = pd.read_csv(os.path.join(BASE_DIR, "products_cache.csv"))
 
     print("\n🛍️ Sample Products Loaded Successfully:")
     print(len(products_df))
@@ -38,9 +44,9 @@ def main():
 
  # Dummy orders generate karo
     df = generate_dummy_orders(
-    products_csv="products_cache.csv",
-    output_csv="structured_dummy_orders.csv"
-   )
+    products_csv=os.path.join(BASE_DIR, "products_cache.csv"),
+    output_csv=os.path.join(BASE_DIR, "structured_dummy_orders.csv")
+    )
 
     print(df.head())
 
@@ -73,7 +79,7 @@ def main():
     # print(recommendations)
     
 
-    # update_crosssell.save_recommendations(recommendations)
+    update_crosssell.save_recommendations(recommendations)
 
 if __name__ == "__main__":
     main()

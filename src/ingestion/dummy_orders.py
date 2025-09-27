@@ -29,6 +29,9 @@ def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4
     "Set": [
         "Pearl Necklace Sets", "Pearl Bangle", "Pearl Studs Earrings", "Choker Set", "Rani Haar"
     ],
+    "Choker Set": [
+        "Pearl Bracelet", "Pearl Studs Earrings", "Pearl Bangle"
+    ],
     
     # Precious stones → add complementary sets
     "Ruby": ["Pearl Necklace Sets", "Precious Stones Studs"],
