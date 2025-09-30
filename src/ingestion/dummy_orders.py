@@ -1,46 +1,15 @@
 import pandas as pd
 import random
 
-def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4, max_basket=8, price_band=0.4):
-  # Anchor keyword → complementary categories
-    complement_map = {
-    # Necklaces → add earrings, bangles, bracelets
-    "Necklace": [
-        "Pearl Bracelet", "Pearl Studs Earrings", "Pearl Bangle", 
-        "Choker Set", "Rani Haar", "Three Line Pearl Necklace set"
-    ],
-    
-    # Rings → add earrings, bracelets
-    "Ring": [
-        "Precious Stones Studs", "Fancy Pearl Set", "Pearl Bangle"
-    ],
-    
-    # Earrings → add necklaces, bangles
-    "Earrings": [
-        "Pearl Necklace Sets", "Choker Set", "Pearl Bracelet"
-    ],
-    
-    # Bracelets / Bangles → add necklace, earrings
-    "Bracelet": [
-        "Pearl Necklace Sets", "Pearl Studs Earrings", "Choker Set"
-    ],
-    
-    # Sets → mix of necklaces + earrings + bangles
-    "Set": [
-        "Pearl Necklace Sets", "Pearl Bangle", "Pearl Studs Earrings", "Choker Set", "Rani Haar"
-    ],
-    "Choker Set": [
-        "Pearl Bracelet", "Pearl Studs Earrings", "Pearl Bangle"
-    ],
-    
-    # Precious stones → add complementary sets
-    "Ruby": ["Pearl Necklace Sets", "Precious Stones Studs"],
-    "Emerald": ["Pearl Necklace Sets", "Precious Stones Studs"]
-    }
+pd.set_option('display.max_columns', None)
+def generate_dummy_orders( products_csv,output_csv, num_orders=200, min_basket=4, max_basket=8, price_band=0.4):
 
 
     # ---------- Load products ----------
     products = pd.read_csv(products_csv)
+
+    print("products head")
+    print(products.head())
     products = products[
         (products["status"] == "publish") &
         (products["stock_status"] == "instock") &
@@ -60,46 +29,45 @@ def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4
             basket_size = random.randint(min_basket, max_basket)
             anchor = products[products["id"] == pid].iloc[0]
             anchor_price = anchor["price"]
-            category = anchor["categories"]
+            anchor_basecat = anchor["base_category"]
+            anchor_material = anchor["material"]
+            anchor_color = anchor["color"]
 
-            # Candidates in same category & price band
-            candidates_categories = []
-            for keyword, comps in complement_map.items():
-                if keyword.lower() in category.lower():
-                    candidates_categories = comps
-                    break
-
-            if candidates_categories:
-            # Use complementary categories
-                candidates = products[
-                    (products["categories"].isin(candidates_categories)) &
-                    (products["id"] != pid) &
-                    (products["price"].between(anchor_price*(1-price_band),
-                                               anchor_price*(1+price_band)))
-                ]
-            else:
-                # Default: same category + price band
-                candidates = products[
-                    (products["categories"] == category) &
-        (products["id"] != pid) &
-        (products["price"].between(anchor_price*(1-price_band),
-                                   anchor_price*(1+price_band)))
-    ]
-
+            # Candidates: same material, different baseCategory, price in band
+            candidates = products[
+                (products["id"] != pid) &
+                (products["material"] == anchor_material) &
+                (products["base_category"] != anchor_basecat) &
+                (products["color"] == anchor_color) &
+                (products["price"].between(anchor_price * (1 - price_band),
+                                           anchor_price * (1 + price_band)))
+            ]
 
             if candidates.empty:
-                candidates = products[products["id"] != pid]  # fallback
+                # fallback: ignore price band
+                candidates = products[
+                    (products["id"] != pid) &
+                    (products["material"] == anchor_material) &
+                    (products["base_category"] != anchor_basecat)&
+                    (products["color"] == anchor_color)
+                ]
+
+            if candidates.empty:
+                # last fallback: any product except anchor
+                candidates = products[products["id"] != pid]
 
             chosen = random.sample(list(candidates["id"]), min(basket_size - 1, len(candidates)))
             basket = [pid] + chosen
 
             for item in basket:
-                product_name = products.loc[products["id"] == item, "name"].values[0]
+                row = products.loc[products["id"] == item].iloc[0]
                 orders.append({
-                "order_id": order_id,
-                "product_id": item,
-                "product_name": product_name
-            })
+                    "order_id": order_id,
+                    "product_id": item,
+                    "product_name": row["name"],
+                    "base_category": row["base_category"],
+                    "material": row["material"]
+                })
             order_id += 1
 
     # ---------- Step 2: Generate additional random orders ----------
@@ -107,14 +75,24 @@ def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4
         basket_size = random.randint(min_basket, max_basket)
         anchor = products.sample(1).iloc[0]
         anchor_price = anchor["price"]
-        category = anchor["categories"]
+        anchor_material = anchor["material"]
+        anchor_basecat = anchor["base_Category"]
 
         candidates = products[
-            (products["categories"] == category) &
             (products["id"] != anchor["id"]) &
+            (products["material"] == anchor_material) &
+            (products["base_category"] != anchor_basecat) &
             (products["price"].between(anchor_price * (1 - price_band),
                                        anchor_price * (1 + price_band)))
         ]
+
+        if candidates.empty:
+            candidates = products[
+                (products["id"] != anchor["id"]) &
+                (products["material"] == anchor_material) &
+                (products["base_category"] != anchor_basecat)
+            ]
+
         if candidates.empty:
             candidates = products[products["id"] != anchor["id"]]
 
@@ -122,11 +100,14 @@ def generate_dummy_orders(products_csv, output_csv, num_orders=200, min_basket=4
         basket = [anchor["id"]] + chosen
 
         for item in basket:
-           orders.append({
-        "order_id": order_id,
-        "product_id": item,
-        "product_name": product_name
-    })
+            row = products.loc[products["id"] == item].iloc[0]
+            orders.append({
+                "order_id": order_id,
+                "product_id": item,
+                "product_name": row["name"],
+                "base_category": row["base_category"],
+                "material": row["material"]
+            })
         order_id += 1
 
     orders_df = pd.DataFrame(orders)

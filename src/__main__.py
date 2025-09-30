@@ -7,7 +7,7 @@ from ingestion.dummy_orders import generate_dummy_orders
 from processing.basketize import create_baskets
 from processing.similarity import build_similarity, apply_filters, recommend_for_product
 from publishing import update_crosssell
-# from tests import categories
+
 from config_loader import load_config, WP_API_URL
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -22,12 +22,12 @@ import ast
 def main():
     print("Batch job started...")
     BASE_DIR = os.path.dirname(__file__)  # folder jahan __main__.py hai
-    products_cache_path = os.path.join(BASE_DIR, "products_cache.csv")
+
 
     # 2️⃣ Fetch products from API and save CSV
-    fetch_products(products_cache_path)
+    # fetch_products(products_cache_path)
     # Load from cache CSVs
- 
+    
     config = load_config(WP_API_URL)
     
     # products_df = pd.read_csv("products_cache.csv")
@@ -44,7 +44,7 @@ def main():
 
  # Dummy orders generate karo
     df = generate_dummy_orders(
-    products_csv=os.path.join(BASE_DIR, "products_cache.csv"),
+    products_csv=os.path.join(BASE_DIR, "add_base.csv"),
     output_csv=os.path.join(BASE_DIR, "structured_dummy_orders.csv")
     )
 
@@ -79,7 +79,7 @@ def main():
     # print(recommendations)
     
 
-    update_crosssell.save_recommendations(recommendations)
+    # update_crosssell.save_recommendations(recommendations)
 
 if __name__ == "__main__":
     main()
