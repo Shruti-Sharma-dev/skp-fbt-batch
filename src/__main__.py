@@ -1,4 +1,4 @@
-from ingestion import orders, products
+from ingestion import orders, products, add_base
 from processing import basketize, similarity
 from publishing import update_crosssell
 from ingestion.products import fetch_products
@@ -7,6 +7,7 @@ from ingestion.dummy_orders import generate_dummy_orders
 from processing.basketize import create_baskets
 from processing.similarity import build_similarity, apply_filters, recommend_for_product
 from publishing import update_crosssell
+
 
 from config_loader import load_config, WP_API_URL
 import sys, os
@@ -40,7 +41,8 @@ def main():
 
     print("\n🛍️ Sample Products Loaded Successfully:")
     print(len(products_df))
-
+    
+    add_base.add_base()
 
  # Dummy orders generate karo
     df = generate_dummy_orders(
@@ -54,7 +56,7 @@ def main():
     # Create baskets
     baskets_df = create_baskets(df)
     print("\n🛍️ Sample Baskets Loaded Successfully:")
-    print(baskets_df)
+    # print(baskets_df)
 
     # Build similarity
     similarity_df = build_similarity(baskets_df,config)
@@ -79,7 +81,7 @@ def main():
     # print(recommendations)
     
 
-    # update_crosssell.save_recommendations(recommendations)
+    update_crosssell.save_recommendations(recommendations)
 
 if __name__ == "__main__":
     main()
