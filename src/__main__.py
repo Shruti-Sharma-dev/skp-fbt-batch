@@ -26,13 +26,11 @@ def main():
 
 
     # 2️⃣ Fetch products from API and save CSV
-    # fetch_products(products_cache_path)
+    fetch_products(os.path.join(BASE_DIR, "products_cache.csv"))
     # Load from cache CSVs
     
     config = load_config(WP_API_URL)
-    
-    # products_df = pd.read_csv("products_cache.csv")
-    # orders_df = pd.read_csv("orders_cache.csv")
+    # orders_df = pd.read_csv(os.path.join(BASE_DIR, "orders_cache.csv"))
 
 
     # orders_df = fetch_orders()
@@ -64,24 +62,35 @@ def main():
     print("\n🛍️ Sample Similarity Scores Loaded Successfully:")
     print(similarity_df.head(50))
 
-    # merged = similarity_df.merge(products_df, left_on="other_product", right_on="id", how="left", indicator=True)
-    # print("DEBUG >> merge results")
-    # print(merged[["product_id", "other_product", "_merge"]].head(20))
+    merged = similarity_df.merge(products_df, left_on="other_product", right_on="id", how="left", indicator=True)
+    print("DEBUG >> merge results")
+    print(merged[["product_id", "other_product", "_merge"]].head(20))
 
-    # # #Apply filters
+    #Apply filters
     filtered_df = apply_filters(similarity_df, products_df)
     print("\n🛍️ filtered Loaded Successfully:")
-    print(len(filtered_df))
+    print(len( filtered_df))
+    print( filtered_df.head(50))
 
     
     
-    
-    
-    recommendations = filtered_df.to_dict(orient="records")
-    # print(recommendations)
-    
 
-    update_crosssell.save_recommendations(recommendations)
+
+    grouped = filtered_df.groupby('product_id')
+
+    result_list = []
+
+    for pid, group in grouped:
+        recs = group.apply(lambda x: {"rec_id": int(x['other_product']), "score": float(x['score'])}, axis=1).tolist()
+        result_list.append({
+            "product_id": int(pid),
+            "recommendations": recs
+    })
+
+    print(result_list)
+
+
+    update_crosssell.save_recommendations(result_list)
 
 if __name__ == "__main__":
     main()

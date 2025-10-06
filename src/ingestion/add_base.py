@@ -23,10 +23,10 @@ def add_base():
     print(filtered.head(10))
 
     conditions=[
-        filtered['categories'].str.contains('necklace|set|choker|haar', case=False, na=False) | filtered['name'].str.contains('necklace|set|choker|haar', case=False, na=False) ,
-        filtered['categories'].str.contains('earrings|studs|hanging', case=False, na=False) | filtered['name'].str.contains('earrings|studs|hanging', case=False, na=False),
+        filtered['categories'].str.contains('necklace|set|choker|haar|chain', case=False, na=False) | filtered['name'].str.contains('necklace|set|choker|haar|chain', case=False, na=False) ,
+        filtered['categories'].str.contains('earrings|studs|hanging|chand baali', case=False, na=False) | filtered['name'].str.contains('earrings|studs|hanging|chand baali', case=False, na=False),
         filtered['categories'].str.contains('bracelet', case=False, na=False) | filtered['name'].str.contains('bracelet', case=False, na=False),
-        filtered['categories'].str.contains('ring', case=False, na=False) | filtered['name'].str.contains('necklace|set|choker|haar', case=False, na=False),
+        filtered['categories'].str.contains('ring', case=False, na=False) | filtered['name'].str.contains('necklace|set|choker|haar|chain', case=False, na=False),
         filtered['categories'].str.contains('bangle', case=False, na=False) | filtered['name'].str.contains('bangle', case=False, na=False),
         filtered['categories'].str.contains('stones|ruby|emerald', case=False, na=False) | filtered['name'].str.contains('stones|ruby|emerald', case=False, na=False),
     
@@ -55,14 +55,21 @@ def add_base():
         (filtered['name'].str.contains('ruby', case=False, na=False)),
         
         
+        (filtered['name'].str.contains('pearl', case=False, na=False)) &
+        (filtered['name'].str.contains('sapphire', case=False, na=False)),
+        
+        
         (filtered['name'].str.contains('emerald', case=False, na=False)),
         (filtered['name'].str.contains('ruby', case=False, na=False)),
         (filtered['name'].str.contains('oyster', case=False, na=False)),
-        filtered['name'].str.contains('pearl', case=False, na=False)
+        (filtered['name'].str.contains('pearl', case=False, na=False)),
+        (filtered['name'].str.contains('sapphire', case=False, na=False)),
+        (filtered['name'].str.contains('gold', case=False, na=False)),
+        (filtered['name'].str.contains('silver', case=False, na=False)),
     ]
 
 
-    choices_material = ['pearl, emerald', 'pearl, oyster', 'pearl, stone', 'pearl, ruby' ,'emerald', 'ruby', 'oyster', 'pearl']
+    choices_material = ['pearl, emerald', 'pearl, oyster', 'pearl, stone', 'pearl, ruby', 'pearl, sapphire', 'emerald', 'ruby', 'oyster', 'pearl' , 'sapphire', 'gold','silver'  ]
 
 
 
@@ -75,12 +82,16 @@ def add_base():
         (filtered['name'].str.contains('pink', case=False, na=False))  | (filtered['categories'].str.contains('pink', case=False, na=False)),
         (filtered['name'].str.contains('white', case=False, na=False)) | (filtered['categories'].str.contains('white', case=False, na=False)),
         (filtered['name'].str.contains('gold', case=False, na=False))  | (filtered['categories'].str.contains('gold', case=False, na=False)),
-        (filtered['name'].str.contains('gray', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False))
+        (filtered['name'].str.contains('gray', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
+        (filtered['name'].str.contains('brown', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
+        (filtered['name'].str.contains('blue', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
+        (filtered['name'].str.contains('purple', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
+        (filtered['name'].str.contains('green', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False))
     ]
 
 
 
-    choices_colors = ['black', 'pink', 'white' , 'gold', 'gray']
+    choices_colors = ['black', 'pink', 'white' , 'gold', 'gray', 'brown', 'blue', 'purple', 'green']
 
 
 
