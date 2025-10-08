@@ -26,21 +26,18 @@ def main():
 
 
     # 2️⃣ Fetch products from API and save CSV
-    fetch_products(os.path.join(BASE_DIR, "products_cache.csv"))
+    # fetch_products(os.path.join(BASE_DIR, "products_cache.csv"))
     # Load from cache CSVs
     
     config = load_config(WP_API_URL)
     # orders_df = pd.read_csv(os.path.join(BASE_DIR, "orders_cache.csv"))
 
-
-    # orders_df = fetch_orders()
-    # products_df = fetch_products()
     products_df = pd.read_csv(os.path.join(BASE_DIR, "products_cache.csv"))
 
     print("\n🛍️ Sample Products Loaded Successfully:")
     print(len(products_df))
     
-    add_base.add_base()
+    # add_base.add_base()
 
  # Dummy orders generate karo
     df = generate_dummy_orders(

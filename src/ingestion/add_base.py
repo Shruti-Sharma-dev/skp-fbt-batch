@@ -58,6 +58,9 @@ def add_base():
         (filtered['name'].str.contains('pearl', case=False, na=False)) &
         (filtered['name'].str.contains('sapphire', case=False, na=False)),
         
+        (filtered['name'].str.contains('pearl', case=False, na=False)) &
+        (filtered['name'].str.contains('coral', case=False, na=False)),
+        
         
         (filtered['name'].str.contains('emerald', case=False, na=False)),
         (filtered['name'].str.contains('ruby', case=False, na=False)),
@@ -66,10 +69,11 @@ def add_base():
         (filtered['name'].str.contains('sapphire', case=False, na=False)),
         (filtered['name'].str.contains('gold', case=False, na=False)),
         (filtered['name'].str.contains('silver', case=False, na=False)),
+        (filtered['name'].str.contains('coral', case=False, na=False)),
     ]
 
 
-    choices_material = ['pearl, emerald', 'pearl, oyster', 'pearl, stone', 'pearl, ruby', 'pearl, sapphire', 'emerald', 'ruby', 'oyster', 'pearl' , 'sapphire', 'gold','silver'  ]
+    choices_material = ['pearl, emerald', 'pearl, oyster', 'pearl, stone', 'pearl, ruby', 'pearl, sapphire','pearl, coral', 'emerald', 'ruby', 'oyster', 'pearl' , 'sapphire', 'gold','silver' , 'coral' ]
 
 
 
@@ -83,10 +87,10 @@ def add_base():
         (filtered['name'].str.contains('white', case=False, na=False)) | (filtered['categories'].str.contains('white', case=False, na=False)),
         (filtered['name'].str.contains('gold', case=False, na=False))  | (filtered['categories'].str.contains('gold', case=False, na=False)),
         (filtered['name'].str.contains('gray', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
-        (filtered['name'].str.contains('brown', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
-        (filtered['name'].str.contains('blue', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
-        (filtered['name'].str.contains('purple', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
-        (filtered['name'].str.contains('green', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False))
+        (filtered['name'].str.contains('brown', case=False, na=False)) | (filtered['categories'].str.contains('brown', case=False, na=False)),
+        (filtered['name'].str.contains('blue', case=False, na=False))  | (filtered['categories'].str.contains('blue', case=False, na=False)),
+        (filtered['name'].str.contains('purple', case=False, na=False)) | (filtered['categories'].str.contains('purple', case=False, na=False)),
+        (filtered['name'].str.contains('green', case=False, na=False))  | (filtered['categories'].str.contains('green', case=False, na=False))
     ]
 
 

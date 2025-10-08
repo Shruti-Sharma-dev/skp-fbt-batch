@@ -23,7 +23,7 @@ def create_baskets(orders_df: pd.DataFrame) -> pd.DataFrame:
         baskets = baskets[baskets['products'].map(len) > 0]
 
         print("✅ Baskets created successfully:")
-        print(baskets.head())
+        print(baskets.head(10))
         return baskets
 
     except Exception as e:
