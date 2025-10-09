@@ -55,7 +55,7 @@ def build_similarity(baskets: pd.DataFrame, config) -> pd.DataFrame:
                 "score": score,
                 "co_count": co_count
             })
-            if p1 < p2 and co_count > 3:
+            if p1 < p2 and co_count > MIN_CO_OCCURRENCE:
                 pair_count += 1
 
     print(f"Total unique product pairs with co-occurrence >= {MIN_CO_OCCURRENCE}: {pair_count}")

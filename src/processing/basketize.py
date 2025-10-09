@@ -1,6 +1,7 @@
 # src/processing/basketize.py
 
 import pandas as pd
+import os
 
 def create_baskets(orders_df: pd.DataFrame) -> pd.DataFrame:
     
@@ -24,6 +25,9 @@ def create_baskets(orders_df: pd.DataFrame) -> pd.DataFrame:
 
         print("✅ Baskets created successfully:")
         print(baskets.head(10))
+        
+        baskets_csv = os.path.join("..", "basket_cache.csv")
+        baskets.to_csv(baskets_csv, index=False)
         return baskets
 
     except Exception as e:

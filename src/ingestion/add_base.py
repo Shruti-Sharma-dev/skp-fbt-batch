@@ -42,25 +42,38 @@ def add_base():
 
 
     conditions_material = [
-        (filtered['name'].str.contains('pearl', case=False, na=False)) &
-        (filtered['name'].str.contains('emerald', case=False, na=False)),
+        ((filtered['name'].str.contains('pearl', case=False, na=False)) &
+        (filtered['name'].str.contains('emerald', case=False, na=False)))|
+        ((filtered['categories'].str.contains('pearl', case=False, na=False)) &
+        (filtered['categories'].str.contains('emerald', case=False, na=False))),
         
-        (filtered['name'].str.contains('pearl', case=False, na=False)) &
-        (filtered['name'].str.contains('oyster', case=False, na=False)),
-        
-        (filtered['name'].str.contains('pearl', case=False, na=False)) &
-        (filtered['name'].str.contains('stone', case=False, na=False)),
-        
-        (filtered['name'].str.contains('pearl', case=False, na=False)) &
-        (filtered['name'].str.contains('ruby', case=False, na=False)),
+        ((filtered['name'].str.contains('pearl', case=False, na=False)) &
+        (filtered['name'].str.contains('oyster', case=False, na=False))) |
+        ((filtered['categories'].str.contains('pearl', case=False, na=False)) &
+        (filtered['categories'].str.contains('oyster', case=False, na=False))),
         
         
-        (filtered['name'].str.contains('pearl', case=False, na=False)) &
-        (filtered['name'].str.contains('sapphire', case=False, na=False)),
+        ((filtered['name'].str.contains('pearl', case=False, na=False)) &
+        (filtered['name'].str.contains('stone', case=False, na=False))) |
+        ((filtered['categories'].str.contains('pearl', case=False, na=False)) &
+        (filtered['categories'].str.contains('stone', case=False, na=False))),
+
+        ((filtered['name'].str.contains('pearl', case=False, na=False)) &
+        (filtered['name'].str.contains('ruby', case=False, na=False))) |
+        ((filtered['categories'].str.contains('pearl', case=False, na=False)) &
+        (filtered['categories'].str.contains('ruby', case=False, na=False))),
+
         
-        (filtered['name'].str.contains('pearl', case=False, na=False)) &
-        (filtered['name'].str.contains('coral', case=False, na=False)),
-        
+        ((filtered['name'].str.contains('pearl', case=False, na=False)) &
+        (filtered['name'].str.contains('sapphire', case=False, na=False))) |
+        ((filtered['categories'].str.contains('pearl', case=False, na=False)) &
+        (filtered['categories'].str.contains('sapphire', case=False, na=False))),
+
+        ((filtered['name'].str.contains('pearl', case=False, na=False)) &
+        (filtered['name'].str.contains('coral', case=False, na=False))) |
+        ((filtered['categories'].str.contains('pearl', case=False, na=False)) &
+        (filtered['categories'].str.contains('coral', case=False, na=False))),
+
         
         (filtered['name'].str.contains('emerald', case=False, na=False)),
         (filtered['name'].str.contains('ruby', case=False, na=False)),
