@@ -42,7 +42,8 @@ def main():
  # Dummy orders generate karo
     df = generate_dummy_orders(
     products_csv=os.path.join(BASE_DIR, "add_base.csv"),
-    output_csv=os.path.join(BASE_DIR, "structured_dummy_orders.csv")
+    output_csv=os.path.join(BASE_DIR, "structured_dummy_orders.csv"),
+    config=config
     )
 
     print(df.head())

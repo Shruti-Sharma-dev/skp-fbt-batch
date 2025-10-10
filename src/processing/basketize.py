@@ -28,6 +28,7 @@ def create_baskets(orders_df: pd.DataFrame) -> pd.DataFrame:
         
         baskets_csv = os.path.join("..", "basket_cache.csv")
         baskets.to_csv(baskets_csv, index=False)
+        
         return baskets
 
     except Exception as e:
