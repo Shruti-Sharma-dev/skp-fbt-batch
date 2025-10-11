@@ -37,7 +37,7 @@ def main():
     print("\n🛍️ Sample Products Loaded Successfully:")
     print(len(products_df))
     
-    # add_base.add_base()
+    add_base.add_base()
 
  # Dummy orders generate karo
     df = generate_dummy_orders(
@@ -55,7 +55,7 @@ def main():
     # print(baskets_df)
 
     # Build similarity
-    similarity_df = build_similarity(baskets_df,config)
+    similarity_df = build_similarity(baskets_df,config,os.path.join(BASE_DIR, "add_base.csv"))
     
     print("\n🛍️ Sample Similarity Scores Loaded Successfully:")
     print(similarity_df.head(50))

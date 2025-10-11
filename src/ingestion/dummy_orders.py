@@ -5,7 +5,7 @@ from itertools import combinations
 from collections import Counter
 
 def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_basket=8):
-    price_band = int(config.get("price_band", 40))
+    
     
     
     products = pd.read_csv(products_csv)
@@ -36,19 +36,34 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
             (products["color"] == anchor["color"]) &
             (products["material"] == anchor["material"]) &
             (~products["base_category"].eq(anchor["base_category"]))
+            
         ].copy()
-
-        # If too few candidates, relax material constraint
-        if len(candidates) < 3:
-            relaxed_by_material = products[
+        
+        
+        if(pid == 14794):
+            print(f"🧩DEBUG >> Initial candidates for product {pid} ({anchor['name']}):")
+            print(candidates)
+        # If too few candidates, relax color constraint
+        if len(candidates) < 2:
+            
+            relaxed_by_color = products[
                 (products["id"] != pid) &
                 (products["material"] == anchor["material"]) &
                 (~products["base_category"].eq(anchor["base_category"]))
             ]
-            candidates = pd.concat([candidates, relaxed_by_material]).drop_duplicates(subset=["id"])
+            candidates = pd.concat([candidates, relaxed_by_color]).drop_duplicates(subset=["id"])
+        
+        if(pid == 14794):
+            print(f"⚡DEBUG >> Relaxed by color candidates for product {pid} ({anchor['name']}):")
+            print(candidates)
+        
+        
+        
+        if(candidates["base_category"].nunique()>=2):
+            
+            candidates = candidates.drop_duplicates(subset=["base_category"])
 
-
-        return candidates.drop_duplicates(subset=["base_category"])
+        return candidates
 
 
     product_ids = list(products["id"].unique())
@@ -62,7 +77,7 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
             if candidates.empty:
                 continue
             
-            if(pid == "3068"):
+            if(pid == 14794):
                 print(f"DEBUG >> Candidates for product {pid} ({anchor['name']}):")
                 print(candidates)
 
@@ -118,6 +133,7 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
 
     # --- Save CSVs ---
     orders_df = pd.DataFrame(orders)
+    print(orders_df.head())
     pairs_df = pd.DataFrame(valid_pairs_list)
 
     dummy_csv = os.path.join(os.path.dirname(output_csv), "dummy_orders.csv")

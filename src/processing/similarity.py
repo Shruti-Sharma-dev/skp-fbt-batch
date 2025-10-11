@@ -9,7 +9,7 @@ PRICE_BAND = 40  # ±40%
 
 
 # --- SIMILARITY LOGIC ---
-def build_similarity(baskets: pd.DataFrame, config) -> pd.DataFrame:
+def build_similarity(baskets: pd.DataFrame, config, products_csv) -> pd.DataFrame:
     """
     Build co-occurrence matrix, compute support, lift, and score.
     """
@@ -84,7 +84,11 @@ def apply_filters(similarity_df: pd.DataFrame, products_df: pd.DataFrame,
     products_df["id"] = pd.to_numeric(products_df["id"], errors="coerce").astype("Int64")
     similarity_df["product_id"] = pd.to_numeric(similarity_df["product_id"], errors="coerce").astype("Int64")
     similarity_df["other_product"] = pd.to_numeric(similarity_df["other_product"], errors="coerce").astype("Int64")
-
+    
+    
+    
+    
+    
     print("✅ Type check before merge:")
     print(similarity_df.dtypes[["product_id", "other_product"]])
     print(products_df.dtypes[["id"]])
@@ -102,16 +106,7 @@ def apply_filters(similarity_df: pd.DataFrame, products_df: pd.DataFrame,
         left_on='other_product', right_on='id', suffixes=('', '_rec')
     )
 
-    # --- Filter invalid status/visibility ---
-    similarity_df = similarity_df[
-        (similarity_df["status"].str.lower() == "publish") &
-        (similarity_df["catalog_visibility"].str.lower() == "visible") &
-        (similarity_df["stock_status"].str.lower() == "instock") &
-        (similarity_df["status_rec"].str.lower() == "publish") &
-        (similarity_df["catalog_visibility_rec"].str.lower() == "visible") &
-        (similarity_df["stock_status_rec"].str.lower() == "instock")
-    ]
-
+   
     # --- Sort & select top-N ---
     similarity_df = similarity_df.sort_values(['product_id', 'score'], ascending=[True, False])
     top_recs = similarity_df.groupby('product_id').head(top_n).reset_index(drop=True)
