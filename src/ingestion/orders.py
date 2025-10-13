@@ -6,7 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_URL = "https://srikrishnapearls.com/wp-json/wc/v3/orders"
+
+baseurl = os.getenv("WOO_LIVE_URL")
+BASE_URL = f"{baseurl}/wp-json/wc/v3/orders"
 CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
 CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")
 

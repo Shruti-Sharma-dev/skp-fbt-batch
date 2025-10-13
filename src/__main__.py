@@ -26,7 +26,7 @@ def main():
 
 
     # 2️⃣ Fetch products from API and save CSV
-    # fetch_products(os.path.join(BASE_DIR, "products_cache.csv"))
+    fetch_products(os.path.join(BASE_DIR, "products_cache.csv"))
     # Load from cache CSVs
     
     config = load_config(WP_API_URL)

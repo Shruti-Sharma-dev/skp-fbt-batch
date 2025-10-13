@@ -25,9 +25,7 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
     order_id = 1001
     all_pairs = []
 
-    # --- Normalize material ---
-    def normalize_material(mat_str):
-        return [x.strip().lower() for x in str(mat_str).replace(";", ",").split(",") if x.strip()]
+
 
     # --- Get same-color, same-material, different-category candidates ---
     def get_candidates(anchor, pid):
@@ -38,11 +36,10 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
             (~products["base_category"].eq(anchor["base_category"]))
             
         ].copy()
+        if(pid == 3488):
+                print(f"✅DEBUG >> Candidates for product {pid} ({anchor['name']}):")
+                print(candidates)
         
-        
-        if(pid == 14794):
-            print(f"🧩DEBUG >> Initial candidates for product {pid} ({anchor['name']}):")
-            print(candidates)
         # If too few candidates, relax color constraint
         if len(candidates) < 2:
             
@@ -52,15 +49,16 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
                 (~products["base_category"].eq(anchor["base_category"]))
             ]
             candidates = pd.concat([candidates, relaxed_by_color]).drop_duplicates(subset=["id"])
+            
+        if(pid == 3488):
+                print(f"💡DEBUG >> Candidates for product {pid} ({anchor['name']}):")
+                print(candidates)
         
-        if(pid == 14794):
-            print(f"⚡DEBUG >> Relaxed by color candidates for product {pid} ({anchor['name']}):")
-            print(candidates)
         
-        
+
         
         if(candidates["base_category"].nunique()>=2):
-            
+            candidates = candidates.sample(frac=1).reset_index(drop=True)
             candidates = candidates.drop_duplicates(subset=["base_category"])
 
         return candidates
@@ -77,8 +75,8 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
             if candidates.empty:
                 continue
             
-            if(pid == 14794):
-                print(f"DEBUG >> Candidates for product {pid} ({anchor['name']}):")
+            if(pid == 3488):
+                print(f"💡DEBUG >> Candidates for product {pid} ({anchor['name']}):")
                 print(candidates)
 
             basket_size = random.randint(min_basket, max_basket)

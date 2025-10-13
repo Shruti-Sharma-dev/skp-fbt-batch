@@ -5,7 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_URL = "https://srikrishnanew-staging.us23.cdn-alpha.com/wp-json/wc/v3/products"
+
+baseurl = os.getenv("WOO_STAGING_URL")
+API_URL = f"{baseurl}/wp-json/wc/v3/products"
 CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
 CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")
 
@@ -30,7 +32,7 @@ def fetch_products(products_cache):
             "consumer_secret": CONSUMER_SECRET
         }
 
-        r = requests.get(BASE_URL, params=params, headers=headers)
+        r = requests.get(API_URL, params=params, headers=headers)
         print(f"--- PAGE {page} --- Status Code: {r.status_code}")
 
         if r.status_code != 200:

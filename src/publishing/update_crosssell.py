@@ -1,9 +1,19 @@
 import requests
 import os
 import json  
+import dotenv
 
-API_URL = "https://srikrishnanew-staging.us23.cdn-alpha.com/wp-json/skp-fbt/v1/save-recs"
-WC_API_URL = "https://srikrishnanew-staging.us23.cdn-alpha.com/wp-json/wc/v3/products"
+dotenv.load_dotenv()
+
+    
+# Access your variables
+base_url = os.getenv("WOO_STAGING_URL")
+products_url = f"{base_url}/wp-json/wc/v3/products"
+
+API_URL = f"{base_url}/wp-json/skp-fbt/v1/save-recs"
+WC_API_URL = f"{base_url}/wp-json/wc/v3/products"
+
+
 
 CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
 CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")

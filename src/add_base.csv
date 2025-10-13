@@ -8,9 +8,9 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 14908,14908,Designer sets,13000.0,instock,visible,publish,,Gorgeous Oyster & Pearl Flora Necklace,necklace,oyster,other
 14905,14905,Designer sets,8999.0,instock,visible,publish,,Designer Oyster Flora Necklace,necklace,oyster,other
 14902,14902,"Baroque Pearls,Designer sets,Fancy Pearl Set",15990.0,instock,visible,publish,,Designer Baroque Pearl With Oyster Flower,necklace,oyster,other
-14899,14899,"Baroque Pearls,Plain White Pearl Set",7500.0,instock,visible,publish,,Attractive Baroque Pearl Square,necklace,pearl,white
-14896,14896,Plain White Pearl Set,10900.0,instock,visible,publish,,Elegant Pearl Necklace,necklace,pearl,white
-14893,14893,"Designer sets,Plain White Pearl Set",,instock,visible,publish,,Classy Pearl & Emerald Beautiful Necklace,necklace,emerald,white
+14899,14899,"Baroque Pearls,Plain White Pearl Set",7500.0,instock,visible,publish,,Attractive Baroque Pearl Square,necklace,pearl,other
+14896,14896,Plain White Pearl Set,10900.0,instock,visible,publish,,Elegant Pearl Necklace,necklace,pearl,other
+14893,14893,"Designer sets,Plain White Pearl Set",,instock,visible,publish,,Classy Pearl & Emerald Beautiful Necklace,necklace,emerald,other
 14890,14890,Single Line Pearl Set,3900.0,instock,visible,publish,,Designer Pearl Necklace,necklace,pearl,other
 14887,14887,Single Line Pearl Set,,instock,visible,publish,,Stunning Pearl Necklace Set,necklace,pearl,other
 14884,14884,Single Line Pearl Set,3900.0,instock,visible,publish,,Classy Pearl Necklace,necklace,pearl,other
@@ -29,41 +29,41 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 14845,14845,Plain Black Pearl Set,6500.0,instock,visible,publish,,Black Grading Pearl Necklace,necklace,pearl,black
 14842,14842,Long Pearl Set,15500.0,instock,visible,publish,,Elegant Pearl & Sapphire Necklace,necklace,sapphire,other
 14839,14839,Long Pearl Set,15500.0,instock,visible,publish,,Classy Coral & Pearl Long Necklace,necklace,coral,other
-14836,14836,Plain White Pearl Set,9000.0,instock,visible,publish,,Gorgeous Multi Colour Pearl Necklace,necklace,pearl,white
-14833,14833,Plain White Pearl Set,6900.0,instock,visible,publish,,Adorable Premium Looking Pearl Necklace,necklace,pearl,white
+14836,14836,Plain White Pearl Set,9000.0,instock,visible,publish,,Gorgeous Multi Colour Pearl Necklace,necklace,pearl,other
+14833,14833,Plain White Pearl Set,6900.0,instock,visible,publish,,Adorable Premium Looking Pearl Necklace,necklace,pearl,other
 14830,14830,"Long Pearl Set,Luxury Pearl Set",29000.0,instock,visible,publish,,Gorgeous Multilayered Long Pearl Necklace,necklace,pearl,other
 14827,14827,Plain Pink Pearl Set,11900.0,instock,visible,publish,,Gorgeous Round Pearl Long Necklace,necklace,pearl,pink
-14824,14824,Plain White Pearl Set,8900.0,instock,visible,publish,,Beautiful Oval Multi Colour Necklace,necklace,pearl,white
+14824,14824,Plain White Pearl Set,8900.0,instock,visible,publish,,Beautiful Oval Multi Colour Necklace,necklace,pearl,other
 14821,14821,Plain Pink Pearl Set,4500.0,instock,visible,publish,,Plain Pink Pearl Necklace,necklace,pearl,pink
 14818,14818,Long Pearl Set,15500.0,instock,visible,publish,,Classy Pink Pearl Long Necklace,necklace,pearl,pink
 14815,14815,"Long Pearl Set,Luxury Pearl Set",24990.0,instock,visible,publish,,Multilayers Long Pearl Designer Necklace,necklace,pearl,other
 14812,14812,"Plain Pink Pearl Set,Plain White Pearl Set",7500.0,instock,visible,publish,,Elegant White & Pink Pearl Necklace,necklace,pearl,pink
 14809,14809,"Exclusive Pearls Set,Plain Pink Pearl Set,Plain White Pearl Set",11500.0,instock,visible,publish,,Exclusive Pearl Necklace,necklace,pearl,pink
-14806,14806,"Long Pearl Set,Plain White Pearl Set",24000.0,instock,visible,publish,,Stunning Long Pearl Necklace,necklace,pearl,white
+14806,14806,"Long Pearl Set,Plain White Pearl Set",24000.0,instock,visible,publish,,Stunning Long Pearl Necklace,necklace,pearl,other
 14803,14803,"Exclusive Pearls Set,Plain Pink Pearl Set,Plain White Pearl Set",8000.0,instock,visible,publish,,Elegant Pearl Necklace White & Pink,necklace,pearl,pink
-14800,14800,"Long Pearl Set,Plain White Pearl Set",19000.0,instock,visible,publish,,Designer Oval & Flat Mix Long Pearl Necklace,necklace,pearl,white
+14800,14800,"Long Pearl Set,Plain White Pearl Set",19000.0,instock,visible,publish,,Designer Oval & Flat Mix Long Pearl Necklace,necklace,pearl,other
 14797,14797,Pearl Bracelet,1900.0,instock,visible,publish,,Designer Pearl Drop Bracelet,bracelet,pearl,other
 14794,14794,Pearl Bracelet,1700.0,instock,visible,publish,,Designer Pearl Pink Bracelet,bracelet,pearl,pink
-14791,14791,Pearl Studs Earrings,1600.0,instock,visible,publish,,Designer Oyster Shell & Pearl Studs,earrings,oyster,other
-14788,14788,Pearl Studs Earrings,700.0,instock,visible,publish,,White Pearl Studs,earrings,pearl,white
-14785,14785,Pearl Studs Earrings,1900.0,instock,visible,publish,,Gray Pearl Studs Big,earrings,pearl,gray
-14782,14782,Pearl Studs Earrings,1500.0,instock,visible,publish,,Brown Pearl Studs,earrings,pearl,brown
-14779,14779,Pearl Studs Earrings,1400.0,instock,visible,publish,,Golden Pearl Studs,earrings,gold,gold
-14776,14776,Pearl Studs Earrings,1500.0,instock,visible,publish,,Black Pearl Studs Big,earrings,pearl,black
+14791,14791,Pearl Studs Earrings,1600.0,instock,visible,publish,,Designer Oyster Shell & Pearl Studs,studs,oyster,other
+14788,14788,Pearl Studs Earrings,700.0,instock,visible,publish,,White Pearl Studs,studs,pearl,other
+14785,14785,Pearl Studs Earrings,1900.0,instock,visible,publish,,Gray Pearl Studs Big,studs,pearl,gray
+14782,14782,Pearl Studs Earrings,1500.0,instock,visible,publish,,Brown Pearl Studs,studs,pearl,brown
+14779,14779,Pearl Studs Earrings,1400.0,instock,visible,publish,,Golden Pearl Studs,studs,gold,gold
+14776,14776,Pearl Studs Earrings,1500.0,instock,visible,publish,,Black Pearl Studs Big,studs,pearl,black
 14773,14773,"Plain Pink Pearl Set,Plain White Pearl Set",11000.0,instock,visible,publish,,Most Lustrous White & Pink Necklace,necklace,pearl,pink
 14770,14770,"Plain Pink Pearl Set,Plain White Pearl Set",9000.0,instock,visible,publish,,Designer Round Pearl Grading White & Pink Mix,necklace,pearl,pink
-14767,14767,Pearl Studs Earrings,1200.0,instock,visible,publish,,Light Pink Plain Pearl Studs,earrings,pearl,pink
+14767,14767,Pearl Studs Earrings,1200.0,instock,visible,publish,,Light Pink Plain Pearl Studs,studs,pearl,pink
 14764,14764,"Plain Pink Pearl Set,Plain White Pearl Set",3400.0,instock,visible,publish,,Classy White & Pink Mix Pearl Set,necklace,pearl,pink
 14761,14761,"Plain Pink Pearl Set,Plain White Pearl Set",8500.0,instock,visible,publish,,Designer Shading Pearl Necklace Lighter To Darker,necklace,pearl,pink
 14758,14758,Plain Pink Pearl Set,5500.0,instock,visible,publish,,Attractive Pink Pearl Grading Necklace,necklace,pearl,pink
 14755,14755,Plain Pink Pearl Set,6999.0,instock,visible,publish,,Beautiful Pink Pearl Necklace,necklace,pearl,pink
-14752,14752,"Baroque Pearls,Plain White Pearl Set",24000.0,instock,visible,publish,,Stunning Baroque Pearl Necklace 20-25mm,necklace,pearl,white
-14749,14749,Plain White Pearl Set,13000.0,instock,visible,publish,,Royal Round Pearl 12mm Necklace,necklace,pearl,white
-14746,14746,Plain White Pearl Set,7999.0,instock,visible,publish,,Stunning Oval Pearl Grading Two Line,necklace,pearl,white
-14743,14743,Plain White Pearl Set,2500.0,instock,visible,publish,,Beautiful Oval Pearl Necklace,necklace,pearl,white
-14740,14740,Plain White Pearl Set,2999.0,instock,visible,publish,,Classy Plain Pearl Necklace,necklace,pearl,white
-14737,14737,Plain White Pearl Set,9000.0,instock,visible,publish,,Gorgeous Round Pearl Two Line Necklace,necklace,pearl,white
-14734,14734,Plain White Pearl Set,5500.0,instock,visible,publish,,Classy Round Pearl 6mm,necklace,pearl,white
+14752,14752,"Baroque Pearls,Plain White Pearl Set",24000.0,instock,visible,publish,,Stunning Baroque Pearl Necklace 20-25mm,necklace,pearl,other
+14749,14749,Plain White Pearl Set,13000.0,instock,visible,publish,,Royal Round Pearl 12mm Necklace,necklace,pearl,other
+14746,14746,Plain White Pearl Set,7999.0,instock,visible,publish,,Stunning Oval Pearl Grading Two Line,necklace,pearl,other
+14743,14743,Plain White Pearl Set,2500.0,instock,visible,publish,,Beautiful Oval Pearl Necklace,necklace,pearl,other
+14740,14740,Plain White Pearl Set,2999.0,instock,visible,publish,,Classy Plain Pearl Necklace,necklace,pearl,other
+14737,14737,Plain White Pearl Set,9000.0,instock,visible,publish,,Gorgeous Round Pearl Two Line Necklace,necklace,pearl,other
+14734,14734,Plain White Pearl Set,5500.0,instock,visible,publish,,Classy Round Pearl 6mm,necklace,pearl,other
 14728,14728,Three Line Pearl Necklace set,13500.0,instock,visible,publish,,Classy Ruby Pearl Necklace,necklace,ruby,other
 14725,14725,"Choker Set,Luxury Pearl Set",17900.0,instock,visible,publish,,Luxury Broad Choker Pearl Necklace Set,necklace,pearl,other
 14719,14719,"Choker Set,Luxury Pearl Set",13900.0,instock,visible,publish,,Stunning Broad Pearl Necklace,necklace,pearl,other
@@ -116,8 +116,8 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 14540,14540,"Double Line Pearl Set,Others",6100.0,instock,visible,publish,,Classy Pearl Necklace Set,necklace,pearl,other
 14537,14537,Double Line Pearl Set,4900.0,instock,visible,publish,,Designer Pearl Necklace Set,necklace,pearl,other
 10298,10298,Pearl Hanging,1299.0,instock,visible,publish,,Sparkling Stylish Pearl Hangings,earrings,pearl,other
-10297,10297,Pearl Studs Earrings,1299.0,instock,visible,publish,,Designer Pearl Earrings,earrings,pearl,other
-10294,10294,Pearl Studs Earrings,1299.0,instock,visible,publish,,Beautiful Pearl Earrings,earrings,pearl,other
+10297,10297,Pearl Studs Earrings,1299.0,instock,visible,publish,,Designer Pearl Earrings,studs,pearl,other
+10294,10294,Pearl Studs Earrings,1299.0,instock,visible,publish,,Beautiful Pearl Earrings,studs,pearl,other
 10293,10293,Pearl Hanging,1249.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
 10292,10292,Pearl Hanging,1349.0,instock,visible,publish,,Sparkling Wings Pink Pearl Hangings,earrings,pearl,pink
 10291,10291,Pearl Hanging,1249.0,instock,visible,publish,,Attractive Pink Pearl hangings,earrings,pearl,pink
@@ -125,13 +125,13 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 10289,10289,Pearl Hanging,1249.0,instock,visible,publish,,Stylish Leaf Pearl Hangings,earrings,pearl,other
 10288,10288,Pearl Hanging,1249.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
 10286,10286,Pearl Hanging,1299.0,instock,visible,publish,,Lovely Heart Pearl Hangings ?,earrings,pearl,other
-10222,10222,"Pearl Hanging,Pearl Studs Earrings",1249.0,instock,visible,publish,,Ethnic Leaf Style Designer Pearl Earrings,earrings,pearl,other
-10213,10213,Pearl Studs Earrings,1299.0,instock,visible,publish,,Stylish Pink Pearl Earrings,earrings,pearl,pink
+10222,10222,"Pearl Hanging,Pearl Studs Earrings",1249.0,instock,visible,publish,,Ethnic Leaf Style Designer Pearl Earrings,studs,pearl,other
+10213,10213,Pearl Studs Earrings,1299.0,instock,visible,publish,,Stylish Pink Pearl Earrings,studs,pearl,pink
 10211,10211,Pearl Hanging,1299.0,instock,visible,publish,,Classy Pearl Hangings,earrings,pearl,other
 10208,10208,Pearl Hanging,1249.0,instock,visible,publish,,Cute Pearl Hangings,earrings,pearl,other
 10207,10207,Pearl Hanging,1299.0,instock,visible,publish,,Sparkling Stylish Pearl Hangings,earrings,pearl,other
-10206,10206,Pearl Studs Earrings,1299.0,instock,visible,publish,,Designer Pearl Earrings,earrings,pearl,other
-10205,10205,Pearl Studs Earrings,1299.0,instock,visible,publish,,Beautiful Pearl Earrings,earrings,pearl,other
+10206,10206,Pearl Studs Earrings,1299.0,instock,visible,publish,,Designer Pearl Earrings,studs,pearl,other
+10205,10205,Pearl Studs Earrings,1299.0,instock,visible,publish,,Beautiful Pearl Earrings,studs,pearl,other
 10204,10204,Pearl Hanging,1249.0,instock,visible,publish,,Sparkling Pearl Hangings,earrings,pearl,other
 10202,10202,Pearl Hanging,1249.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
 10196,10196,Pearl Hanging,1349.0,instock,visible,publish,,Sparkling Wings Pink Pearl Hangings,earrings,pearl,pink
@@ -141,25 +141,25 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 10192,10192,Pearl Hanging,1249.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
 10191,10191,Pearl Hanging,1149.0,instock,visible,publish,,Stylish Pearl Hangings,earrings,pearl,other
 10190,10190,Pearl Hanging,1199.0,instock,visible,publish,,Cute Little Heart Pearl Hangings ?,earrings,pearl,other
-10189,10189,Pearl Studs Earrings,1249.0,instock,visible,publish,,Ethnic Leaf Style Designer Pearl Earrings,earrings,pearl,other
-10188,10188,Pearl Studs Earrings,1299.0,instock,visible,publish,,Stylish Pink Pearl Studs,earrings,pearl,pink
-10187,10187,Pearl Studs Earrings,1399.0,instock,visible,publish,,Beautiful Pearl Studs,earrings,pearl,other
+10189,10189,Pearl Studs Earrings,1249.0,instock,visible,publish,,Ethnic Leaf Style Designer Pearl Earrings,studs,pearl,other
+10188,10188,Pearl Studs Earrings,1299.0,instock,visible,publish,,Stylish Pink Pearl Studs,studs,pearl,pink
+10187,10187,Pearl Studs Earrings,1399.0,instock,visible,publish,,Beautiful Pearl Studs,studs,pearl,other
 10154,10154,Pearl Hanging,1299.0,instock,visible,publish,,Classy Pearl Hangings,earrings,pearl,other
 10122,10122,Plain Black Pearl Set,9000.0,instock,visible,publish,,Elegant Black Pearl Drop Necklace,necklace,pearl,black
-10121,10121,"Plain Grey Pearl Set,Plain White Pearl Set",7900.0,instock,visible,publish,,Elegant Gray Pearl Necklace,necklace,pearl,white
-10120,10120,"Plain Grey Pearl Set,Plain White Pearl Set",3900.0,instock,visible,publish,,Simple Gray Pearl Necklace,necklace,pearl,white
+10121,10121,"Plain Grey Pearl Set,Plain White Pearl Set",7900.0,instock,visible,publish,,Elegant Gray Pearl Necklace,necklace,pearl,gray
+10120,10120,"Plain Grey Pearl Set,Plain White Pearl Set",3900.0,instock,visible,publish,,Simple Gray Pearl Necklace,necklace,pearl,gray
 10119,10119,Emerald,16000.0,instock,visible,publish,,Emerald Tumble,stone,emerald,other
 10117,10117,Ruby,,instock,visible,publish,,Gorgeous Blue Sapphire & Pearl Necklace,necklace,ruby,blue
 10116,10116,"Ruby,Semi-Precious Stones",12700.0,instock,visible,publish,,Stunning Amethyst Plain Necklace,necklace,ruby,other
 10109,10109,"Ruby,Semi-Precious Stones",16000.0,instock,visible,publish,,Rose Quartz Stones,stone,ruby,other
 10108,10108,Emerald,24000.0,instock,visible,publish,,Beautiful Emerald & Pearl Necklace,necklace,emerald,other
 10107,10107,"Designer sets,Exclusive Pearls Set,Fancy Pearls Sets,Plain Pink Pearl Set",19000.0,instock,visible,publish,,Magnificent Flora Pearl & Oyster Necklace Set,necklace,oyster,pink
-10106,10106,"Exclusive Pearls Set,Long Pearl Set,Plain White Pearl Set",,instock,visible,publish,,Luxurious Pearl Necklace (AAA),necklace,pearl,white
-10105,10105,"Baroque Pearls,Exclusive Pearls Set,Luxury Pearl Set,Plain White Pearl Set,Single Line Pearl Set",13000.0,instock,visible,publish,,Stunning Baroque Pearl Necklace,necklace,pearl,white
-10103,10103,Plain White Pearl Set,4990.0,instock,visible,publish,,Classic Grading Oval Pearl Necklace,necklace,pearl,white
+10106,10106,"Exclusive Pearls Set,Long Pearl Set,Plain White Pearl Set",,instock,visible,publish,,Luxurious Pearl Necklace (AAA),necklace,pearl,other
+10105,10105,"Baroque Pearls,Exclusive Pearls Set,Luxury Pearl Set,Plain White Pearl Set,Single Line Pearl Set",13000.0,instock,visible,publish,,Stunning Baroque Pearl Necklace,necklace,pearl,other
+10103,10103,Plain White Pearl Set,4990.0,instock,visible,publish,,Classic Grading Oval Pearl Necklace,necklace,pearl,other
 10101,10101,Plain Pink Pearl Set,5000.0,instock,visible,publish,,Good-Looking Simple Pink Pearl Necklace,necklace,pearl,pink
 10100,10100,Plain Pink Pearl Set,2900.0,instock,visible,publish,,Delightful Pink Pearl Simple Necklace,necklace,pearl,pink
-10099,10099,Plain White Pearl Set,8001.0,instock,visible,publish,,Classy Rice Pearl Long Necklace,necklace,pearl,white
+10099,10099,Plain White Pearl Set,8001.0,instock,visible,publish,,Classy Rice Pearl Long Necklace,necklace,pearl,other
 10090,10090,Double Line Pearl Set,8999.0,instock,visible,publish,,Premium Quality Small Pearls Simple Necklace,necklace,pearl,other
 10091,10091,Double Line Pearl Set,5499.0,instock,visible,publish,,Gorgeous Pearl Necklace,necklace,pearl,other
 10075,10075,Double Line Pearl Set,6199.0,instock,visible,publish,,Designer Pink Pearl Necklace,necklace,pearl,pink
@@ -191,7 +191,7 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 9215,9215,"Single Line Pearl Set,Three Line Pearl Necklace set",13000.0,instock,visible,publish,,Rice Pearl Long Necklace Set,necklace,pearl,other
 9212,9212,Double Line Pearl Set,4850.0,instock,visible,publish,,Original Pearl Necklace Set,necklace,pearl,other
 9206,9206,Double Line Pearl Set,4750.0,instock,visible,publish,,Original Pearl Necklace Set,necklace,pearl,other
-9175,9175,"Baroque Pearls,Luxury Pearl Set,Plain White Pearl Set",14500.0,instock,visible,publish,,Luxurious Baroque Pearl Coin Shape,necklace,pearl,white
+9175,9175,"Baroque Pearls,Luxury Pearl Set,Plain White Pearl Set",14500.0,instock,visible,publish,,Luxurious Baroque Pearl Coin Shape,necklace,pearl,other
 9168,9168,Rani Haar,17999.0,instock,visible,publish,,Designer Pearl Long Rani Haar Set,necklace,pearl,other
 9167,9167,Rani Haar,15500.0,instock,visible,publish,,Sparkling Pastel Color long Pearl Necklace,necklace,pearl,other
 9159,9159,Rani Haar,12900.0,instock,visible,publish,,Designer Ruby Pearl Long Rani Haar,necklace,ruby,other
@@ -225,7 +225,7 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 8368,8368,Double Line Pearl Set,7599.0,instock,visible,publish,,Classy Pearl Necklace Set,necklace,pearl,other
 8366,8366,Three Line Pearl Necklace set,15500.0,instock,visible,publish,,Exclusive Temple Jewellery Pearl Necklace,necklace,pearl,other
 8307,8307,Double Line Pearl Set,4700.0,instock,visible,publish,,Designer Pearl Necklace Set,necklace,pearl,other
-8114,8114,Pearl Studs Earrings,1500.0,instock,visible,publish,,Plain Pearl Studs Original Big Size,earrings,pearl,other
+8114,8114,Pearl Studs Earrings,1500.0,instock,visible,publish,,Plain Pearl Studs Original Big Size,studs,pearl,other
 7781,7781,Pearl Bangle,5899.0,instock,visible,publish,skp1525mj-2,Beautiful Pearl Bangle Premium 2.4 size,bangle,pearl,other
 7775,7775,Three Line Pearl Necklace set,9900.0,instock,visible,publish,,Sparkling 3 Layered Pearl Necklace,necklace,pearl,other
 7774,7774,"Broch Set,Exclusive Pearls Set,Luxury Pearl Set",16500.0,instock,visible,publish,,Exclusive Original Pearl & Blue Sapphire Brooch Set,necklace,sapphire,blue
@@ -236,27 +236,27 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 7767,7767,Single Line Pearl Set,2450.0,instock,visible,publish,,Simple Pearl Set One Row,necklace,pearl,other
 7759,7759,Single Line Pearl Set,2650.0,instock,visible,publish,,Sparkling Pearl Set,necklace,pearl,other
 12762,12762,Pearl Bangle,5899.0,instock,visible,publish,skp1525mj-1,Beautiful Pearl Bangle Premium 2.8 size,bangle,pearl,other
-7407,7407,Others,0.0,instock,visible,publish,,Plain Pearl Tops,others,pearl,other
+7407,7407,Others,0.0,instock,visible,publish,,Plain Pearl Tops,studs,pearl,other
 7392,7392,Others,,instock,visible,publish,,916 Gold Pearl Earrings,earrings,gold,gold
 7391,7391,Pearl Hanging,2000.0,instock,visible,publish,,Beautiful Oyster & Pearl Flower Hanging,earrings,oyster,other
 7390,7390,Pearl Hanging,1900.0,instock,visible,publish,,Beautiful Oyster & Pearl Hanging,earrings,oyster,other
-7388,7388,"Pearl Hanging,Precious Stones Studs",2600.0,instock,visible,publish,,Original Pearl & Ruby Long Bali,earrings,ruby,other
-7384,7384,"Pearl Hanging,Precious Stones Studs",2700.0,instock,visible,publish,,Attractive Pearl Chand Bali,earrings,pearl,other
-7381,7381,"Pearl Hanging,Precious Stones Studs",2600.0,instock,visible,publish,,Designer Pearl Chand Bali,earrings,pearl,other
-7360,7360,Pearl Studs Earrings,1399.0,instock,visible,publish,,Designer Pearl Studs,earrings,pearl,other
+7388,7388,"Pearl Hanging,Precious Stones Studs",2600.0,instock,visible,publish,,Original Pearl & Ruby Long Bali,studs,ruby,other
+7384,7384,"Pearl Hanging,Precious Stones Studs",2700.0,instock,visible,publish,,Attractive Pearl Chand Bali,studs,pearl,other
+7381,7381,"Pearl Hanging,Precious Stones Studs",2600.0,instock,visible,publish,,Designer Pearl Chand Bali,studs,pearl,other
+7360,7360,Pearl Studs Earrings,1399.0,instock,visible,publish,,Designer Pearl Studs,studs,pearl,other
 7357,7357,Pearl Hanging,1399.0,instock,visible,publish,,Sparkling Pearl Hanging,earrings,pearl,other
-7351,7351,Others,1299.0,instock,visible,publish,,Classic Pink Pearl Studs,earrings,pearl,pink
+7351,7351,Others,1299.0,instock,visible,publish,,Classic Pink Pearl Studs,studs,pearl,pink
 7343,7343,Others,1399.0,instock,visible,publish,,Sparkling Quen Pearl Hanging,earrings,pearl,other
-7342,7342,Pearl Studs Earrings,1399.0,instock,visible,publish,,Sparkling Original Pearl Studs ♣,earrings,pearl,other
-7337,7337,Pearl Studs Earrings,1099.0,instock,visible,publish,,Delightfull Pearl Studs,earrings,pearl,other
+7342,7342,Pearl Studs Earrings,1399.0,instock,visible,publish,,Sparkling Original Pearl Studs ♣,studs,pearl,other
+7337,7337,Pearl Studs Earrings,1099.0,instock,visible,publish,,Delightfull Pearl Studs,studs,pearl,other
 7336,7336,Pearl Hanging,1399.0,instock,visible,publish,,Sparkling Pearl Hanging,earrings,pearl,other
-7328,7328,Precious Stones Studs,1599.0,instock,visible,publish,,Designer Ruby & Pearl Studs,earrings,ruby,other
-7313,7313,Precious Stones Studs,1299.0,instock,visible,publish,,Designer Pearl And Ruby Studs,earrings,ruby,other
-7312,7312,Precious Stones Studs,1599.0,instock,visible,publish,,Designer Pearl & Ruby Studs,earrings,ruby,other
-7309,7309,Precious Stones Studs,1499.0,instock,visible,publish,,Pearl & Ruby Studs,earrings,ruby,other
-7308,7308,Precious Stones Studs,1499.0,instock,visible,publish,,Simple Pearl & Ruby Studs,earrings,ruby,other
-7305,7305,Precious Stones Studs,1199.0,instock,visible,publish,,Simple Ruby And Emerald Studs,earrings,emerald,other
-7303,7303,Precious Stones Studs,1400.0,instock,visible,publish,,Simple Pearl And Ruby Studs,earrings,ruby,other
+7328,7328,Precious Stones Studs,1599.0,instock,visible,publish,,Designer Ruby & Pearl Studs,studs,ruby,other
+7313,7313,Precious Stones Studs,1299.0,instock,visible,publish,,Designer Pearl And Ruby Studs,studs,ruby,other
+7312,7312,Precious Stones Studs,1599.0,instock,visible,publish,,Designer Pearl & Ruby Studs,studs,ruby,other
+7309,7309,Precious Stones Studs,1499.0,instock,visible,publish,,Pearl & Ruby Studs,studs,ruby,other
+7308,7308,Precious Stones Studs,1499.0,instock,visible,publish,,Simple Pearl & Ruby Studs,studs,ruby,other
+7305,7305,Precious Stones Studs,1199.0,instock,visible,publish,,Simple Ruby And Emerald Studs,studs,emerald,other
+7303,7303,Precious Stones Studs,1400.0,instock,visible,publish,,Simple Pearl And Ruby Studs,studs,ruby,other
 7299,7299,Others,3100.0,instock,visible,publish,,Exclusive Oyster Pearl Long Hanging,earrings,oyster,other
 7296,7296,Pearl Hanging,1999.0,instock,visible,publish,,Designer Oyster Pearl Hanging,earrings,oyster,other
 7295,7295,Pearl Hanging,1999.0,instock,visible,publish,,Beautiful Pink Pearl Oyster Hanging,earrings,oyster,pink
@@ -265,12 +265,12 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 7111,7111,"Choker Set,Exclusive Pearls Set,Luxury Pearl Set",14500.0,instock,visible,publish,,Premium Pearl Jali Choker Set,necklace,pearl,other
 7108,7108,Choker Set,8500.0,instock,visible,publish,,Classy Pearl Choker,necklace,pearl,other
 7107,7107,Choker Set,7900.0,instock,visible,publish,,Sparkling Pearl Choker Set,necklace,pearl,other
-6631,6631,"Others,Pearl Studs Earrings",1150.0,instock,visible,publish,,Classy Pink Button Tops Big,earrings,pearl,pink
+6631,6631,"Others,Pearl Studs Earrings",1150.0,instock,visible,publish,,Classy Pink Button Tops Big,studs,pearl,pink
 6399,6399,"Exclusive Pearls Set,Three Line Pearl Necklace set",12500.0,instock,visible,publish,,Exclusive Pink Peacock Necklace,necklace,pearl,pink
-6394,6394,Pearl Studs Earrings,900.0,instock,visible,publish,,Black Pearl Tops,earrings,pearl,black
+6394,6394,Pearl Studs Earrings,900.0,instock,visible,publish,,Black Pearl Tops,studs,pearl,black
 6365,6365,Three Line Pearl Necklace set,11500.0,instock,visible,publish,,Beautiful Peacock Necklace,necklace,pearl,other
 6361,6361,Pearl Bracelet,5100.0,instock,visible,publish,,Classy Round Pearl Bracelet 10mm,bracelet,pearl,other
-6358,6358,Plain White Pearl Set,10500.0,instock,visible,publish,,Classy White Round Pearl 10mm,necklace,pearl,white
+6358,6358,Plain White Pearl Set,10500.0,instock,visible,publish,,Classy White Round Pearl 10mm,necklace,pearl,other
 6357,6357,Plain Black Pearl Set,10800.0,instock,visible,publish,,Black Pearl Round 7-8mm,necklace,pearl,black
 6354,6354,Plain Black Pearl Set,16100.0,instock,visible,publish,,Black Pearl Round 10mm,necklace,pearl,black
 6237,6237,Rani Haar,18999.0,instock,visible,publish,,Best Pearl & Multi Stone Rani Haar,necklace,pearl,other
@@ -278,12 +278,12 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 12742,12742,Necklace Set,7500.0,instock,visible,publish,,Classy Pearl & Blue Sapphire Necklace,necklace,sapphire,blue
 6213,6213,Necklace Set,7000.0,instock,visible,publish,,Classy Pearl & Ruby Necklace,necklace,ruby,other
 6141,6141,92.5 Silver Pearl Jewellery,3400.0,instock,visible,publish,,92.5 Silver One Pearl Chain Black,necklace,silver,black
-6139,6139,92.5 Silver Pearl Jewellery,2999.0,instock,visible,publish,,92.5 Silver Pearl Chain White,necklace,silver,white
+6139,6139,92.5 Silver Pearl Jewellery,2999.0,instock,visible,publish,,92.5 Silver Pearl Chain White,necklace,silver,other
 6073,6073,Designer sets,8000.0,instock,visible,publish,,Classy Western Wear Necklace,necklace,others,other
 6072,6072,Designer sets,8100.0,instock,visible,publish,,Exclusive Pearl Oyster Necklace,necklace,oyster,other
 5994,5994,Plain Pink Pearl Set,3400.0,instock,visible,publish,,Beautiful Pink Pearl Necklace,necklace,pearl,pink
-5990,5990,Plain White Pearl Set,5600.0,instock,visible,publish,,Simple Pearl Set Three Line Half Round Shape,necklace,pearl,white
-5986,5986,Plain White Pearl Set,5499.0,instock,visible,publish,,Simple Plain Pearl Three Line Oval Shape,necklace,pearl,white
+5990,5990,Plain White Pearl Set,5600.0,instock,visible,publish,,Simple Pearl Set Three Line Half Round Shape,necklace,pearl,other
+5986,5986,Plain White Pearl Set,5499.0,instock,visible,publish,,Simple Plain Pearl Three Line Oval Shape,necklace,pearl,other
 5985,5985,"Plain Pink Pearl Set,Plain White Pearl Set",4500.0,instock,visible,publish,,Exotic Pearl Rainbow Set,necklace,pearl,pink
 5984,5984,"Plain Pink Pearl Set,Plain White Pearl Set",5100.0,instock,visible,publish,,Best Pearl Necklace Set,necklace,pearl,pink
 5983,5983,"Plain Pink Pearl Set,Plain White Pearl Set",4500.0,instock,visible,publish,,Simple Pearl Necklace White & Pink,necklace,pearl,pink
@@ -295,15 +295,15 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 5597,5597,Choker Set,7499.0,instock,visible,publish,,Designer Pearl Choker Green,necklace,pearl,green
 5580,5580,Choker Set,5600.0,instock,visible,publish,,Classy Three line choker,necklace,others,other
 5578,5578,Choker Set,7699.0,instock,visible,publish,,Original Pearl Choker,necklace,pearl,other
-5508,5508,92.5 Silver Pearl Jewellery,3400.0,instock,visible,publish,,92.5 Silver One Pearl Chain White,necklace,silver,white
+5508,5508,92.5 Silver Pearl Jewellery,3400.0,instock,visible,publish,,92.5 Silver One Pearl Chain White,necklace,silver,other
 5498,5498,Pearl Bangle,5899.0,instock,visible,publish,skp1525mj,Beautiful Pearl Bangle Premium 2.6 size,bangle,pearl,other
-5494,5494,"Pearl Studs Earrings,Precious Stones Studs",1100.0,instock,visible,publish,,Simple Ruby Studs,earrings,ruby,other
-5493,5493,"Pearl Studs Earrings,Precious Stones Studs",1700.0,instock,visible,publish,,Ruby Pearl Studs,earrings,ruby,other
-5485,5485,"Pearl Studs Earrings,Precious Stones Studs",3400.0,instock,visible,publish,,Best Pearl Premium Tops,earrings,pearl,other
-5478,5478,"Pearl Studs Earrings,Precious Stones Studs",1450.0,instock,visible,publish,,Pearl And Coral Studs,earrings,coral,other
+5494,5494,"Pearl Studs Earrings,Precious Stones Studs",1100.0,instock,visible,publish,,Simple Ruby Studs,studs,ruby,other
+5493,5493,"Pearl Studs Earrings,Precious Stones Studs",1700.0,instock,visible,publish,,Ruby Pearl Studs,studs,ruby,other
+5485,5485,"Pearl Studs Earrings,Precious Stones Studs",3400.0,instock,visible,publish,,Best Pearl Premium Tops,studs,pearl,other
+5478,5478,"Pearl Studs Earrings,Precious Stones Studs",1450.0,instock,visible,publish,,Pearl And Coral Studs,studs,coral,other
 5085,5085,Plain Pink Pearl Set,16900.0,instock,visible,publish,,Pink Round Pearl Necklace 14MM,necklace,pearl,pink
 5082,5082,Plain Pink Pearl Set,12600.0,instock,visible,publish,,Gorgeous Pink Round Necklace 12MM,necklace,pearl,pink
-5077,5077,"Exclusive Pearls Set,Plain White Pearl Set,Simple Pearl Necklace Set",11000.0,instock,visible,publish,,Beautiful Pearl & Ruby Necklace,necklace,ruby,white
+5077,5077,"Exclusive Pearls Set,Plain White Pearl Set,Simple Pearl Necklace Set",11000.0,instock,visible,publish,,Beautiful Pearl & Ruby Necklace,necklace,ruby,other
 5051,5051,Pearl Bracelet,2500.0,instock,visible,publish,,Round Grading Pearl Bracelet,bracelet,pearl,other
 5050,5050,Pearl Bangle,2900.0,instock,visible,publish,,Button Pearl Bracelet,bracelet,pearl,other
 5049,5049,Pearl Bracelet,4500.0,instock,visible,publish,,Oyster Pearl Pendent Bracelet,bracelet,oyster,other
@@ -324,17 +324,17 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 4637,4637,Pearl Bangle,2399.0,instock,visible,publish,,Pearl Bangle,bangle,pearl,other
 4636,4636,Pearl Bangle,2600.0,instock,visible,publish,,Pearl Bangle,bangle,pearl,other
 4601,4601,"Long Pearl Set,Luxury Pearl Set,Plain Pink Pearl Set",16900.0,instock,visible,publish,,Original Pearl Pink Long Necklace,necklace,pearl,pink
-4600,4600,"Long Pearl Set,Plain White Pearl Set",15999.0,instock,visible,publish,,Original Pearl Long Necklace,necklace,pearl,white
-4599,4599,"Long Pearl Set,Plain White Pearl Set",15600.0,instock,visible,publish,,Original Pearl Long Necklace,necklace,pearl,white
+4600,4600,"Long Pearl Set,Plain White Pearl Set",15999.0,instock,visible,publish,,Original Pearl Long Necklace,necklace,pearl,other
+4599,4599,"Long Pearl Set,Plain White Pearl Set",15600.0,instock,visible,publish,,Original Pearl Long Necklace,necklace,pearl,other
 4505,4505,"Luxury Pearl Set,Plain Black Pearl Set",11000.0,instock,visible,publish,,Classy Jali Pearl Necklace Black,necklace,pearl,black
-4504,4504,"Exclusive Pearls Set,Luxury Pearl Set,Plain Pearl Sets,Plain White Pearl Set",10000.0,instock,visible,publish,,Premium Design Jali Pearl Necklace,necklace,pearl,white
-4361,4361,"Luxury Pearl Set,Plain White Pearl Set",14500.0,instock,visible,publish,,Premium Quality Round Grading Pearl,necklace,pearl,white
+4504,4504,"Exclusive Pearls Set,Luxury Pearl Set,Plain Pearl Sets,Plain White Pearl Set",10000.0,instock,visible,publish,,Premium Design Jali Pearl Necklace,necklace,pearl,other
+4361,4361,"Luxury Pearl Set,Plain White Pearl Set",14500.0,instock,visible,publish,,Premium Quality Round Grading Pearl,necklace,pearl,other
 4360,4360,"Long Pearl Set,Plain Pink Pearl Set,Plain White Pearl Set",16500.0,instock,visible,publish,,Beautiful Multi Layer Pearl Set,necklace,pearl,pink
 4356,4356,Others,3500.0,instock,visible,publish,,Pearl Choker Set,necklace,pearl,other
 4333,4333,Double Line Pearl Set,5499.0,instock,visible,publish,skp1125,Classy Original Pearl Set,necklace,pearl,other
-4194,4194,"Pearl Studs Earrings,Precious Stones Studs",1100.0,instock,visible,publish,,Original Pearls Studs,earrings,pearl,other
-4193,4193,"Pearl Studs Earrings,Precious Stones Studs",1450.0,instock,visible,publish,,Beautiful Pearl Emerald Studs,earrings,emerald,other
-4181,4181,"Pearl Studs Earrings,Precious Stones Studs",1400.0,instock,visible,publish,,Beautiful Pearl Studs,earrings,pearl,other
+4194,4194,"Pearl Studs Earrings,Precious Stones Studs",1100.0,instock,visible,publish,,Original Pearls Studs,studs,pearl,other
+4193,4193,"Pearl Studs Earrings,Precious Stones Studs",1450.0,instock,visible,publish,,Beautiful Pearl Emerald Studs,studs,emerald,other
+4181,4181,"Pearl Studs Earrings,Precious Stones Studs",1400.0,instock,visible,publish,,Beautiful Pearl Studs,studs,pearl,other
 4097,4097,Double Line Pearl Set,4999.0,instock,visible,publish,,Real Pearl Two Line Necklace,necklace,pearl,other
 3925,3925,Pearl Bangle,2400.0,instock,visible,publish,,Pearl Bangle,bangle,pearl,other
 3924,3924,Pearl Bangle,1800.0,instock,visible,publish,,Pearl Bangle,bangle,pearl,other
@@ -365,21 +365,21 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 3515,3515,"Plain Black Pearl Set,Plain Pearl Sets",14400.0,instock,visible,publish,,Twisted Rice Black Pearl,necklace,pearl,black
 3513,3513,"Plain Black Pearl Set,Plain Pearl Sets",4000.0,instock,visible,publish,,Round Pearl,necklace,pearl,black
 3510,3510,"Plain Black Pearl Set,Plain Pearl Sets",4900.0,instock,visible,publish,,Round Black Pearl,necklace,pearl,black
-3508,3508,"Plain Pearl Sets,Plain White Pearl Set",9990.0,instock,visible,publish,,Round Gradation Pearl,necklace,pearl,white
-3506,3506,"Plain Pearl Sets,Plain White Pearl Set",11000.0,instock,visible,publish,,Elegant Flat Designer Pearl Necklace,necklace,pearl,white
-3504,3504,"Plain Pearl Sets,Plain White Pearl Set",3900.0,instock,visible,publish,,Simple Design Pearl Set,necklace,pearl,white
-3502,3502,"Plain Pearl Sets,Plain White Pearl Set",4500.0,instock,visible,publish,,Simple 2 Row Pearl Set,necklace,pearl,white
-3500,3500,Plain White Pearl Set,11000.0,instock,visible,publish,,Round Pearl Knot Design,necklace,pearl,white
-3494,3494,"Plain Pearl Sets,Plain White Pearl Set",14000.0,instock,visible,publish,,Classy Round Pearl,necklace,pearl,white
-3488,3488,"Plain Pearl Sets,Plain White Pearl Set",10500.0,instock,visible,publish,,Two Layer Round Pearl,necklace,pearl,white
-3486,3486,"Plain Pearl Sets,Plain White Pearl Set",3200.0,instock,visible,publish,,Two Row Pearl Set,necklace,pearl,white
-3483,3483,"Others,Plain White Pearl Set",4800.0,instock,visible,publish,,Single Row Round Pearl,necklace,pearl,white
-3479,3479,"Plain Pearl Sets,Plain White Pearl Set",1890.0,instock,visible,publish,,Plain White Pearl Set,necklace,pearl,white
-3421,3421,"Plain Pearl Sets,Plain White Pearl Set",15100.0,instock,visible,publish,,Two Layered Royal Round Pearl,necklace,pearl,white
-3420,3420,"Plain Pearl Sets,Plain White Pearl Set",6500.0,instock,visible,publish,,10 MM White Round Pearl A Quality,necklace,pearl,white
+3508,3508,"Plain Pearl Sets,Plain White Pearl Set",9990.0,instock,visible,publish,,Round Gradation Pearl,necklace,pearl,other
+3506,3506,"Plain Pearl Sets,Plain White Pearl Set",11000.0,instock,visible,publish,,Elegant Flat Designer Pearl Necklace,necklace,pearl,other
+3504,3504,"Plain Pearl Sets,Plain White Pearl Set",3900.0,instock,visible,publish,,Simple Design Pearl Set,necklace,pearl,other
+3502,3502,"Plain Pearl Sets,Plain White Pearl Set",4500.0,instock,visible,publish,,Simple 2 Row Pearl Set,necklace,pearl,other
+3500,3500,Plain White Pearl Set,11000.0,instock,visible,publish,,Round Pearl Knot Design,necklace,pearl,other
+3494,3494,"Plain Pearl Sets,Plain White Pearl Set",14000.0,instock,visible,publish,,Classy Round Pearl,necklace,pearl,other
+3488,3488,"Plain Pearl Sets,Plain White Pearl Set",10500.0,instock,visible,publish,,Two Layer Round Pearl,necklace,pearl,other
+3486,3486,"Plain Pearl Sets,Plain White Pearl Set",3200.0,instock,visible,publish,,Two Row Pearl Set,necklace,pearl,other
+3483,3483,"Others,Plain White Pearl Set",4800.0,instock,visible,publish,,Single Row Round Pearl,necklace,pearl,other
+3479,3479,"Plain Pearl Sets,Plain White Pearl Set",1890.0,instock,visible,publish,,Plain White Pearl Set,necklace,pearl,other
+3421,3421,"Plain Pearl Sets,Plain White Pearl Set",15100.0,instock,visible,publish,,Two Layered Royal Round Pearl,necklace,pearl,other
+3420,3420,"Plain Pearl Sets,Plain White Pearl Set",6500.0,instock,visible,publish,,10 MM White Round Pearl A Quality,necklace,pearl,other
 3419,3419,"Plain Pearl Sets,Plain White Pearl Set",10500.0,instock,visible,publish,,Designer White Pink Pearl Set,necklace,pearl,pink
-3418,3418,"Plain Pearl Sets,Plain White Pearl Set",17200.0,instock,visible,publish,,Jali Work Oval Pearl Necklace,necklace,pearl,white
-12707,12707,"Plain Pearl Sets,Plain White Pearl Set",8900.0,instock,visible,publish,,Seed Pearl Twister Necklace,necklace,pearl,white
+3418,3418,"Plain Pearl Sets,Plain White Pearl Set",17200.0,instock,visible,publish,,Jali Work Oval Pearl Necklace,necklace,pearl,other
+12707,12707,"Plain Pearl Sets,Plain White Pearl Set",8900.0,instock,visible,publish,,Seed Pearl Twister Necklace,necklace,pearl,other
 3404,3404,"Plain Pearl Sets,Plain White Pearl Set",7800.0,instock,visible,publish,,Designer White Pink Pearl Set,necklace,pearl,pink
 3388,3388,"Ruby,Semi-Precious Stones",,instock,visible,publish,,Luxurious Ruby,stone,ruby,other
 3387,3387,"Ruby,Semi-Precious Stones",,instock,visible,publish,,Original Ruby and Pearl Drop Set,necklace,ruby,other
@@ -390,15 +390,15 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 3373,3373,"Emerald,Semi-Precious Stones",,instock,visible,publish,,Real Emerald Stone,stone,emerald,other
 3372,3372,"Emerald,Semi-Precious Stones",,instock,visible,publish,,Original Precious Emerald Drops (awaze),stone,emerald,other
 3359,3359,"Emerald,Semi-Precious Stones",,instock,visible,publish,,Real Emerald Tumbled,stone,emerald,other
-3318,3318,Precious Stones Studs,2300.0,instock,visible,publish,,Coral And Pearl Studs,earrings,coral,other
-3289,3289,Precious Stones Studs,1799.0,instock,visible,publish,,Ruby And Pearl Studs,earrings,ruby,other
-3281,3281,Pearl Studs Earrings,1450.0,instock,visible,publish,,Plain Hook Pearl studs,earrings,pearl,other
-3279,3279,Pearl Studs Earrings,650.0,instock,visible,publish,,Simple Pearl Studs Black,earrings,pearl,black
-3268,3268,Pearl Studs Earrings,700.0,instock,visible,publish,,Simple Flower Pearl Studs Dark Pink,earrings,pearl,pink
-3265,3265,Pearl Studs Earrings,1800.0,instock,visible,publish,,Simple Flower Pearl Studs,earrings,pearl,other
-3247,3247,Pearl Studs Earrings,700.0,instock,visible,publish,,Simple Flower Pearl Studs Pink,earrings,pearl,pink
-3245,3245,Pearl Studs Earrings,550.0,instock,visible,publish,,Simple Pearl Studs Pink,earrings,pearl,pink
-3243,3243,Pearl Studs Earrings,1199.0,instock,visible,publish,,Simple Pearl studs gray,earrings,pearl,gray
+3318,3318,Precious Stones Studs,2300.0,instock,visible,publish,,Coral And Pearl Studs,studs,coral,other
+3289,3289,Precious Stones Studs,1799.0,instock,visible,publish,,Ruby And Pearl Studs,studs,ruby,other
+3281,3281,Pearl Studs Earrings,1450.0,instock,visible,publish,,Plain Hook Pearl studs,studs,pearl,other
+3279,3279,Pearl Studs Earrings,650.0,instock,visible,publish,,Simple Pearl Studs Black,studs,pearl,black
+3268,3268,Pearl Studs Earrings,700.0,instock,visible,publish,,Simple Flower Pearl Studs Dark Pink,studs,pearl,pink
+3265,3265,Pearl Studs Earrings,1800.0,instock,visible,publish,,Simple Flower Pearl Studs,studs,pearl,other
+3247,3247,Pearl Studs Earrings,700.0,instock,visible,publish,,Simple Flower Pearl Studs Pink,studs,pearl,pink
+3245,3245,Pearl Studs Earrings,550.0,instock,visible,publish,,Simple Pearl Studs Pink,studs,pearl,pink
+3243,3243,Pearl Studs Earrings,1199.0,instock,visible,publish,,Simple Pearl studs gray,studs,pearl,gray
 3236,3236,"Button Pearl Set,Pearl Necklace Sets",7600.0,instock,visible,publish,,Button Pearl White & Pink Set,necklace,pearl,pink
 3234,3234,"Button Pearl Set,Pearl Necklace Sets",7900.0,instock,visible,publish,,Button Pearl Side Brooch Set,necklace,pearl,other
 3177,3177,"Double Line Pearl Set,Pearl Necklace Sets",4599.0,instock,visible,publish,,Classy Oval Pearl Double Line Set,necklace,pearl,other

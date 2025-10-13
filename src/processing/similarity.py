@@ -85,6 +85,9 @@ def apply_filters(similarity_df: pd.DataFrame, products_df: pd.DataFrame,
     similarity_df["product_id"] = pd.to_numeric(similarity_df["product_id"], errors="coerce").astype("Int64")
     similarity_df["other_product"] = pd.to_numeric(similarity_df["other_product"], errors="coerce").astype("Int64")
     
+
+
+
     
     
     
@@ -105,23 +108,35 @@ def apply_filters(similarity_df: pd.DataFrame, products_df: pd.DataFrame,
                      'stock_status', 'catalog_visibility', 'status']],
         left_on='other_product', right_on='id', suffixes=('', '_rec')
     )
+    
 
-   
+    # --- ✅ Conditional price rule ---
+    # If rec price <= product price → keep it
+    # Else → keep only if rec price <= product price + 5000
+    condition = (
+        (similarity_df['price_rec'] <= similarity_df['price']) |
+        ((similarity_df['price_rec'] > similarity_df['price']) &
+         (similarity_df['price_rec'] <= similarity_df['price'] + 5000))
+    )
+
+    similarity_df = similarity_df[condition]
+    
     # --- Sort & select top-N ---
     similarity_df = similarity_df.sort_values(['product_id', 'score'], ascending=[True, False])
     top_recs = similarity_df.groupby('product_id').head(top_n).reset_index(drop=True)
 
     # --- Save for debugging (optional) ---
-    if debug_csv_path:
-        debug_df = top_recs[[
-            'product_id', 'name',
-            'other_product', 'name_rec', 'score'
-        ]]
-        debug_df.to_csv(debug_csv_path, index=False)
-        print(f"🧾 Saved debug recommendations to {debug_csv_path}")
+    # if debug_csv_path:
+    #     debug_df = top_recs[[
+    #         'product_id', 'name',
+    #         'other_product', 'name_rec', 'score'
+    #     ]]
+    #     debug_df.to_csv(debug_csv_path, index=False)
+    #     print(f"🧾 Saved debug recommendations to {debug_csv_path}")
 
     print("✅ Top recommendations (after filters):")
     print(top_recs.head())
+    
 
     return top_recs[['product_id', 'other_product', 'score']]
 
