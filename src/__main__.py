@@ -9,7 +9,7 @@ from processing.similarity import build_similarity, apply_filters, recommend_for
 from publishing import update_crosssell
 
 
-from config_loader import load_config, WP_API_URL
+from config_loader import load_config
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.helpers import log
@@ -26,10 +26,10 @@ def main():
 
 
     # 2️⃣ Fetch products from API and save CSV
-    fetch_products(os.path.join(BASE_DIR, "products_cache.csv"))
+    # fetch_products(os.path.join(BASE_DIR, "products_cache.csv"))
     # Load from cache CSVs
     
-    config = load_config(WP_API_URL)
+    config = load_config()
     # orders_df = pd.read_csv(os.path.join(BASE_DIR, "orders_cache.csv"))
 
     products_df = pd.read_csv(os.path.join(BASE_DIR, "products_cache.csv"))

@@ -32,7 +32,7 @@ def add_base():
     
     ]
 
-    choices = ['necklace','studs', 'earrings', 'bracelet', 'ring', 'bangle', 'stone']
+    choices = ['necklace','studs','earrings', 'bracelet', 'ring', 'bangle', 'stone']
 
 
 

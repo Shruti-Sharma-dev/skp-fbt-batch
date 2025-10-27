@@ -14,7 +14,7 @@ def build_similarity(baskets: pd.DataFrame, config, products_csv) -> pd.DataFram
     Build co-occurrence matrix, compute support, lift, and score.
     """
     print("this is config", config)
-    MIN_CO_OCCURRENCE = int(config.get("min_occurrence"))
+    MIN_CO_OCCURRENCE = int(config.get("min_cooccurrence"))
     TOP_N = int(config.get("top_n"))
     price = int(config.get("price_band"))
     PRICE_BAND = price / 100

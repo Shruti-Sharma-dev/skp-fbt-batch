@@ -7,7 +7,7 @@ dotenv.load_dotenv()
 
     
 # Access your variables
-base_url = os.getenv("WOO_STAGING_URL")
+base_url = os.getenv("WOO_URL")
 products_url = f"{base_url}/wp-json/wc/v3/products"
 
 API_URL = f"{base_url}/wp-json/skp-fbt/v1/save-recs"

@@ -1,16 +1,17 @@
+import os
 import requests
 import time
 
-WP_API_URL = "https://srikrishnanew-staging.us23.cdn-alpha.com/wp-json/skp-fbt/v1/config"
+WP_API_URL = os.getenv("WOO_URL")
 
-def load_config(api_url):
+def load_config():
     headers = {
         "Accept": "application/json",
         "User-Agent": "SKP-FBT-Batch/1.0 (+https://srikrishnanew-staging.us23.cdn-alpha.com)",
     }
     params = {"_": int(time.time())}  
     try:
-        resp = requests.get(api_url, headers=headers, timeout=10 , params=params)
+        resp = requests.get(WP_API_URL, headers=headers, timeout=10, params=params)
         resp.raise_for_status()  # Raise exception for non-200
         config = resp.json()
     except requests.exceptions.Timeout:

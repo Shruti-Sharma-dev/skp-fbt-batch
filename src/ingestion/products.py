@@ -6,10 +6,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-baseurl = os.getenv("WOO_STAGING_URL")
+baseurl = os.getenv("WOO_URL")
 API_URL = f"{baseurl}/wp-json/wc/v3/products"
-CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
-CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")
+CONSUMER_KEY = os.getenv("WOO_LOCAL_CONSUMER_KEY")
+CONSUMER_SECRET = os.getenv("WOO_LOCAL_CONSUMER_SECRET")
 
 
 def fetch_products(products_cache):

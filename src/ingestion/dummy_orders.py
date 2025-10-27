@@ -50,7 +50,7 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
             ]
             candidates = pd.concat([candidates, relaxed_by_color]).drop_duplicates(subset=["id"])
             
-        if(pid == 3488):
+        if(pid == 5051):
                 print(f"💡DEBUG >> Candidates for product {pid} ({anchor['name']}):")
                 print(candidates)
         
