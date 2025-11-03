@@ -23,8 +23,7 @@ def add_base():
 
     conditions=[
         filtered['categories'].str.contains('necklace|set|choker|haar|chain', case=False, na=False) | filtered['name'].str.contains('necklace|set|choker|haar|chain', case=False, na=False) ,
-        filtered['categories'].str.contains('studs|tops', case=False, na=False) | filtered['name'].str.contains('studs|tops', case=False, na=False),
-        filtered['categories'].str.contains('earrings|hanging|chand baali|jhumka', case=False, na=False) | filtered['name'].str.contains('earrings|hanging|chand baali|jhumka', case=False, na=False),
+        filtered['categories'].str.contains('earrings|hanging|chand baali|jhumka|studs|tops', case=False, na=False) | filtered['name'].str.contains('earrings|hanging|chand baali|jhumka|studs|tops', case=False, na=False),
         filtered['categories'].str.contains('bracelet', case=False, na=False) | filtered['name'].str.contains('bracelet', case=False, na=False),
         filtered['categories'].str.contains('ring', case=False, na=False) | filtered['name'].str.contains('necklace|set|choker|haar|chain', case=False, na=False),
         filtered['categories'].str.contains('bangle', case=False, na=False) | filtered['name'].str.contains('bangle', case=False, na=False),
@@ -32,7 +31,7 @@ def add_base():
     
     ]
 
-    choices = ['necklace','studs','earrings', 'bracelet', 'ring', 'bangle', 'stone']
+    choices = ['necklace','earrings', 'bracelet', 'ring', 'bangle', 'stone']
 
 
 
@@ -51,10 +50,12 @@ def add_base():
         ((filtered['name'].str.contains('silver', case=False, na=False)) | (filtered['categories'].str.contains('silver', case=False, na=False))),
         ((filtered['name'].str.contains('coral', case=False, na=False)) | (filtered['categories'].str.contains('coral', case=False, na=False))),
         ((filtered['name'].str.contains('pearl', case=False, na=False)) | (filtered['categories'].str.contains('pearl', case=False, na=False))),
+        ((filtered['name'].str.contains('diamond', case=False, na=False)) | (filtered['categories'].str.contains('diamond', case=False, na=False))),
+        ((filtered['name'].str.contains('baroque', case=False, na=False)) | (filtered['categories'].str.contains('baroque', case=False, na=False)))
     ]
 
 
-    choices_material = [ 'emerald', 'ruby', 'oyster' , 'sapphire', 'gold','silver' , 'coral' , 'pearl']
+    choices_material = [ 'emerald', 'ruby', 'oyster' , 'sapphire', 'gold','silver' , 'coral' , 'pearl', 'diamond', 'baroque']
 
 
 
@@ -66,7 +67,7 @@ def add_base():
         (filtered['name'].str.contains('black', case=False, na=False)) | (filtered['categories'].str.contains('black', case=False, na=False)),
         (filtered['name'].str.contains('pink', case=False, na=False))  | (filtered['categories'].str.contains('pink', case=False, na=False)),
         (filtered['name'].str.contains('gold', case=False, na=False))  | (filtered['categories'].str.contains('gold', case=False, na=False)),
-        (filtered['name'].str.contains('gray', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
+        (filtered['name'].str.contains('gray|grey', case=False, na=False))  | (filtered['categories'].str.contains('gray', case=False, na=False)),
         (filtered['name'].str.contains('brown', case=False, na=False)) | (filtered['categories'].str.contains('brown', case=False, na=False)),
         (filtered['name'].str.contains('blue', case=False, na=False))  | (filtered['categories'].str.contains('blue', case=False, na=False)),
         (filtered['name'].str.contains('purple', case=False, na=False)) | (filtered['categories'].str.contains('purple', case=False, na=False)),

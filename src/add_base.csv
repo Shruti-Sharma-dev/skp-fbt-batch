@@ -10,7 +10,7 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 15081,15081,Double Line Pearl Set,6299.0,instock,visible,publish,SKPDOUBLE70003,Elegant Emerald &amp; Ruby Double Line Pearls Pendent Set,necklace,emerald,other
 15076,15076,Double Line Pearl Set,9199.0,instock,visible,publish,SKPDOUBLE70002,Royal Ruby Double Line Pearls Pendent Set,necklace,ruby,other
 15070,15070,Single Line Pearl Set,3099.0,instock,visible,publish,SKPWHITE11004,Classy Single Line Pearls Pendent Set,necklace,pearl,other
-15066,15066,"Plain Grey Pearl Set,Single Line Pearl Set",6999.0,instock,visible,publish,SKPGREY11003,Beautiful Grey Round Pearls Pendent Set,necklace,pearl,other
+15066,15066,"Plain Grey Pearl Set,Single Line Pearl Set",6999.0,instock,visible,publish,SKPGREY11003,Beautiful Grey Round Pearls Pendent Set,necklace,pearl,gray
 15062,15062,Single Line Pearl Set,3099.0,instock,visible,publish,SKPPINK11002,Adorable Blush Pearls Pendent Set,necklace,pearl,other
 15055,15055,Single Line Pearl Set,3099.0,instock,visible,publish,SKPPINK11001,Beautiful Pink Pearl Single Line Pendent Set,necklace,pearl,pink
 15036,15036,Button Pearl Set,5199.0,instock,visible,publish,SKPBUTTOM30012,Pretty Button Pearls Necklace Set,necklace,pearl,other
@@ -98,7 +98,7 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 14346,14346,Pearl Bracelet,1899.0,instock,visible,publish,,Classy Pink Pearls Bracelet,bracelet,pearl,pink
 14333,14333,Pearl Bracelet,3399.0,instock,visible,publish,,Designer Double Line Black Button Pearls Bracelet,bracelet,pearl,black
 14328,14328,Pearl Bracelet,3299.0,instock,visible,publish,,Designer Double Line White Button Pearls Bracelet,bracelet,pearl,other
-14326,14326,Pearl Bracelet,2499.0,instock,visible,publish,,Designer Grey Button Pearls Bracelet,bracelet,pearl,other
+14326,14326,Pearl Bracelet,2499.0,instock,visible,publish,,Designer Grey Button Pearls Bracelet,bracelet,pearl,gray
 14321,14321,Pearl Bracelet,1399.0,instock,visible,publish,,Western Single Line Multicolor Pearl Bracelet,bracelet,pearl,other
 14318,14318,Pearl Bracelet,1599.0,instock,visible,publish,,Adorable Original Multicolour Pearls Bracelet,bracelet,pearl,other
 14315,14315,Pearl Bracelet,1599.0,instock,visible,publish,,Beautiful Small Pearls Bracelet,bracelet,pearl,other
@@ -166,18 +166,18 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 13866,13866,Chain’s,4095.0,instock,visible,publish,,92.5 Silver Classy Chain,necklace,silver,other
 13862,13862,Chain’s,10400.0,instock,visible,publish,,92.5 Silver Designer Twister Chain,necklace,silver,other
 13853,13853,Chain’s,5225.0,instock,visible,publish,,92.5 Pure Silver Designer Chain,necklace,silver,other
-13847,13847,Pearl Studs Earrings,1199.0,instock,visible,publish,STUDS1,Adorable Pearl Studds,studs,pearl,other
+13847,13847,Pearl Studs Earrings,1199.0,instock,visible,publish,STUDS1,Adorable Pearl Studds,earrings,pearl,other
 13837,13837,Pearl Hanging,1199.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
-13834,13834,Pearl Studs Earrings,1099.0,instock,visible,publish,,Flower Petals Pearl Studds,studs,pearl,other
+13834,13834,Pearl Studs Earrings,1099.0,instock,visible,publish,,Flower Petals Pearl Studds,earrings,pearl,other
 13831,13831,92.5 Silver Jewellery Pearls Earrings,1800.0,instock,visible,publish,,92.5 Silver Post Pin Cute Pearl Studds,earrings,silver,other
 13828,13828,Pearl Hanging,1499.0,instock,visible,publish,,Adorable Flora Oyster Pearl Hangings,earrings,oyster,other
 13825,13825,92.5 Silver Jewellery Pearls Earrings,1199.0,instock,visible,publish,,Cute Pearl Hangings,earrings,silver,other
 13823,13823,Pearl Hanging,1200.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
-13820,13820,Pearl Studs Earrings,499.0,instock,visible,publish,,Beautiful Brown Pearl Studds,studs,pearl,brown
+13820,13820,Pearl Studs Earrings,499.0,instock,visible,publish,,Beautiful Brown Pearl Studds,earrings,pearl,brown
 13802,13802,92.5 Silver Pearl Jewellery,2199.0,instock,visible,publish,,92.5 Pure Silver  Flower Pearl Earrings,earrings,silver,other
 13798,13798,92.5 Silver Pearl Jewellery,1399.0,instock,visible,publish,,Flower Pearl Studds,others,silver,other
 13795,13795,Pearls Earrings,1250.0,instock,visible,publish,,92.5 Silver Post Pin Designer Pearl Studds,earrings,silver,other
-13792,13792,Pearl Studs Earrings,1199.0,instock,visible,publish,STUDS2,Big Pearl Studds,studs,pearl,other
+13792,13792,Pearl Studs Earrings,1199.0,instock,visible,publish,STUDS2,Big Pearl Studds,earrings,pearl,other
 13790,13790,Pearls Earrings,1600.0,instock,visible,publish,,92.5 Silver Post Pin Tiny Pearl Studds,earrings,silver,other
 13787,13787,Uncategorized,1399.0,instock,visible,publish,,92.5 Silver Post Pin Cute Pearl Studds,others,silver,other
 13784,13784,Uncategorized,1399.0,instock,visible,publish,,92.5 Silver Post Pin Pearl Studds,others,silver,other
@@ -192,7 +192,7 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 13756,13756,"92.5 Silver Jewellery Pearls Earrings,92.5 Silver Pearl Jewellery",1399.0,instock,visible,publish,,92.5 Silver Post Pin Pearl Rectangular Hangings,earrings,silver,other
 13753,13753,92.5 Silver Jewellery Pearls Earrings,1800.0,instock,visible,publish,,92.5 Silver Post Pin Pearl Hangings,earrings,silver,other
 13741,13741,"92.5 Silver Jewellery Pearls Earrings,92.5 Silver Pearl Jewellery",1199.0,instock,visible,publish,,92.5 Silver Post Pin Pearl Studded Earrings,earrings,silver,other
-13738,13738,92.5 Silver Jewellery,1800.0,instock,visible,publish,,92.5 Silver Post Pin Pink Pearl Studs,studs,silver,pink
+13738,13738,92.5 Silver Jewellery,1800.0,instock,visible,publish,,92.5 Silver Post Pin Pink Pearl Studs,earrings,silver,pink
 13735,13735,92.5 Silver Jewellery Pearls Earrings,1800.0,instock,visible,publish,,92.5 Silver Post Pin Blossom Pearl Studds,earrings,silver,other
 13731,13731,92.5 Silver Pearl Jewellery,1199.0,instock,visible,publish,,92.5 Silver Post Pin Butterfly Hangings,earrings,silver,other
 13717,13717,92.5 Silver Pearl Jewellery,1800.0,instock,visible,publish,,92.5 Silver Post Pin Emerald Studded Hangings,earrings,emerald,other
@@ -202,14 +202,14 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 13666,13666,Pearl Hanging,1149.0,instock,visible,publish,,Blossom Pearl Hangings,earrings,pearl,other
 13663,13663,"Pearl Hanging,Uncategorized",1999.0,instock,visible,publish,,Lavish Pearl Studded Hangings,earrings,pearl,other
 13660,13660,Pearl Hanging,2599.0,instock,visible,publish,EARRING2,Lavish Pearl Studded Hangings,earrings,pearl,other
-13654,13654,Pearl Studs Earrings,1099.0,instock,visible,publish,,Elegant Pearl Studded Earrings,studs,pearl,other
+13654,13654,Pearl Studs Earrings,1099.0,instock,visible,publish,,Elegant Pearl Studded Earrings,earrings,pearl,other
 13647,13647,Pearl Hanging,1149.0,instock,visible,publish,,Flora Pearl Hangings,earrings,pearl,other
 13644,13644,Pearl Hanging,1149.0,instock,visible,publish,,Flora Pearl Hangings,earrings,pearl,other
 13641,13641,Pearl Hanging,1349.0,instock,visible,publish,,Pretty Pearl Hangings,earrings,pearl,other
 13638,13638,Pearl Hanging,1349.0,instock,visible,publish,,Pretty Pearl Hangings,earrings,pearl,other
-13631,13631,Pearl Studs Earrings,2199.0,instock,visible,publish,,Designer Pearl Studded Earrings,studs,pearl,other
+13631,13631,Pearl Studs Earrings,2199.0,instock,visible,publish,,Designer Pearl Studded Earrings,earrings,pearl,other
 13628,13628,Pearl Hanging,1349.0,instock,visible,publish,,Elegant Pearl Hangings,earrings,pearl,other
-13625,13625,Pearl Studs Earrings,1099.0,instock,visible,publish,,Cute Pearl Studded Earrings,studs,pearl,other
+13625,13625,Pearl Studs Earrings,1099.0,instock,visible,publish,,Cute Pearl Studded Earrings,earrings,pearl,other
 13622,13622,Pearl Hanging,1449.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
 13620,13620,"Pearl Hanging,Uncategorized",1149.0,instock,visible,publish,,Elagent Pearl Hangings,earrings,pearl,other
 13618,13618,Pearl Hanging,1249.0,instock,visible,publish,,Exquisite Pearl Hangings,earrings,pearl,other
@@ -280,32 +280,32 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 12998,12998,"Fancy Pearl Set,Single Line Pearl Set",3499.0,instock,visible,publish,,Attractive Pearl Studded Pendet Set,necklace,pearl,other
 12993,12993,Single Line Pearl Set,3499.0,instock,visible,publish,SKP12PEARLS,Adorable Pearl Studded Pendent Set,necklace,pearl,other
 12978,12978,Single Line Pearl Set,3499.0,instock,visible,publish,,Adorable Single Line Flower Petal Pendent Set,necklace,pearl,other
-12952,12952,Pearl Studs Earrings,699.0,instock,visible,publish,,Classic Pearl Studded Earrings,studs,pearl,other
-12943,12943,Pearl Studs Earrings,799.0,instock,visible,publish,,Regular Wear Original Pearls Studs With Micro Rhodium Gold Plating Cover,studs,gold,gold
-12940,12940,Precious Stones Studs,1299.0,instock,visible,publish,,Adorable Ruby &amp; Emerald Pearl Studded Earrings,studs,emerald,other
-12937,12937,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Ruby &amp; Emerald Pearl Studded Earrings,studs,emerald,other
-12934,12934,Precious Stones Studs,1699.0,instock,visible,publish,,Adorable Ruby Studded Earrings,studs,ruby,other
-12932,12932,Precious Stones Studs,1799.0,instock,visible,publish,,Adorable Pink Stone Pearl Studded Earrings,studs,pearl,pink
-12930,12930,Precious Stones Studs,1799.0,instock,visible,publish,,Adorable Multistone Pearl Studded Earrings,studs,pearl,other
-12925,12925,Precious Stones Studs,1799.0,instock,visible,publish,,Adorable Pink Stone Pearl Studded Earrings,studs,pearl,pink
-12922,12922,Precious Stones Studs,1799.0,instock,visible,publish,,Adorable Flower Design Earrings,studs,others,other
-12919,12919,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Coral Pearl Studded Earrings,studs,coral,other
-12916,12916,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Blue Stone Pearl Studded Earrings,studs,pearl,blue
-12910,12910,Precious Stones Studs,1999.0,instock,visible,publish,,Adorable Ruby &amp; Emerald Pearl Studded Earrings,studs,emerald,other
-12907,12907,Pearl Studs Earrings,2099.0,instock,visible,publish,STUDS3,Adorable Pearls Studded Earrings,studs,pearl,other
-12904,12904,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Sunflower Ruby Pearl Studded Earrings,studs,ruby,other
-12901,12901,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Multistone Pearl Studded Earrings,studs,pearl,other
-12897,12897,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Flower Pearl Studded Earrings,studs,pearl,other
-12894,12894,Precious Stones Studs,1999.0,instock,visible,publish,,Adorable Pearl Studded Earrings,studs,pearl,other
-12891,12891,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Ruby &amp; Emerald Studded Earrings,studs,emerald,other
-12885,12885,Precious Stones Studs,1999.0,instock,visible,publish,EMERALDPEARLSTUDS,Designer Emerald Pearl Studded Earrings,studs,emerald,other
-12882,12882,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Multistone Pearl Studded Earrings,studs,pearl,other
-12879,12879,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Ruby Studded Earrings,studs,ruby,other
-12876,12876,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Pearl Studded Ruby Earings,studs,ruby,other
-12873,12873,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Navratna Pearl Studded Earings,studs,pearl,other
-12870,12870,Precious Stones Studs,1999.0,instock,visible,publish,RUBYPEARLSTUDS,Designer Flower Ruby Pearl Studded Earings,studs,ruby,other
-12867,12867,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Flower Ruby &amp; Emerald Pearl Studded Earings,studs,emerald,other
-12862,12862,Precious Stones Studs,1999.0,instock,visible,publish,,Sunflower Ruby Pearls Studded Earings,studs,ruby,other
+12952,12952,Pearl Studs Earrings,699.0,instock,visible,publish,,Classic Pearl Studded Earrings,earrings,pearl,other
+12943,12943,Pearl Studs Earrings,799.0,instock,visible,publish,,Regular Wear Original Pearls Studs With Micro Rhodium Gold Plating Cover,earrings,gold,gold
+12940,12940,Precious Stones Studs,1299.0,instock,visible,publish,,Adorable Ruby &amp; Emerald Pearl Studded Earrings,earrings,emerald,other
+12937,12937,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Ruby &amp; Emerald Pearl Studded Earrings,earrings,emerald,other
+12934,12934,Precious Stones Studs,1699.0,instock,visible,publish,,Adorable Ruby Studded Earrings,earrings,ruby,other
+12932,12932,Precious Stones Studs,1799.0,instock,visible,publish,,Adorable Pink Stone Pearl Studded Earrings,earrings,pearl,pink
+12930,12930,Precious Stones Studs,1799.0,instock,visible,publish,,Adorable Multistone Pearl Studded Earrings,earrings,pearl,other
+12925,12925,Precious Stones Studs,1799.0,instock,visible,publish,,Adorable Pink Stone Pearl Studded Earrings,earrings,pearl,pink
+12922,12922,Precious Stones Studs,1799.0,instock,visible,publish,,Adorable Flower Design Earrings,earrings,others,other
+12919,12919,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Coral Pearl Studded Earrings,earrings,coral,other
+12916,12916,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Blue Stone Pearl Studded Earrings,earrings,pearl,blue
+12910,12910,Precious Stones Studs,1999.0,instock,visible,publish,,Adorable Ruby &amp; Emerald Pearl Studded Earrings,earrings,emerald,other
+12907,12907,Pearl Studs Earrings,2099.0,instock,visible,publish,STUDS3,Adorable Pearls Studded Earrings,earrings,pearl,other
+12904,12904,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Sunflower Ruby Pearl Studded Earrings,earrings,ruby,other
+12901,12901,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Multistone Pearl Studded Earrings,earrings,pearl,other
+12897,12897,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Flower Pearl Studded Earrings,earrings,pearl,other
+12894,12894,Precious Stones Studs,1999.0,instock,visible,publish,,Adorable Pearl Studded Earrings,earrings,pearl,other
+12891,12891,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Ruby &amp; Emerald Studded Earrings,earrings,emerald,other
+12885,12885,Precious Stones Studs,1999.0,instock,visible,publish,EMERALDPEARLSTUDS,Designer Emerald Pearl Studded Earrings,earrings,emerald,other
+12882,12882,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Multistone Pearl Studded Earrings,earrings,pearl,other
+12879,12879,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Ruby Studded Earrings,earrings,ruby,other
+12876,12876,Precious Stones Studs,1999.0,instock,visible,publish,,Beautiful Pearl Studded Ruby Earings,earrings,ruby,other
+12873,12873,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Navratna Pearl Studded Earings,earrings,pearl,other
+12870,12870,Precious Stones Studs,1999.0,instock,visible,publish,RUBYPEARLSTUDS,Designer Flower Ruby Pearl Studded Earings,earrings,ruby,other
+12867,12867,Precious Stones Studs,1999.0,instock,visible,publish,,Designer Flower Ruby &amp; Emerald Pearl Studded Earings,earrings,emerald,other
+12862,12862,Precious Stones Studs,1999.0,instock,visible,publish,,Sunflower Ruby Pearls Studded Earings,earrings,ruby,other
 12856,12856,Chain’s,2349.0,instock,visible,publish,,92.5 Silver Designer Chain.,necklace,silver,other
 12852,12852,92.5 Silver Pearl Jewellery,2970.0,instock,visible,publish,,92.5 Silver Designer Chain,necklace,silver,other
 12847,12847,Chain’s,5999.0,instock,visible,publish,,92.5 Silver Designer Chain.,necklace,silver,other
@@ -329,11 +329,11 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 12681,12681,Pearls Earrings,2199.0,instock,visible,publish,,92.5 Silver Rhombus Pearl Hangings,earrings,silver,other
 12678,12678,Pearls Earrings,2199.0,instock,visible,publish,,92.5 Silver Designer Pearl Studded Earings,earrings,silver,other
 12672,12672,Pearls Earrings,2199.0,instock,visible,publish,,92.5 Silver Cute Pearl Studded Earings,earrings,silver,other
-12666,12666,Pearl Studs Earrings,2199.0,instock,visible,publish,,92.5 Silver Adorable Pearl Studded Earings,studs,silver,other
+12666,12666,Pearl Studs Earrings,2199.0,instock,visible,publish,,92.5 Silver Adorable Pearl Studded Earings,earrings,silver,other
 12657,12657,Pearl Hanging,2199.0,instock,visible,publish,,92.5 Silver Cute Pearl Earings,earrings,silver,other
-12651,12651,Pearl Studs Earrings,2199.0,instock,visible,publish,,92.5 Silver Adorable Pearl Studded Earings,studs,silver,other
+12651,12651,Pearl Studs Earrings,2199.0,instock,visible,publish,,92.5 Silver Adorable Pearl Studded Earings,earrings,silver,other
 12638,12638,Pearls Earrings,2199.0,instock,visible,publish,,92.5 Silver Beautiful Star Shape Pearl Earings,earrings,silver,other
-12634,12634,Pearl Studs Earrings,2199.0,instock,visible,publish,,92.5 Pure Silver Small Pearls Studded Earrings,studs,silver,other
+12634,12634,Pearl Studs Earrings,2199.0,instock,visible,publish,,92.5 Pure Silver Small Pearls Studded Earrings,earrings,silver,other
 12621,12621,"Choker Set,Exclusive Pearls Set",9499.0,instock,visible,publish,,"Attractive Designer Pearl, Ruby &amp; Emerald Choker Pendant Set",necklace,emerald,other
 12608,12608,"Choker Set,Designer sets",5899.0,instock,visible,publish,,Exclusive Chocker Button Pearl Ruby Set,necklace,ruby,other
 12604,12604,Plain Black Pearl Set,7999.0,instock,visible,publish,,Round Black Pearl,necklace,pearl,black
@@ -378,13 +378,13 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 11622,11622,"Long Pearl Set,Plain White Pearl Set",24000.0,instock,visible,publish,,Stunning Long Pearl Necklace,necklace,pearl,other
 11613,11613,"Exclusive Pearls Set,Plain Pink Pearl Set,Plain White Pearl Set",8000.0,instock,visible,publish,,Elegant Pearl Necklace White & Pink,necklace,pearl,pink
 11612,11612,"Long Pearl Set,Plain White Pearl Set",19000.0,instock,visible,publish,,Designer Oval & Flat Mix Long Pearl Necklace,necklace,pearl,other
-11530,11530,Pearl Studs Earrings,700.0,instock,visible,publish,SKPPEARL5,White Pearl Studs,studs,pearl,other
-11529,11529,Pearl Studs Earrings,1900.0,instock,visible,publish,,Gray Pearl Studs Big,studs,pearl,gray
-11527,11527,Pearl Studs Earrings,1400.0,instock,visible,publish,,Golden Pearl Studs,studs,gold,gold
-11526,11526,Pearl Studs Earrings,1500.0,instock,visible,publish,,Black Pearl Studs Big,studs,pearl,black
+11530,11530,Pearl Studs Earrings,700.0,instock,visible,publish,SKPPEARL5,White Pearl Studs,earrings,pearl,other
+11529,11529,Pearl Studs Earrings,1900.0,instock,visible,publish,,Gray Pearl Studs Big,earrings,pearl,gray
+11527,11527,Pearl Studs Earrings,1400.0,instock,visible,publish,,Golden Pearl Studs,earrings,gold,gold
+11526,11526,Pearl Studs Earrings,1500.0,instock,visible,publish,,Black Pearl Studs Big,earrings,pearl,black
 11524,11524,"Plain Pink Pearl Set,Plain White Pearl Set",11000.0,instock,visible,publish,,Most Lustrous White &amp; Pink Necklace,necklace,pearl,pink
 11522,11522,"Plain Pink Pearl Set,Plain White Pearl Set",9000.0,instock,visible,publish,,Designer Round Pearl Grading White & Pink Mix,necklace,pearl,pink
-11521,11521,Pearl Studs Earrings,1200.0,instock,visible,publish,,Light Pink Plain Pearl Studs,studs,pearl,pink
+11521,11521,Pearl Studs Earrings,1200.0,instock,visible,publish,,Light Pink Plain Pearl Studs,earrings,pearl,pink
 11520,11520,"Plain Pink Pearl Set,Plain White Pearl Set",3400.0,instock,visible,publish,,Classy White &amp; Pink Mix Pearl Set,necklace,pearl,pink
 11519,11519,"Plain Pink Pearl Set,Plain White Pearl Set",8500.0,instock,visible,publish,,Designer Shading Pearl Necklace Lighter To Darker,necklace,pearl,pink
 11518,11518,Plain Pink Pearl Set,5500.0,instock,visible,publish,,Attractive Pink Pearl Grading Necklace,necklace,pearl,pink
@@ -402,13 +402,13 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 10681,10681,Single Line Pearl Set,3400.0,instock,visible,publish,,Beautiful Pearl Necklace Set,necklace,pearl,other
 10665,10665,"Double Line Pearl Set,Uncategorized",6100.0,instock,visible,publish,,Classy Pearl Necklace Set,necklace,pearl,other
 10298,10298,Pearl Hanging,1299.0,instock,visible,publish,,Sparkling Stylish Pearl Hangings,earrings,pearl,other
-10297,10297,Pearl Studs Earrings,1299.0,instock,visible,publish,,Designer Pearl Earrings,studs,pearl,other
-10294,10294,Pearl Studs Earrings,1299.0,instock,visible,publish,STUDS4,Beautiful Pearl Earrings,studs,pearl,other
+10297,10297,Pearl Studs Earrings,1299.0,instock,visible,publish,,Designer Pearl Earrings,earrings,pearl,other
+10294,10294,Pearl Studs Earrings,1299.0,instock,visible,publish,STUDS4,Beautiful Pearl Earrings,earrings,pearl,other
 10291,10291,Pearl Hanging,1249.0,instock,visible,publish,,Attractive Pink Pearl hangings,earrings,pearl,pink
 10288,10288,Pearl Hanging,1249.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
 10208,10208,Pearl Hanging,1249.0,instock,visible,publish,,Cute Pearl Hangings,earrings,pearl,other
-10206,10206,Pearl Studs Earrings,1299.0,instock,visible,publish,,Designer Pearl Earrings,studs,pearl,other
-10205,10205,Pearl Studs Earrings,1299.0,instock,visible,publish,,Beautiful Pearl Earrings,studs,pearl,other
+10206,10206,Pearl Studs Earrings,1299.0,instock,visible,publish,,Designer Pearl Earrings,earrings,pearl,other
+10205,10205,Pearl Studs Earrings,1299.0,instock,visible,publish,,Beautiful Pearl Earrings,earrings,pearl,other
 10202,10202,Pearl Hanging,1249.0,instock,visible,publish,,Designer Pearl Hangings,earrings,pearl,other
 10195,10195,Pearl Hanging,1249.0,instock,visible,publish,,Attractive Pink Pearl hangings,earrings,pearl,pink
 10117,10117,Ruby,114999.0,instock,visible,publish,,Gorgeous Blue Sapphire &amp; Pearl Necklace,necklace,ruby,blue
@@ -429,14 +429,14 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 8388,8388,"Plain Black Pearl Set,Simple Pearl Necklace Set",7000.0,instock,visible,publish,,Elegant Black Rice Pearl Necklace,necklace,pearl,black
 8387,8387,Ruby,16999.0,instock,visible,publish,,Premium Quality Classy Light Pink Ruby,stone,ruby,pink
 8384,8384,Emerald,13100.0,instock,visible,publish,,Simple Emerald Necklace,necklace,emerald,other
-8114,8114,Pearl Studs Earrings,1500.0,instock,visible,publish,,Plain Pearl Studs Original Big Size,studs,pearl,other
+8114,8114,Pearl Studs Earrings,1500.0,instock,visible,publish,,Plain Pearl Studs Original Big Size,earrings,pearl,other
 7715,7715,Pearl Bangle,5899.0,instock,visible,publish,skp1525mj-1,Beautiful Pearl Bangle Premium 2.8 size,bangle,pearl,other
-7407,7407,Uncategorized,450.0,instock,visible,publish,,Plain Pearl Tops,studs,pearl,other
+7407,7407,Uncategorized,450.0,instock,visible,publish,,Plain Pearl Tops,earrings,pearl,other
 7391,7391,Pearl Hanging,1999.0,instock,visible,publish,SKPK9,Beautiful Oyster &amp; Pearl Flower Hanging,earrings,oyster,other
 7390,7390,Pearl Hanging,1900.0,instock,visible,publish,,Beautiful Oyster & Pearl Hanging,earrings,oyster,other
-6631,6631,"Pearl Studs Earrings,Uncategorized",1150.0,instock,visible,publish,,Classy Pink Button Tops,studs,pearl,pink
+6631,6631,"Pearl Studs Earrings,Uncategorized",1150.0,instock,visible,publish,,Classy Pink Button Tops,earrings,pearl,pink
 6399,6399,"Exclusive Pearls Set,Three Line Pearl Necklace set",14500.0,instock,visible,publish,,Exclusive Pink Peacock Necklace,necklace,pearl,pink
-6394,6394,Pearl Studs Earrings,900.0,instock,visible,publish,,Black Pearl Tops,studs,pearl,black
+6394,6394,Pearl Studs Earrings,900.0,instock,visible,publish,,Black Pearl Tops,earrings,pearl,black
 6365,6365,Three Line Pearl Necklace set,18900.0,instock,visible,publish,PEACOCKWHITE,Beautiful Peacock Necklace,necklace,pearl,other
 6361,6361,Pearl Bracelet,5100.0,instock,visible,publish,,Classy Round Pearl Bracelet 10mm,bracelet,pearl,other
 6358,6358,Plain White Pearl Set,10500.0,instock,visible,publish,,Classy White Round Pearl 10mm,necklace,pearl,other
@@ -457,8 +457,8 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 5865,5865,Long Pearl Set,18900.0,instock,visible,publish,,Simple Long Pearl Set,necklace,pearl,other
 5600,5600,Choker Set,7699.0,instock,visible,publish,,Designer Pearl Choker Red,necklace,pearl,other
 5498,5498,Pearl Bangle,5899.0,instock,visible,publish,skp1525mj,Beautiful Pearl Bangle Premium 2.6 size,bangle,pearl,other
-5493,5493,"Pearl Studs Earrings,Precious Stones Studs",1700.0,instock,visible,publish,,Ruby Pearl Studs,studs,ruby,other
-5478,5478,"Pearl Studs Earrings,Precious Stones Studs",1450.0,instock,visible,publish,,Pearl And Coral Studs,studs,coral,other
+5493,5493,"Pearl Studs Earrings,Precious Stones Studs",1700.0,instock,visible,publish,,Ruby Pearl Studs,earrings,ruby,other
+5478,5478,"Pearl Studs Earrings,Precious Stones Studs",1450.0,instock,visible,publish,,Pearl And Coral Studs,earrings,coral,other
 5085,5085,Plain Pink Pearl Set,16900.0,instock,visible,publish,,Pink Round Pearl Necklace 14MM,necklace,pearl,pink
 5082,5082,Plain Pink Pearl Set,13500.0,instock,visible,publish,,Gorgeous Pink Round Necklace 12MM,necklace,pearl,pink
 5077,5077,"Exclusive Pearls Set,Plain White Pearl Set,Simple Pearl Necklace Set",11000.0,instock,visible,publish,RUBYPEARLTHREELINE,Beautiful Pearl &amp; Ruby Necklace,necklace,ruby,other
@@ -535,11 +535,11 @@ id,parent_id,categories,price,stock_status,catalog_visibility,status,sku,name,ba
 3373,3373,"Emerald,Precious Stones",34499.0,instock,visible,publish,,Real Emerald Stone,stone,emerald,other
 3372,3372,"Emerald,Precious Stones",,instock,visible,publish,,Original Precious Emerald Drops (awaze),stone,emerald,other
 3359,3359,"Emerald,Precious Stones",,instock,visible,publish,,Real Emerald Tumbled,stone,emerald,other
-3279,3279,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",650.0,instock,visible,publish,,Simple Pearl Studs Black,studs,pearl,black
-3268,3268,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",900.0,instock,visible,publish,,Simple Flower Pearl Studs Dark Pink,studs,pearl,pink
-3265,3265,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",1800.0,instock,visible,publish,,Simple Flower Pearl Studs,studs,pearl,other
-3247,3247,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",900.0,instock,visible,publish,,Simple Flower Pearl Studs Pink,studs,pearl,pink
-3245,3245,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",750.0,instock,visible,publish,,Simple Pearl Studs Pink,studs,pearl,pink
-3243,3243,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",1199.0,instock,visible,publish,,Simple Pearl studs gray,studs,pearl,gray
+3279,3279,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",650.0,instock,visible,publish,,Simple Pearl Studs Black,earrings,pearl,black
+3268,3268,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",900.0,instock,visible,publish,,Simple Flower Pearl Studs Dark Pink,earrings,pearl,pink
+3265,3265,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",1800.0,instock,visible,publish,,Simple Flower Pearl Studs,earrings,pearl,other
+3247,3247,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",900.0,instock,visible,publish,,Simple Flower Pearl Studs Pink,earrings,pearl,pink
+3245,3245,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",750.0,instock,visible,publish,,Simple Pearl Studs Pink,earrings,pearl,pink
+3243,3243,"Pearl Earrings &amp; Bangles,Pearl Studs Earrings",1199.0,instock,visible,publish,,Simple Pearl studs gray,earrings,pearl,gray
 3213,3213,"Button Pearl Set,Pearl Necklace Sets",7999.0,instock,visible,publish,,Button Pearl Zig Zag Set,necklace,pearl,other
 3177,3177,"Double Line Pearl Set,Pearl Necklace Sets",5199.0,instock,visible,publish,,Classy Oval Pearl Double Line Set,necklace,pearl,other
