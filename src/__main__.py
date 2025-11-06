@@ -37,11 +37,12 @@ def main():
     print("\n🛍️ Sample Products Loaded Successfully:")
     print(len(products_df))
     
-    add_base.add_base()
+    # add_base.add_base()
 
  # Dummy orders generate karo
     df = generate_dummy_orders(
-    products_csv=os.path.join(BASE_DIR, "add_base.csv"),
+    products_csv=os.path.join(BASE_DIR, "products_cache.csv"),
+    # products_csv=os.path.join(BASE_DIR, "add_base.csv"),
     output_csv=os.path.join(BASE_DIR, "structured_dummy_orders.csv"),
     config=config
     )

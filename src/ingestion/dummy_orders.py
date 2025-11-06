@@ -9,12 +9,15 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
     
     
     products = pd.read_csv(products_csv)
-
+    
+    
     # --- Basic filters ---
     products = products[
         (products["status"].str.lower() == "publish") &
         (products["stock_status"].str.lower() == "instock") &
-        (products["catalog_visibility"].str.lower() == "visible")
+        (products["catalog_visibility"].str.lower() == "visible")&
+        (products["price"].notna()) &
+        (products["price"].astype(float) > 0)
     ].copy()
     products["price"] = products["price"].astype(float)
 
@@ -36,9 +39,7 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
             (~products["base_category"].eq(anchor["base_category"]))
             
         ].copy()
-        if(pid == 3488):
-                print(f"✅DEBUG >> Candidates for product {pid} ({anchor['name']}):")
-                print(candidates)
+   
         
         # If too few candidates, relax color constraint
         if len(candidates) < 2:
@@ -49,11 +50,7 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
                 (~products["base_category"].eq(anchor["base_category"]))
             ]
             candidates = pd.concat([candidates, relaxed_by_color]).drop_duplicates(subset=["id"])
-            
-        if(pid == 5051):
-                print(f"💡DEBUG >> Candidates for product {pid} ({anchor['name']}):")
-                print(candidates)
-        
+      
         
 
         
@@ -75,10 +72,6 @@ def generate_dummy_orders(products_csv, output_csv, config, min_basket=3, max_ba
             if candidates.empty:
                 continue
             
-            if(pid == 3488):
-                print(f"💡DEBUG >> Candidates for product {pid} ({anchor['name']}):")
-                print(candidates)
-
             basket_size = random.randint(min_basket, max_basket)
             chosen = []
 

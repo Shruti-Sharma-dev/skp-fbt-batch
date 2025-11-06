@@ -15,8 +15,8 @@ WC_API_URL = f"{base_url}/wp-json/wc/v3/products"
 
 
 
-CONSUMER_KEY = os.getenv("WOO_CONSUMER_KEY")
-CONSUMER_SECRET = os.getenv("WOO_CONSUMER_SECRET")
+CONSUMER_KEY = os.getenv("WOO_LOCAL_CONSUMER_KEY")
+CONSUMER_SECRET = os.getenv("WOO_LOCAL_CONSUMER_SECRET")
 
 def save_recommendations(grouped_recommendations):
     """
@@ -38,6 +38,7 @@ def save_recommendations(grouped_recommendations):
         "User-Agent": "Mozilla/5.0"
     }
 
+    
     for product in grouped_recommendations:
         product_id = product["product_id"]
         recs = product["recommendations"]
@@ -58,11 +59,18 @@ def save_recommendations(grouped_recommendations):
         # --- 2️⃣ Update WooCommerce cross-sell IDs ---
         cross_sell_ids = [rec["rec_id"] for rec in recs]
         payload_wc = {"cross_sell_ids": cross_sell_ids}
+        
+        
+        params = {
+            "consumer_key": CONSUMER_KEY,
+            "consumer_secret": CONSUMER_SECRET
+                }
 
         try:
             r_wc = requests.put(
                 f"{WC_API_URL}/{product_id}",
                 auth=(CONSUMER_KEY, CONSUMER_SECRET),
+                params=params,
                 json=payload_wc,
                 headers=headers
             )
